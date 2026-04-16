@@ -1,0 +1,44 @@
+{{ partial "header.html" . }}
+{{ partial "menu.html" . }}
+{{ partial "submenu.html" . }}
+{{ partial "contextmenu.html" . }}
+{{ partial "banner.html" . }}
+
+{{ partial "tags-modal.html" . }}
+
+<section class="section">
+    <div class="container content">
+        <div class="columns is-multiline is-centered">
+            {{ partial "sidebar.html" . }}
+            <div class="content column is-9">
+                <h1 class="title">Authors</h1>
+                <div class="columns is-multiline">
+                    {{ range .Site.Taxonomies.authors.ByCount }}
+                    <div class="column is-6">
+                        <div class="cont coloring-1 p-4">
+                            {{ $authorPage := $.Site.GetPage (printf "/authors/%s" .Page.Title) }}
+                            {{ $displayName := .Page.Title }}
+                            {{ $bio := "" }}
+                            {{ if $authorPage }}
+                                {{ $displayName = $authorPage.Params.display_name | default .Page.Title }}
+                                {{ $bio = $authorPage.Params.bio }}
+                            {{ end }}
+                            <h2 class="title is-5">
+                                <a href="{{ .Page.RelPermalink }}">{{ $displayName }}</a>
+                            </h2>
+                            {{ if $bio }}
+                                <p class="is-size-7">{{ $bio }}</p>
+                            {{ end }}
+                            <p class="is-size-7 has-text-grey">
+                                {{ .Count }} post{{ if ne .Count 1 }}s{{ end }}
+                            </p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "footer.html" . }}

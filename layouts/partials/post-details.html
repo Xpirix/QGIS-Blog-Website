@@ -1,0 +1,84 @@
+
+{{ $baseURL := .Site.BaseURL }}
+<section class="section">
+    <div class="container content">
+        <div class="columns is-multiline is-centered">
+            {{ partial "sidebar.html" . }}
+            <div class="content column is-9">
+                <div class="container rich">
+                    <div class="cont coloring-1">
+                        <h2 class="title is-4">
+                            {{ if .Params.link }}
+                                <a href="{{ .Params.link }}">{{ .Params.title }}</a>
+                            {{ else }}
+                                {{ .Params.title | default .Title }}
+                            {{ end }}
+                        </h2>
+                        <article class="subtitle is-7">
+                            <span class="has-text-weight-normal">
+                                {{ .Date.Format "January 2, 2006" }}
+                            </span> by
+                            <span class="has-text-weight-normal">
+                                {{ if .Params.link }}
+                                    {{/* Planet post: link author to subscriber archive */}}
+                                    {{ $firstSubscriber := index .Params.subscribers 0 }}
+                                    <a href="{{ $baseURL }}/subscribers/{{ $firstSubscriber | urlize }}">
+                                        {{ .Params.author }}
+                                    </a>
+                                {{ else }}
+                                    {{/* Blog post: link author to author taxonomy archive */}}
+                                    {{ $authors := .Params.authors }}
+                                    {{ if $authors }}
+                                        {{ range $i, $slug := $authors }}
+                                            {{ if $i }}, {{ end }}
+                                            {{ with $.Site.GetPage (printf "/authors/%s" $slug) }}
+                                                <a href="{{ .RelPermalink }}">{{ .Params.display_name | default .Title }}</a>
+                                            {{ else }}
+                                                {{ $slug }}
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ else }}
+                                        {{ .Params.author }}
+                                    {{ end }}
+                                {{ end }}
+                            </span>
+
+                            {{ $categories := .Params.categories }}
+                            {{ if $categories }}
+                                in
+                                {{ range $categories }}
+                                    <span class="tag is-info is-light mb-1">
+                                        <a href="{{ $baseURL }}/category/{{ . | urlize }}" class="truncate-tag">{{ . }}</a>
+                                    </span>
+                                {{ end }}
+                            {{ end }}
+
+                            {{ $tags := .Params.tags }}
+                            {{ if $tags }}
+                                tagged
+                                {{ range $tags }}
+                                    <span class="tag is-success is-light mb-1">
+                                        <a href="{{ $baseURL }}/tags/{{ . | urlize }}" class="truncate-tag">{{ . }}</a>
+                                    </span>
+                                {{ end }}
+                            {{ end }}
+                        </article>
+
+                        <div class="content mt-3">
+                            {{ if .Params.link }}
+                                {{/* Planet post: render raw HTML excerpt */}}
+                                {{ .Page.RawContent | safeHTML }}
+                                <a href="{{ .Params.link }}" class="button is-success is-outlined mt-3">Learn More</a>
+                            {{ else }}
+                                {{/* Blog post: render full inline content */}}
+                                {{ .Content | safeHTML }}
+                            {{ end }}
+                        </div>
+
+                        {{ partial "comments.html" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

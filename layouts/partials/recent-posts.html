@@ -1,0 +1,74 @@
+{{ $baseURL := .Site.BaseURL }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+<section class="section">
+    <div class="container content">
+        <div class="columns is-multiline is-centered">
+            {{ partial "sidebar.html" . }}
+            <div class="content column is-9">
+                {{ range $paginator.Pages }}
+                    <div class="column is-12">
+                        <div class="container rich">
+                            <div class="cont coloring-1">
+                                <h3 class="title is-4">
+                                    {{ if .Params.link }}
+                                        <a href="{{ .Params.link }}">{{ .Params.title }}</a>
+                                    {{ else }}
+                                        <a href="{{ .Permalink }}">{{ .Params.title | default .Title }}</a>
+                                    {{ end }}
+                                </h3>
+                                <article class="subtitle is-7">
+                                    <span class="has-text-weight-normal">
+                                        {{ .Date.Format "January 2, 2006" }}
+                                    </span> by
+                                    <span class="has-text-weight-normal">
+                                        {{ if .Params.link }}
+                                            {{ $firstSubscriber := index .Params.subscribers 0 }}
+                                            <a href="{{ $baseURL }}/subscribers/{{ $firstSubscriber | urlize }}">
+                                                {{ .Params.author }}
+                                            </a>
+                                        {{ else }}
+                                            {{ $authors := .Params.authors }}
+                                            {{ if $authors }}
+                                                {{ range $i, $slug := $authors }}
+                                                    {{ if $i }}, {{ end }}
+                                                    {{ with $.Site.GetPage (printf "/authors/%s" $slug) }}
+                                                        <a href="{{ .RelPermalink }}">{{ .Params.display_name | default .Title }}</a>
+                                                    {{ else }}
+                                                        {{ $slug }}
+                                                    {{ end }}
+                                                {{ end }}
+                                            {{ else }}
+                                                {{ .Params.author }}
+                                            {{ end }}
+                                        {{ end }}
+                                    </span>
+                                    {{ $categories := .Params.categories }}
+                                    {{ if $categories }}
+                                        in
+                                        {{ range $categories }}
+                                            <span class="tag is-info is-light mb-1">
+                                                <a href="{{ $baseURL }}/category/{{ . | urlize }}" class="truncate-tag">{{ . }}</a>
+                                            </span>
+                                        {{ end }}
+                                    {{ end }}
+                                </article>
+                                <div class="content mt-3">
+                                    {{ if .Params.link }}
+                                        {{ .Page.RawContent | safeHTML }}
+                                    {{ else }}
+                                        <p>{{ .Summary | plainify | truncate 300 "…" }}</p>
+                                    {{ end }}
+                                </div>
+                                {{ if .Params.link }}
+                                    <a href="{{ .Params.link }}" class="button is-success is-outlined">Learn More</a>
+                                {{ else }}
+                                    <a href="{{ .Permalink }}" class="button is-success is-outlined">Read More</a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

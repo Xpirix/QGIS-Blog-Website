@@ -1,0 +1,3 @@
+baseURL = 'https://blog.qgis.org/'
+publishDir = "public_prod"
+minify = true

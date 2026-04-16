@@ -1,0 +1,52 @@
+# This workflow scrapes the latest show episodes and commits the new episode and data
+# files to the repo.
+
+name: ⚒️ Scrape and commit
+on:
+  schedule:
+    - cron:  '0 0,12 * * *'  # At midnight & noon UTC
+  workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+    if: github.repository_owner == 'qgis'
+    steps:
+    - name: '🛒 Checkout QGIS Planet Website'
+      uses: actions/checkout@v4
+      with:
+        ref: main
+        path: ./qgis-planet-website
+          # This will allow us to trigger other workflows (cachix-build, etc.)
+          # when we commit changes using the git-auto-commit-action
+        token: ${{ secrets.PAT }}
+
+    - name: '🐍 Setup Python'
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+        cache: 'pip'
+        cache-dependency-path: '**/REQUIREMENTS.txt'
+  
+    - name: '🚸Install Python deps'
+      run: |
+        cd ./qgis-planet-website
+        pip install -r REQUIREMENTS.txt
+        pip freeze
+
+    - name: '🗞️ Fetch Feed Content'
+      run: |
+        cd ./qgis-planet-website
+        pip freeze
+        ./fetch_feeds.py
+
+    - name: '✉️ Commit'
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: 'Posts scraped and committed via a GitHub Action.'
+        repository: ./qgis-planet-website
+        # push_options: --force

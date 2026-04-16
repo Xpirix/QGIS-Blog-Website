@@ -1,0 +1,124 @@
+{{ with .Page }}
+{{ $pageUrl:= replaceRE "/$" "" .RelPermalink }}
+
+<div id="hamburger-btn" onclick="toggleMenu()"><span id="ham-title"></span></div>
+<div class="column is-3">
+    <nav id="sidebar" class="sidebar">
+        <ul class="content-wrapper">
+
+            <li {{ if eq $pageUrl .Site.BaseURL }} class="is-active"{{ end }}>
+                <a href="{{ .Site.BaseURL }}" class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li {{ if findRE "category" $pageUrl }} class="is-active"{{ end }}>
+                <div class="has-child">
+                    <a onclick="toggleSubMenu('categories')" class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-folder"></i>
+                        </span>
+                        <span>Categories</span>
+                    </a>
+                    <span onclick="toggleSubMenu('categories')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
+                </div>
+                <ul id="categories" class="collapsed">
+                    {{ range $.Site.Taxonomies.categories.ByCount }}
+                    <li {{ if findRE (replaceRE "/$" "" .Page.RelPermalink) $pageUrl }} class="is-active"{{ end }}>
+                        <a href="{{ .Page.RelPermalink }}" class="icon-text truncate">
+                            <span class="icon">
+                                <i class="fas fa-folder-open"></i>
+                            </span>
+                            <span>{{ .Page.Title }} ({{ .Count }})</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+
+            </li>
+
+            <li {{ if findRE "author" $pageUrl }} class="is-active"{{ end }}>
+                <div class="has-child">
+                    <a onclick="toggleSubMenu('authors')" class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-user-edit"></i>
+                        </span>
+                        <span>Authors</span>
+                    </a>
+                    <span onclick="toggleSubMenu('authors')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
+                </div>
+                <ul id="authors" class="collapsed">
+                    {{ range $.Site.Taxonomies.authors.ByCount }}
+                    <li {{ if findRE (replaceRE "/$" "" .Page.RelPermalink) $pageUrl }} class="is-active"{{ end }}>
+                        <a href="{{ .Page.RelPermalink }}" class="icon-text truncate">
+                            <span class="icon">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span>
+                                {{ with $.Site.GetPage (printf "/authors/%s" .Page.Title) }}
+                                    {{ .Params.display_name | default .Title }}
+                                {{ else }}
+                                    {{ .Page.Title }}
+                                {{ end }}
+                                ({{ .Count }})
+                            </span>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+
+            </li>
+
+            <li>
+                <a 
+                    class="tagcloudModalButton icon-text" 
+                    href="#tagcloudModal" 
+                    role="button" 
+                    data-target="planetTagsModal"
+                    onclick="toggleMenu()"
+                >
+                    <span class="icon">
+                        <i class="fas fa-tags"></i>
+                    </span>
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+{{ end }}
+
+<script>
+function rotateArrow(e) {
+        e.previousElementSibling.querySelector('img').classList.toggle('rotated');
+}
+
+function toggleSubMenu(listId) {
+        let e = document.getElementById(listId);
+        e.classList.toggle('unfolded');
+        rotateArrow(e);
+}
+
+function toggleMenu() {
+        document.getElementById('sidebar').classList.toggle('visible');
+        document.getElementById('hamburger-btn').classList.toggle('open');
+}
+
+// compose title for menu button: contatenate parent section titles
+let activeListItem = document.getElementsByClassName('is-active')[0];
+let ham = document.getElementById('ham-title');
+let hamTitle = activeListItem.querySelector('a').textContent;
+if (activeListItem.parentElement.previousElementSibling != null) {
+        hamTitle = activeListItem.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
+}
+ham.textContent = hamTitle;
+
+// expand active section
+document.querySelectorAll('li.is-active,li:has(.is-active)').forEach(li => {
+        if (e = li.querySelector('ul')) {
+                e.classList.toggle('unfolded');
+        }
+});
+</script>

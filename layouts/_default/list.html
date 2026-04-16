@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+{{ partial "menu.html" . }}
+{{ partial "submenu.html" . }}
+{{ partial "banner.html" . }}
+
+<section>
+    <div class="container content">
+        {{/* Get the title in the _index.md frontmatter in the parent folder */}}
+        <div class="columns is-multiline is-centered">
+            {{ partial "sidebar.html" . }}
+            <div class="content column is-9">
+            <h1 class="title">{{ .Title }}</h1>
+            {{ if .Params.subtitle }}
+                <p class="is-size-5">{{ .Params.subtitle }}</p>
+            {{ end }}
+
+                {{ range .Paginator.Pages }}
+                <div class="container rich">
+                    <div class="cont coloring-1">
+                        <h3 class="title is-4"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                        <p class="subtitle is-7">{{ .Date.Format "January 2, 2006" }}</p>
+                        <p>{{ .Summary | plainify | truncate 300 "…" }}</p>
+                        <a class="button is-success is-outlined" href="{{ .Permalink }}">Read more</a>
+                    </div>
+                </div>
+                {{ end }}
+               </div>
+        </div>  
+    </div>
+</section>
+
+{{ partial "pagination.html" }}
+{{ partial "footer.html" }}
