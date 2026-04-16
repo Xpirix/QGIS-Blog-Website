@@ -4,6 +4,7 @@ date: "2026-03-18T00:45:27+00:00"
 draft: false
 authors: ["mbernasocchi"]
 categories: ["QGIS Funding"]
+featured_image: "/wp-content/uploads/2026/03/muhammad-afandi-g8pbjf7wfzm-unsplash.jpg"
 ---
 
 <p class="wp-block-paragraph">QGIS 4.0 is out. After years of work by hundreds of volunteers and organisations around the world (migrating to Qt6, reworking the codebase, shipping over 100 new features on top) we have a platform that will serve the community for the next decade. That&#8217;s worth celebrating.</p>

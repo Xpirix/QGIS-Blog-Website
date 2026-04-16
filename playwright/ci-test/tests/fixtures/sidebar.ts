@@ -5,7 +5,6 @@ export class Sidebar {
     public readonly homeLink: Locator;
     public readonly allPostsLink: Locator;
     public readonly subscribersLink: Locator;
-    public readonly tagsLink: Locator;
 
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
@@ -18,8 +17,5 @@ export class Sidebar {
         this.subscribersLink = this.sidebar.locator('a')
         .filter({ hasText: 'Feeds' });
 
-        this.tagsLink = this.sidebar.getByRole("button", {
-            name: " Tags",
-        });
     }
 }

@@ -1,6 +1,6 @@
-# ✨ Contributing to QGIS-Planet-Website
+# ✨ Contributing to QGIS-Blog-Website
 
-Thank you for considering contributing to QGIS Planet Website!
+Thank you for considering contributing to QGIS Blog Website!
 We welcome contributions of all kinds, including bug fixes, feature requests,
 documentation improvements, and more. Please follow the guidelines below to
 ensure a smooth contribution process.
@@ -20,8 +20,8 @@ This web site is a static site built using [Hugo](https://gohugo.io/).
 ## 🛒 Getting the Code
 
 ```sh
-git clone --recurse-submodules https://github.com/qgis/QGIS-Planet-Website.git
-cd QGIS-Planet-Website
+git clone --recurse-submodules https://github.com/qgis/QGIS-Blog-Website.git
+cd QGIS-Blog-Website
 # To update the submodule
 git submodule update --init --recursive
 ```
@@ -44,7 +44,7 @@ hugo server
 To build the website:
 
 ```sh
-nix build .#packages.x86_64-linux # Add | cachix push QGIS-Planet-Website to push it to cachix
+nix build .#packages.x86_64-linux # Add | cachix push QGIS-Blog-Website to push it to cachix
 ```
 
 
@@ -94,7 +94,7 @@ If you are using VSCode, I recommend the following extensions:
 Clone the repo:
 
 ```sh
-git clone https://github.com/qgis/QGIS-Planet-Website.git
+git clone https://github.com/qgis/QGIS-Blog-Website.git
 ```
 
 Run the site:
@@ -192,7 +192,7 @@ Also some bulma theme overrides are placed in themes/qgis-website-theme/assets/c
 
 The layout of the landing page is themes/qgis-website-theme/layouts/index.html: the main page has many diverse blocks, that are not used anywhere else, hence its content is mostly in the partials.
 
-The `content/_index.md` contains the front matter of the page and the contents for the `feature` shortcodes. Just edit whatever you like there. The blocks shortcodes are described [here](https://github.com/qgis/QGIS-Planet-Website/blob/main/docs/shortcodes.md)
+The `content/_index.md` contains the front matter of the page and the contents for the `feature` shortcodes. Just edit whatever you like there. The blocks shortcodes are described [here](https://github.com/qgis/QGIS-Blog-Website/blob/main/docs/shortcodes.md)
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
@@ -219,7 +219,7 @@ markdown as `/img/foo.png`.
 
 The site uses a number of shortcodes to create reusable blocks of content. These are defined in the `themes/qgis-website-theme/layouts/shortcodes/` folder.
 
-The shortcodes with screenshots are described [here](https://github.com/qgis/QGIS-Planet-Website/blob/main/docs/shortcodes.md)
+The shortcodes with screenshots are described [here](https://github.com/qgis/QGIS-Blog-Website/blob/main/docs/shortcodes.md)
 
 ### Sidebar
 

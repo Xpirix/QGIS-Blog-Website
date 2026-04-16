@@ -13,7 +13,7 @@ export class HomePage {
 
     public readonly textList: string[] = [
         "Free and Open Source",
-        "QGIS Planet",
+        "QGIS Blog",
         "Your go-to source for the latest posts and updates related to QGIS",
     ];
 

@@ -91,7 +91,6 @@ test.describe("Home page", () => {
         await expect(footer.banner).toBeVisible();
         await expect(footer.projectList).toBeVisible();
         await expect(footer.communityList).toBeVisible();
-        await expect(footer.resourcesList.first()).toBeVisible();
         await expect(footer.downloadLink).toBeVisible();
         await expect(footer.logoImage).toBeVisible();
         await expect(footer.facebookLink).toBeVisible();

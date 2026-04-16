@@ -3,7 +3,9 @@ title: "QGIS Grants #11: Call for Grant Proposals 2026"
 date: "2026-03-16T17:10:26+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme", "grants"]
+categories: ["QGIS Grant Programme"]
+tags: ["grants"]
+featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 
 <p class="wp-block-paragraph">Dear QGIS Community,</p>

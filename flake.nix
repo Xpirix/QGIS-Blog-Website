@@ -1,5 +1,5 @@
 {
-  description = "QGIS Planet Website";
+  description = "QGIS Blog Website";
 
   # nixConfig = {
   #   extra-substituters = [ "https://example.cachix.org" ];
@@ -109,7 +109,7 @@
               export DIRENV_LOG_FORMAT=
               echo "-----------------------"
               echo "🌈 Your Hugo Dev Environment is ready."
-              echo "It provides hugo and vscode for use with the QGIS Planet Website Project"
+              echo "It provides hugo and vscode for use with the QGIS Blog Website Project"
               echo ""
               echo "🪛 VSCode:"
               echo "--------------------------------"

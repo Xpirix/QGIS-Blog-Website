@@ -16,11 +16,11 @@ jobs:
       contents: write
     if: github.repository_owner == 'qgis'
     steps:
-    - name: '🛒 Checkout QGIS Planet Website'
+    - name: '🛒 Checkout QGIS Blog Website'
       uses: actions/checkout@v4
       with:
         ref: main
-        path: ./qgis-planet-website
+        path: ./QGIS-Blog-Website
           # This will allow us to trigger other workflows (cachix-build, etc.)
           # when we commit changes using the git-auto-commit-action
         token: ${{ secrets.PAT }}
@@ -34,13 +34,13 @@ jobs:
   
     - name: '🚸Install Python deps'
       run: |
-        cd ./qgis-planet-website
+        cd ./QGIS-Blog-Website
         pip install -r REQUIREMENTS.txt
         pip freeze
 
     - name: '🗞️ Fetch Feed Content'
       run: |
-        cd ./qgis-planet-website
+        cd ./QGIS-Blog-Website
         pip freeze
         ./fetch_feeds.py
 
@@ -48,5 +48,5 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: 'Posts scraped and committed via a GitHub Action.'
-        repository: ./qgis-planet-website
+        repository: ./QGIS-Blog-Website
         # push_options: --force

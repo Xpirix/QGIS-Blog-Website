@@ -20,7 +20,7 @@
                             </span> by
                             <span class="has-text-weight-normal">
                                 {{ if .Params.link }}
-                                    {{/* Planet post: link author to subscriber archive */}}
+                                    {{/* Blog post: link author to subscriber archive */}}
                                     {{ $firstSubscriber := index .Params.subscribers 0 }}
                                     <a href="{{ $baseURL }}/subscribers/{{ $firstSubscriber | urlize }}">
                                         {{ .Params.author }}
@@ -64,9 +64,13 @@
                             {{ end }}
                         </article>
 
+                        {{ if .Params.featured_image }}
+                        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="max-height:420px; margin-left: auto; margin-right: auto; display: block;">
+                        {{ end }}
+
                         <div class="content mt-3">
                             {{ if .Params.link }}
-                                {{/* Planet post: render raw HTML excerpt */}}
+                                {{/* Blog post: render raw HTML excerpt */}}
                                 {{ .Page.RawContent | safeHTML }}
                                 <a href="{{ .Params.link }}" class="button is-success is-outlined mt-3">Learn More</a>
                             {{ else }}

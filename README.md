@@ -1,18 +1,18 @@
-# 🌐 QGIS Planet Website [![DPG Badge](https://img.shields.io/badge/Verified-DPG-3333AB?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMzEiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMSAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjIwMDggMjEuMzY3OEwxMC4xNzM2IDE4LjAxMjRMMTEuNTIxOSAxNi40MDAzTDEzLjk5MjggMTguNDU5TDE5LjYyNjkgMTIuMjExMUwyMS4xOTA5IDEzLjYxNkwxNC4yMDA4IDIxLjM2NzhaTTI0LjYyNDEgOS4zNTEyN0wyNC44MDcxIDMuMDcyOTdMMTguODgxIDUuMTg2NjJMMTUuMzMxNCAtMi4zMzA4MmUtMDVMMTEuNzgyMSA1LjE4NjYyTDUuODU2MDEgMy4wNzI5N0w2LjAzOTA2IDkuMzUxMjdMMCAxMS4xMTc3TDMuODQ1MjEgMTYuMDg5NUwwIDIxLjA2MTJMNi4wMzkwNiAyMi44Mjc3TDUuODU2MDEgMjkuMTA2TDExLjc4MjEgMjYuOTkyM0wxNS4zMzE0IDMyLjE3OUwxOC44ODEgMjYuOTkyM0wyNC44MDcxIDI5LjEwNkwyNC42MjQxIDIyLjgyNzdMMzAuNjYzMSAyMS4wNjEyTDI2LjgxNzYgMTYuMDg5NUwzMC42NjMxIDExLjExNzdMMjQuNjI0MSA5LjM1MTI3WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==)](https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/)
+# 🌐 QGIS Blog Website [![DPG Badge](https://img.shields.io/badge/Verified-DPG-3333AB?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMzEiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMSAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjIwMDggMjEuMzY3OEwxMC4xNzM2IDE4LjAxMjRMMTEuNTIxOSAxNi40MDAzTDEzLjk5MjggMTguNDU5TDE5LjYyNjkgMTIuMjExMUwyMS4xOTA5IDEzLjYxNkwxNC4yMDA4IDIxLjM2NzhaTTI0LjYyNDEgOS4zNTEyN0wyNC44MDcxIDMuMDcyOTdMMTguODgxIDUuMTg2NjJMMTUuMzMxNCAtMi4zMzA4MmUtMDVMMTEuNzgyMSA1LjE4NjYyTDUuODU2MDEgMy4wNzI5N0w2LjAzOTA2IDkuMzUxMjdMMCAxMS4xMTc3TDMuODQ1MjEgMTYuMDg5NUwwIDIxLjA2MTJMNi4wMzkwNiAyMi44Mjc3TDUuODU2MDEgMjkuMTA2TDExLjc4MjEgMjYuOTkyM0wxNS4zMzE0IDMyLjE3OUwxOC44ODEgMjYuOTkyM0wyNC44MDcxIDI5LjEwNkwyNC42MjQxIDIyLjgyNzdMMzAuNjYzMSAyMS4wNjEyTDI2LjgxNzYgMTYuMDg5NUwzMC42NjMxIDExLjExNzdMMjQuNjI0MSA5LjM1MTI3WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==)](https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/)
 
 ![Screenshot](./img/qgis-planet.webp)
 
 
-> ## 👋 Welcome to the QGIS Planet Website!
+> ## 👋 Welcome to the QGIS Blog Website!
 >
-> **This repository hosts the source code for the official QGIS Planet Website:**  
+> **This repository hosts the source code for the official QGIS Blog Website:**  
 > 🌍 [https://planet.qgis.org](https://planet.qgis.org)
 >
-> Here you'll find everything you need to **build, develop, and contribute** to the QGIS Planet Website.
+> Here you'll find everything you need to **build, develop, and contribute** to the QGIS Blog Website.
 >
 > ### ⚠️ Note on Subdomain Websites
 >
-> **This repository is _only_ for the main QGIS Planet Website ([planet.qgis.org](https://planet.qgis.org)).**
+> **This repository is _only_ for the main QGIS Blog Website ([planet.qgis.org](https://planet.qgis.org)).**
 >
 > If you are looking for the source code or want to contribute to QGIS subdomain websites, please visit their respective repositories below.  
 > Each subdomain has its own codebase and contribution process:
@@ -67,11 +67,11 @@ To make your feed appear on this Planet:
 - Add your RSS feed in the subscribers list using a Pull Request (or an issue if you don't know how to do a fork + PR). See [below for the subscriber model](#subscriber-model).
 
 > **NOTE**:
-> Only feed items with, at least, the `QGIS` [category](https://www.rssboard.org/rss-specification#ltcategorygtSubelementOfLtitemgt) (= tag) will be listed. Although there was work done on a mechanism to customize tags per feed, we have disabled this for now. [See this discussion](https://github.com/qgis/QGIS-Planet-Website/pull/49#discussion_r1958152569).
+> Only feed items with, at least, the `QGIS` [category](https://www.rssboard.org/rss-specification#ltcategorygtSubelementOfLtitemgt) (= tag) will be listed. Although there was work done on a mechanism to customize tags per feed, we have disabled this for now. [See this discussion](https://github.com/qgis/QGIS-Blog-Website/pull/49#discussion_r1958152569).
 
 ### Subscriber model
 
-The file `data/subscribers.json` is the main entry to fetch all feeds for the QGIS Planet Website. **You can add or update a feed by editing this file and submitting a Pull Request to this repository.** Below is the recommended data structure:
+The file `data/subscribers.json` is the main entry to fetch all feeds for the QGIS Blog Website. **You can add or update a feed by editing this file and submitting a Pull Request to this repository.** Below is the recommended data structure:
 
 ```jsonc
   {
@@ -102,18 +102,18 @@ The file `data/subscribers.json` is the main entry to fetch all feeds for the QG
 ### 🪪 Badges
 | Badge | Description |
 |-------|-------------|
-| [![E2E Tests](https://github.com/qgis/QGIS-Planet-Website/actions/workflows/playwright-e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Planet-Website/actions/workflows/playwright-e2e.yml) | End-to-end tests status (Playwright) |
-| [![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Planet-Website/actions/workflows/github-pages.yml/badge.svg)](https://github.com/qgis/QGIS-Planet-Website/actions/workflows/github-pages.yml) | Deployment status to GitHub Pages |
+| [![E2E Tests](https://github.com/qgis/QGIS-Blog-Website/actions/workflows/playwright-e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Blog-Website/actions/workflows/playwright-e2e.yml) | End-to-end tests status (Playwright) |
+| [![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Blog-Website/actions/workflows/github-pages.yml/badge.svg)](https://github.com/qgis/QGIS-Blog-Website/actions/workflows/github-pages.yml) | Deployment status to GitHub Pages |
 | ![Website Status](https://img.shields.io/website-up-down-green-red/https/planet.qgis.org.svg) | Website availability status |
-| ![License](https://img.shields.io/github/license/qgis/QGIS-Planet-Website.svg) | Repository license |
-| ![](https://img.shields.io/github/issues/qgis/QGIS-Planet-Website.svg) | Open issues count |
-| ![](https://img.shields.io/github/issues-closed/qgis/QGIS-Planet-Website.svg) | Closed issues count |
-| ![](https://img.shields.io/github/issues-pr/qgis/QGIS-Planet-Website.svg) | Open pull requests count |
-| ![](https://img.shields.io/github/issues-pr-closed/qgis/QGIS-Planet-Website.svg) | Closed pull requests count |
+| ![License](https://img.shields.io/github/license/qgis/QGIS-Blog-Website.svg) | Repository license |
+| ![](https://img.shields.io/github/issues/qgis/QGIS-Blog-Website.svg) | Open issues count |
+| ![](https://img.shields.io/github/issues-closed/qgis/QGIS-Blog-Website.svg) | Closed issues count |
+| ![](https://img.shields.io/github/issues-pr/qgis/QGIS-Blog-Website.svg) | Open pull requests count |
+| ![](https://img.shields.io/github/issues-pr-closed/qgis/QGIS-Blog-Website.svg) | Closed pull requests count |
 
 ### ⭐️ Project Stars
 
-![Stars](https://starchart.cc/qgis/QGIS-Planet-Website.svg)
+![Stars](https://starchart.cc/qgis/QGIS-Blog-Website.svg)
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
@@ -127,7 +127,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ## 📂 Folder Structure
 
 ```plaintext
-QGIS-Planet-Website/
+QGIS-Blog-Website/
   ├── 🖼️  assets/           # Mainly used to store the schedule.csv file
   ├── ⚙️  config/           # Hugo configuration files
   ├── 📄  content/          # Markdown content files (pages, posts)
@@ -197,7 +197,7 @@ hugo server
 To build the website:
 
 ```sh
-nix build .#packages.x86_64-linux # Add | cachix push qgis-planet-website to push it to cachix
+nix build .#packages.x86_64-linux # Add | cachix push QGIS-Blog-Website to push it to cachix
 ```
 
 ![-----------------------------------------------------](./img/green-gradient.png)
@@ -216,10 +216,10 @@ Have questions or feedback? Feel free to open an issue or submit a Pull Request!
 ![-----------------------------------------------------](./img/green-gradient.png)
 ## 🧑‍💻👩‍💻 Contributors
 
-- [Tim Sutton](https://github.com/timlinux) – Original author and lead maintainer of the QGIS Planet Website project
+- [Tim Sutton](https://github.com/timlinux) – Original author and lead maintainer of the QGIS Blog Website project
 - [Kontur Team](https://www.kontur.io) – Responsible for the design and development of the current website theme
 - [Lova Andriarimalala](https://github.com/Xpirix) – Core developer and ongoing maintainer
-- [QGIS Contributors](https://github.com/qgis/QGIS-Planet-Website/graphs/contributors) – See the full list of amazing contributors who have helped make this website possible.
+- [QGIS Contributors](https://github.com/qgis/QGIS-Blog-Website/graphs/contributors) – See the full list of amazing contributors who have helped make this website possible.
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 

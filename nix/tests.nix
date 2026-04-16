@@ -59,7 +59,7 @@
 
       # Homepage
       check_status "/" "200" "Homepage returns HTTP 200"
-      check_content "/" "QGIS Planet Website" "Homepage has site title"
+      check_content "/" "QGIS Blog Website" "Homepage has site title"
       check_content "/" "Your go-to source for the latest posts and updates related to QGIS from the community." "Homepage has tagline"
 
       # Key section pages

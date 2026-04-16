@@ -1,0 +1,15 @@
+---
+title: "New PyQGIS documentation"
+date: "2018-05-20T17:42:55+00:00"
+draft: false
+authors: ["underdark"]
+categories: ["QGIS Documentation"]
+tags: ["documentation", "PyQGIS"]
+featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
+---
+
+<p>We are proud to announce our new dedicated documentation of the QGIS Python API (also called PyQGIS) which is now available at <a href="https://qgis.org/pyqgis/master" target="_blank" rel="noopener">https://qgis.org/pyqgis</a>:</p>
+<p><a href="https://qgis.org/pyqgis/master/"><img loading="lazy" data-attachment-id="1989" data-permalink="http://blog.qgis.org/2018/05/20/new-pyqgis-documentation/pyqgis/" data-orig-file="/wp-content/uploads/2018/05/pyqgis.png" data-orig-size="1095,739" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="pyqgis" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2018/05/pyqgis.png" class="alignnone size-large wp-image-1989" src="/wp-content/uploads/2018/05/pyqgis.png" alt="" width="780" height="526" srcset="/wp-content/uploads/2018/05/pyqgis.png 780w, /wp-content/uploads/2018/05/pyqgis.png 150w, /wp-content/uploads/2018/05/pyqgis.png 300w, /wp-content/uploads/2018/05/pyqgis.png 768w, /wp-content/uploads/2018/05/pyqgis.png 1024w, /wp-content/uploads/2018/05/pyqgis.png 1095w" sizes="(max-width: 780px) 100vw, 780px" /></a></p>
+<p>While the QGIS API has long been documented, Python developers in the past had to work with the general C++ documentation that wasn&#8217;t always straightforward to use. The new PyQGIS documentation presents the API in an accessible pythonic manner.</p>
+<p>Of course, creating a good API documentation from source code in an automated way, is not trivial. A key challenge was to automatically create Python bindings files (or SIP files). A custom Perl script known as &#8220;sipify&#8221; now enables us to automatically integrate the C++ documentation into the Python bindings and keep them up to date. Another challenge was to create the documentation itself using Sphinx. Two detailed reports containing all the technical details of the <a href="https://cloud.opengis.ch/index.php/s/n6HBCzPWrWqa5di">first</a> and <a href="https://lists.osgeo.org/pipermail/qgis-psc/2018-April/006090.html">second</a> generation of the documentation are available if you want to learn more about the underlying architecture.</p>
+<p>This has been a really important infrastructure project for QGIS that has been made possible by support from our <a href="https://qgis.org/en/site/about/sponsorship.html#">donors and sponsors</a>, as well as the generous in-kind contributions of our community members.</p>

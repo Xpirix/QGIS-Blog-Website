@@ -1,0 +1,15 @@
+---
+title: "What are trusted plugins?"
+date: "2016-08-26T10:16:21+00:00"
+draft: false
+authors: ["faunaliagis"]
+categories: ["QGIS Board"]
+featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
+---
+
+<p>The core team of QGIS strives hard to provide the most advanced and user friendly GIS for free use by everyone. In the core QGIS project, every line of code that gets committed is subject to peer review when contributed by a non core developer. This gives us an opportunity to identify and correct inadvertent (or intentional) security issues that a developer may introduce into the code base. By contrast, all of the plugins that are published via the QGIS plugin repository are reviewed by the plugin developers themselves and we don&#8217;t have good insight into how much due diligence is applied to plugin code management.</p>
+<p>The vast majority of our plugins (listed in <a href="http://plugins.qgis.org/" rel="nofollow">http://plugins.qgis.org/</a> and inside your copy of QGIS) are developed by third parties, either individuals, companies, and institutions. As such, they are outside our direct control and the developers often relatively unknown to the QGIS community. We view this as a potential security risk. We are convinced the risk is small, because of many factors including the &#8220;many eyes&#8221; principle (the code is visible to everybody, and in use by thousands of people), but cannot exclude the possibility that someone tries to inject malicious code into a plugin.</p>
+<p>In order to address this situation, we looked into the opportunity of implementing automatic tools to scan plugins, before their publication, and spot potential problems. Our research indicated that this approach would be difficult and costly, and easy to circumvent.</p>
+<p>We (the PSC) therefore decided to implement a simple yet robust approach to security, based on the &#8216;web of trust&#8217; principle: we trust people we know well in the community. You will see on the <a href="http://plugins.qgis.org" rel="nofollow">http://plugins.qgis.org</a> web site that there is a &#8216;Trusted Author&#8217; tag has been applied to plugins created by those members of the community that we know and trust.</p>
+<p>The criteria for &#8216;Trusted Authors&#8217; includes those community members that regularly meet at our QGIS developer meetings, and and those that are in almost daily contact with the core team via our developer mailing lists or background project discussions. The remaining plugins (and there are wonderful, reliable, robust, and useful plugins in the list) have not been given the &#8216;trusted&#8217; label.</p>
+<p>We would be delighted if a side effect of this choice would be to stimulate more active and direct involvement of plugin developers in the QGIS community. All plugin developers are therefore invited to join us at one of the next developer meetings (AKA HackFest), or otherwise become a recognized, active member of the community, so they can be integrated as &#8216;trusted&#8217; plugin developers.</p>

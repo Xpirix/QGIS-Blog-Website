@@ -30,5 +30,4 @@ test("Posts page", async ({ homePage, sidebar }) => {
     await expect(sidebar.homeLink).toBeVisible();
     await expect(sidebar.allPostsLink).toBeVisible();
     await expect(sidebar.subscribersLink).toBeVisible();
-    await expect(sidebar.tagsLink).toBeVisible();
 });

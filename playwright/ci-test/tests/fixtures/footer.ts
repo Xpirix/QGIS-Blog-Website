@@ -5,7 +5,6 @@ export class Footer {
     private readonly liElement: Locator;
     public readonly projectList: Locator;
     public readonly communityList: Locator;
-    public readonly resourcesList: Locator;
     public readonly downloadLink: Locator;
     public readonly logoImage: Locator;
     public readonly facebookLink: Locator;
@@ -17,9 +16,8 @@ export class Footer {
     constructor(public readonly page: Page) {
         this.banner = this.page.getByRole("contentinfo");
         this.liElement = this.page.locator("li");
-        this.projectList = this.liElement.filter({ hasText: "QGIS Planet"}).first();
+        this.projectList = this.liElement.filter({ hasText: "QGIS Blog"}).first();
         this.communityList = this.liElement.filter({ hasText: "All Posts" });
-        this.resourcesList = this.liElement.filter({ hasText: "Tags" });
         this.downloadLink = this.banner
             .locator("div")
             .filter({ hasText: "Download" })

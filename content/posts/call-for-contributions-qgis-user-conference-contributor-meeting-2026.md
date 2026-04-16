@@ -4,9 +4,10 @@ date: "2026-03-05T21:23:24+00:00"
 draft: false
 authors: ["mbernasocchi"]
 categories: ["QGIS Hackfest", "QGIS User Conference"]
+featured_image: "/wp-content/uploads/2026/03/attending_0.webp"
 ---
 
-<h2 class="wp-block-heading"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f4c5.png" alt="📅" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Call for Papers</h2>
+<h2 class="wp-block-heading">📅 Call for Papers</h2>
 
 
 
@@ -18,7 +19,7 @@ categories: ["QGIS Hackfest", "QGIS User Conference"]
 
 
 
-<p class="wp-block-paragraph"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f449.png" alt="👉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Submit your proposal: <a href="https://conference.qgis.org/presenting/">https://conference.qgis.org/presenting/</a></p>
+<p class="wp-block-paragraph">👉 Submit your proposal: <a href="https://conference.qgis.org/presenting/">https://conference.qgis.org/presenting/</a></p>
 
 
 
@@ -98,7 +99,7 @@ categories: ["QGIS Hackfest", "QGIS User Conference"]
 
 
 
-<h2 class="wp-block-heading"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f91d.png" alt="🤝" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Call for Sponsors</h2>
+<h2 class="wp-block-heading">🤝 Call for Sponsors</h2>
 
 
 
@@ -106,11 +107,11 @@ categories: ["QGIS Hackfest", "QGIS User Conference"]
 
 
 
-<p class="wp-block-paragraph">More details here: <img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f449.png" alt="👉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <a href="https://uc2026.qgis.org/sponsors/">https://uc2026.qgis.org/sponsors/</a></p>
+<p class="wp-block-paragraph">More details here: 👉 <a href="https://uc2026.qgis.org/sponsors/">https://uc2026.qgis.org/sponsors/</a></p>
 
 
 
-<h2 class="wp-block-heading"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f4a1.png" alt="💡" class="wp-smiley" style="height: 1em; max-height: 1em;" /> About the User Conference</h2>
+<h2 class="wp-block-heading">💡 About the User Conference</h2>
 
 
 
@@ -118,7 +119,7 @@ categories: ["QGIS Hackfest", "QGIS User Conference"]
 
 
 
-<h2 class="wp-block-heading"><img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f465.png" alt="👥" class="wp-smiley" style="height: 1em; max-height: 1em;" /> About the Contributor Meeting</h2>
+<h2 class="wp-block-heading">👥 About the Contributor Meeting</h2>
 
 
 

@@ -1,0 +1,17 @@
+---
+title: "User question of the Month – Jan’19 & answers from Dec"
+date: "2019-01-07T21:03:44+00:00"
+draft: false
+authors: ["underdark"]
+categories: ["User question of the month"]
+featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
+---
+
+<p>In December, we wanted to know what QGIS.ORG should focus on in 2019.</p>
+<p><img loading="lazy" data-attachment-id="2078" data-permalink="http://blog.qgis.org/2019/01/07/user-question-of-the-month-jan19-answers-from-dec/user_survey_focus2019/" data-orig-file="/wp-content/uploads/2019/01/user_survey_focus2019.png" data-orig-size="601,569" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="user_survey_focus2019" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2019/01/user_survey_focus2019.png" class="alignnone size-full wp-image-2078" src="/wp-content/uploads/2019/01/user_survey_focus2019.png" alt="" width="601" height="569" srcset="/wp-content/uploads/2019/01/user_survey_focus2019.png 601w, /wp-content/uploads/2019/01/user_survey_focus2019.png 150w, /wp-content/uploads/2019/01/user_survey_focus2019.png 300w" sizes="(max-width: 601px) 100vw, 601px" /></p>
+<p style="text-align:center;"><strong>Portuguese </strong></p>
+<p><img loading="lazy" data-attachment-id="2083" data-permalink="http://blog.qgis.org/2019/01/07/user-question-of-the-month-jan19-answers-from-dec/selection_002/" data-orig-file="/wp-content/uploads/2019/01/selection_002.png" data-orig-size="722,319" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="selection_002" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2019/01/selection_002.png" class="alignnone size-full wp-image-2083" src="/wp-content/uploads/2019/01/selection_002.png" alt="selection_002" width="722" height="319" srcset="/wp-content/uploads/2019/01/selection_002.png 722w, /wp-content/uploads/2019/01/selection_002.png 150w, /wp-content/uploads/2019/01/selection_002.png 300w" sizes="(max-width: 722px) 100vw, 722px" /></p>
+<p>Based on these results, in today&#8217;s PSC meeting, we&#8217;ve decided that the 2019 grant programme will be focusing on bug fixing and polishing existing features. So thanks to everyone who provided feedback!</p>
+<h3>New question</h3>
+<p>This month, we&#8217;d like to know if you have ever contributed to improving QGIS and &#8211; if yes &#8211; how. As you&#8217;ll see, there are many different ways to contribute to QGIS, so please go ahead and <a href="https://ee.kobotoolbox.org/x/#CSL7n2HR">take the survey</a>.</p>
+<p>The survey is available in English, Spanish, Portuguese, French, Italian, Ukrainian, and Danish. If you want to help us translate user questions in more languages, please get in touch!</p>

@@ -18,16 +18,46 @@
                 <div class="container rich">
                     <div class="cont coloring-1">
                         <h3 class="title is-4"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                        <p class="subtitle is-7">{{ .Date.Format "January 2, 2006" }}</p>
-                        <p>{{ .Summary | plainify | truncate 300 "…" }}</p>
-                        <a class="button is-success is-outlined" href="{{ .Permalink }}">Read more</a>
+                        <article class="subtitle is-7">
+                            {{ .Date.Format "January 2, 2006" }}
+                            {{ $authors := .Params.authors }}
+                            {{ if $authors }}
+                                by
+                                {{ range $i, $slug := $authors }}
+                                    {{ if $i }}, {{ end }}
+                                    {{ with $.Site.GetPage (printf "/authors/%s" $slug) }}
+                                        <a href="{{ .RelPermalink }}">{{ .Params.display_name | default .Title }}</a>
+                                    {{ else }}
+                                        {{ $slug }}
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
+                            {{ $categories := .Params.categories }}
+                            {{ if $categories }}
+                                in
+                                {{ range $categories }}
+                                    <span class="tag is-info is-light mb-1">
+                                        <a href="{{ $.Site.BaseURL }}/category/{{ . | urlize }}">{{ . }}</a>
+                                    </span>
+                                {{ end }}
+                            {{ end }}
+                        </article>
+                        <div style="display:flex; align-items:flex-start; gap:1.5rem;">
+                            {{ if .Params.featured_image }}
+                            <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="max-width:180px; max-height:140px; object-fit:contain; border-radius:4px; flex-shrink:0;">
+                            {{ end }}
+                            <div style="flex:1;">
+                                <p>{{ .Content | plainify | truncate 300 "…" }}</p>
+                                <div class="has-text-right">
+                                    <a class="button is-success is-outlined" href="{{ .Permalink }}">Read more</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 {{ end }}
+                {{ partial "pagination.html" . }}
                </div>
         </div>  
     </div>
 </section>
-
-{{ partial "pagination.html" }}
-{{ partial "footer.html" }}

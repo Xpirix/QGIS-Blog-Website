@@ -6,7 +6,7 @@
 }:
 
 stdenv.mkDerivation {
-  name = "qgis-planet-website";
+  name = "QGIS-Blog-Website";
 
   src = lib.cleanSourceWith {
     src = ../.;
@@ -38,7 +38,7 @@ stdenv.mkDerivation {
   '';
 
   meta = with lib; {
-    description = "A built QGIS Planet website";
+    description = "A built QGIS Blog Website";
     license = licenses.mit;
   };
 }

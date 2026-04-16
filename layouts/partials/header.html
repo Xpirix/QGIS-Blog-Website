@@ -103,7 +103,7 @@
         <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 
 
-        {{/* Load custom SASS overrides for QGIS Planet */}}
+        {{/* Load custom SASS overrides for QGIS Blog */}}
         {{ $customsass := resources.Get "sass/custom.sass" }}
         {{ $customstyle := $customsass | resources.ExecuteAsTemplate "custom.scss" . | css.Sass | resources.Minify | resources.Fingerprint }}
         <link href="{{ $customstyle.RelPermalink }}" rel="stylesheet" />
@@ -160,16 +160,15 @@
         {{ $expandjs := resources.Get "js/card-expand.js" }}
         {{ $animatejs := resources.Get "js/animate.js" }}
         {{ $navbarjs := resources.Get "js/navbar.js" }}
-        {{ $modaljs := resources.Get "js/modal.js" }}
         {{ $qrcreatejs := resources.Get "js/qrcreate.js" }}
         {{ $fusejs := resources.Get "js/fuse.js" }}
         {{ $markjs := resources.Get "js/mark.min.js" }}
         {{ $matomojs := resources.Get "js/matomo.js" }}
         {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
-        {{ $js := slice $animatejs $expandjs $navbarjs $modaljs $qrcreatejs $fusejs $markjs $matomojs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
+        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $matomojs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
         {{ if (eq .Site.Params.cookiesstate true) }}
             {{ $cookiejs := resources.Get "js/cookie.js" }}
-            {{ $js = slice $animatejs $expandjs $navbarjs $modaljs $qrcreatejs $fusejs $markjs $matomojs $cookiejs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
+            {{ $js = slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $matomojs $cookiejs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
         {{ end }}   
         <script defer src="{{ $js.RelPermalink }}"></script> 
         {{/* Search needs to be rendered as a template to ensure urls are correct */}}

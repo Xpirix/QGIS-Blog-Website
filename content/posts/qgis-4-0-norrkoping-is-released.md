@@ -1,9 +1,11 @@
 ---
-title: "QGIS 4.0 Norrköping is released!"
+title: "QGIS 4.0 Norrköping is released!"
 date: "2026-03-09T20:00:45+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements", "release"]
+categories: ["QGIS Release Announcements"]
+tags: ["release"]
+featured_image: "/wp-content/uploads/2026/03/blog-qgis40.png"
 ---
 
 <p class="wp-block-paragraph">The wait is over! We are pleased to announce the new major release of QGIS 4.0.</p>
@@ -14,7 +16,7 @@ categories: ["QGIS Release Announcements", "release"]
 
 
 
-<p class="wp-block-paragraph"><div class="jetpack-video-wrapper"><iframe class="youtube-player" width="780" height="439" src="https://www.youtube.com/embed/SQJZm5Y0EKs?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe></div></p>
+<p class="wp-block-paragraph"><span class="embed-youtube" style="text-align:center; display: block;"><iframe loading="lazy" class="youtube-player" width="640" height="360" src="https://www.youtube.com/embed/SQJZm5Y0EKs?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe></span></p>
 
 
 
@@ -47,7 +49,7 @@ categories: ["QGIS Release Announcements", "release"]
 
 
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-<div class="jetpack-video-wrapper"><iframe class="youtube-player" width="780" height="439" src="https://www.youtube.com/embed/wTK1exokBA8?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe></div>
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe loading="lazy" class="youtube-player" width="640" height="360" src="https://www.youtube.com/embed/wTK1exokBA8?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox"></iframe></span>
 </div></figure>
 
 

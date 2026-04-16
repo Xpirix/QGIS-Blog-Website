@@ -4,6 +4,7 @@ date: "2026-03-17T09:00:00+00:00"
 draft: false
 authors: ["underdark"]
 categories: ["Sustaining Membership Updates"]
+featured_image: "/wp-content/uploads/2026/03/qgis-flagship-coss-1.png"
 ---
 
 <p class="wp-block-paragraph">It is with great pleasure that we would like to welcome <a href="http://www.coss.fi"><strong>COSS</strong></a> as our latest flagship sustaining member!</p>
@@ -52,7 +53,7 @@ categories: ["Sustaining Membership Updates"]
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><a href="https://members.qgis.org/en/member/pdfohi/"><img data-attachment-id="3470" data-permalink="https://blog.qgis.org/2026/03/17/welcoming-our-latest-flagship-sustaining-member-coss/coss_logo2-2/" data-orig-file="https://blog.qgis.org/wp-content/uploads/2026/03/coss_logo2-2.png" data-orig-size="353,162" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="coss_logo2" data-image-description="" data-image-caption="" data-large-file="https://blog.qgis.org/wp-content/uploads/2026/03/coss_logo2-2.png?w=353" src="https://blog.qgis.org/wp-content/uploads/2026/03/coss_logo2-2.png" alt="" class="wp-image-3470" style="width:353px;height:auto" /></a></figure>
+<figure class="aligncenter size-full is-resized"><a href="https://members.qgis.org/en/member/pdfohi/"><img data-attachment-id="3470" data-permalink="http://blog.qgis.org/2026/03/17/welcoming-our-latest-flagship-sustaining-member-coss/coss_logo2-2/" data-orig-file="/wp-content/uploads/2026/03/coss_logo2-2.png" data-orig-size="353,162" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="coss_logo2" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2026/03/coss_logo2-2.png" src="/wp-content/uploads/2026/03/coss_logo2-2.png" alt="" class="wp-image-3470" style="width:353px;height:auto" /></a></figure>
 </div>
 
 

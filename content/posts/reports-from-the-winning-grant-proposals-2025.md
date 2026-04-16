@@ -3,7 +3,9 @@ title: "Reports from the winning grant proposals 2025"
 date: "2026-03-15T17:24:20+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme", "grants"]
+categories: ["QGIS Grant Programme"]
+tags: ["grants"]
+featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 
 <p class="wp-block-paragraph">With the <a href="https://blog.qgis.org/2025/04/24/qgis-grant-programme-2025-results/">QGIS Grant Programme 2025</a>, we were able to support <a href="https://github.com/qgis/PSC/issues/63">6 enhancement proposals</a> that improve the QGIS project. The following reports summarize the work performed:  </p>

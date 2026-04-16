@@ -1,271 +1,286 @@
 #!/usr/bin/env python3
 """
-WordPress WXR to Hugo Markdown importer for blog.qgis.org
+WordPress.com REST API importer for blog.qgis.org -> Hugo
+
+Fetches all published posts from the WordPress.com REST API, downloads all
+media (featured images + content images) to static/, and writes Hugo Markdown
+files to content/posts/.
 
 Usage:
-    python scripts/import_wordpress.py <wordpress-export.xml> [options]
+    python scripts/import_wordpress.py [options]
 
 Options:
-    --output-dir DIR     Content directory for posts (default: content/posts)
-    --download-images    Download images from wp-content/uploads to static/
-                         and rewrite image URLs in post content.
-    --dry-run            Show what would be created without writing any files.
-    --overwrite          Overwrite existing post files (default: skip).
+    --site SITE          WordPress.com site slug or ID (default: blog.qgis.org)
+    --output-dir DIR     Hugo content directory for posts (default: content/posts)
+    --authors-dir DIR    Hugo content directory for author pages (default: content/authors)
+    --static-dir DIR     Static files directory for downloaded images (default: static)
+    --no-images          Skip downloading images (keep original URLs)
+    --dry-run            Print what would be created without writing any files
+    --overwrite          Overwrite existing post files (default: skip)
+    --batch-size N       Posts per API request (default: 100, max: 100)
 """
 
 import argparse
-import os
+import html as html_module
+import json
 import re
 import sys
-import xml.etree.ElementTree as ET
-from datetime import datetime
+import time
+import urllib.error
+import urllib.request
 from pathlib import Path
-from urllib.parse import urlparse
 
-# WordPress WXR namespaces
-NS = {
-    "content": "http://purl.org/rss/1.0/modules/content/",
-    "dc":      "http://purl.org/dc/elements/1.1/",
-    "wp":      "http://wordpress.org/export/1.2/",
-    "excerpt": "http://wordpress.org/export/1.2/excerpt/",
-}
+API_BASE = "https://public-api.wordpress.com/rest/v1.1/sites"
 
-# WordPress also exports with 1.1 namespace in some versions
-NS_ALT = {
-    "content": "http://purl.org/rss/1.0/modules/content/",
-    "dc":      "http://purl.org/dc/elements/1.1/",
-    "wp":      "http://wordpress.org/export/1.1/",
-    "excerpt": "http://wordpress.org/export/1.1/excerpt/",
-}
+WP_MEDIA_HOSTS = re.compile(
+    r"https?://(?:qgisblog\.wordpress\.com|qgisblog\.files\.wordpress\.com|blog\.qgis\.org)"
+)
 
 
-def detect_ns(root: ET.Element) -> dict:
-    """Detect the correct WXR namespace version from the root element."""
-    channel = root.find("channel")
-    if channel is None:
-        return NS
-    # Try to find a wp:post_type element to confirm namespace
-    for ns in (NS, NS_ALT):
-        if channel.find(".//wp:post_type", ns) is not None:
-            return ns
-    return NS
+# ---------------------------------------------------------------------------
+# HTTP helpers
+# ---------------------------------------------------------------------------
+
+def fetch_json(url: str) -> dict:
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "Mozilla/5.0 (compatible; hugo-importer/1.0)"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode("utf-8"))
 
 
-def parse_date(date_str: str) -> datetime | None:
-    """Parse a WordPress post date string into a datetime object."""
-    formats = [
-        "%Y-%m-%d %H:%M:%S",
-        "%a, %d %b %Y %H:%M:%S %z",
-        "%Y-%m-%dT%H:%M:%S",
-    ]
-    for fmt in formats:
-        try:
-            return datetime.strptime(date_str.strip(), fmt)
-        except ValueError:
-            continue
-    return None
+def download_file(url: str, dest: Path) -> bool:
+    if dest.exists():
+        return True
+    clean_url = url.split("?")[0]
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        req = urllib.request.Request(
+            clean_url,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; hugo-importer/1.0)"},
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            dest.write_bytes(resp.read())
+        print(f"    Downloaded: {dest}")
+        return True
+    except Exception as exc:
+        print(f"    WARNING: Could not download {clean_url}: {exc}", file=sys.stderr)
+        return False
 
 
-def slugify(text: str) -> str:
-    """Convert text to a URL-safe slug."""
-    text = text.lower()
-    text = re.sub(r"[^\w\s-]", "", text)
-    text = re.sub(r"[\s_-]+", "-", text)
-    return text.strip("-")
+# ---------------------------------------------------------------------------
+# Post fetching
+# ---------------------------------------------------------------------------
+
+def fetch_all_posts(site: str, batch_size: int = 100) -> list:
+    posts = []
+    offset = 0
+    total = None
+    while True:
+        url = (
+            f"{API_BASE}/{site}/posts"
+            f"?number={batch_size}&offset={offset}"
+            f"&status=publish&order_by=date&order=DESC"
+        )
+        print(f"  Fetching posts {offset + 1}-{offset + batch_size} ...")
+        data = fetch_json(url)
+        batch = data.get("posts", [])
+        if total is None:
+            total = data.get("found", 0)
+            print(f"  Total posts on site: {total}")
+        posts.extend(batch)
+        print(f"  Fetched so far: {len(posts)}")
+        if not batch or len(posts) >= total:
+            break
+        offset += batch_size
+        time.sleep(0.3)
+    return posts
 
 
-def escape_yaml_string(s: str) -> str:
-    """Wrap a string in YAML double-quotes, escaping internal quotes."""
+# ---------------------------------------------------------------------------
+# Image URL helpers
+# ---------------------------------------------------------------------------
+
+def wp_url_to_local_path(url: str):
+    m = re.match(
+        r"https?://(?:qgisblog\.wordpress\.com|qgisblog\.files\.wordpress\.com|blog\.qgis\.org)"
+        r"/(wp-content/uploads/[^\s\"'<>?#]+)",
+        url,
+    )
+    return m.group(1) if m else None
+
+
+_seen_urls: dict = {}
+
+
+def localise_url(url: str, static_dir: Path, download: bool) -> str:
+    rel = wp_url_to_local_path(url)
+    if rel is None:
+        return url
+    base = url.split("?")[0]
+    if base not in _seen_urls:
+        dest = static_dir / rel
+        if download:
+            download_file(url, dest)
+        _seen_urls[base] = f"/{rel}"
+    return _seen_urls[base]
+
+
+def rewrite_content_images(content: str, static_dir: Path, download: bool) -> str:
+    single_attr_pattern = re.compile(
+        r'((?:src|href|data-orig-file|data-large-file|data-medium-file|data-permalink)=")'
+        r"(https?://(?:qgisblog\.wordpress\.com|qgisblog\.files\.wordpress\.com|blog\.qgis\.org)"
+        r"/wp-content/uploads/[^\"'<>?#]*(?:\?[^\"'<>]*)?)"
+        r'(")',
+    )
+
+    def _replace_attr(m):
+        return m.group(1) + localise_url(m.group(2), static_dir, download) + m.group(3)
+
+    content = single_attr_pattern.sub(_replace_attr, content)
+
+    srcset_pattern = re.compile(r'(srcset=")([^"]+)(")')
+
+    def _replace_srcset(m):
+        parts = []
+        for part in m.group(2).split(","):
+            part = part.strip()
+            tokens = part.split(None, 1)
+            if tokens and WP_MEDIA_HOSTS.match(tokens[0]):
+                tokens[0] = localise_url(tokens[0], static_dir, download)
+            parts.append(" ".join(tokens))
+        return m.group(1) + ", ".join(parts) + m.group(3)
+
+    content = srcset_pattern.sub(_replace_srcset, content)
+    return content
+
+
+# ---------------------------------------------------------------------------
+# YAML / front-matter helpers
+# ---------------------------------------------------------------------------
+
+def escape_yaml(s: str) -> str:
     s = s.replace("\\", "\\\\").replace('"', '\\"')
     return f'"{s}"'
 
 
 def build_front_matter(
-    title: str,
-    date: datetime,
-    author_slug: str,
-    categories: list,
-    tags: list,
-    draft: bool = False,
-) -> str:
-    """Build Hugo YAML front matter block."""
+    title, date, author_slug, categories, tags, featured_image="", draft=False
+):
     lines = ["---"]
-    lines.append(f"title: {escape_yaml_string(title)}")
-    lines.append(f'date: "{date.strftime("%Y-%m-%dT%H:%M:%S+00:00")}"')
+    lines.append(f"title: {escape_yaml(title)}")
+    lines.append(f'date: "{date}"')
     lines.append(f"draft: {'true' if draft else 'false'}")
     if author_slug:
         lines.append(f'authors: ["{author_slug}"]')
     if categories:
-        cat_list = ", ".join(escape_yaml_string(c) for c in categories)
-        lines.append(f"categories: [{cat_list}]")
+        lines.append("categories: [" + ", ".join(escape_yaml(c) for c in categories) + "]")
     if tags:
-        tag_list = ", ".join(escape_yaml_string(t) for t in tags)
-        lines.append(f"tags: [{tag_list}]")
+        lines.append("tags: [" + ", ".join(escape_yaml(t) for t in tags) + "]")
+    if featured_image:
+        lines.append(f"featured_image: {escape_yaml(featured_image)}")
     lines.append("---")
     return "\n".join(lines)
 
 
-def rewrite_image_urls(content: str, static_dir: Path) -> str:
-    """
-    Download images from blog.qgis.org/wp-content/uploads and rewrite
-    their URLs in the HTML content to point to local static paths.
-    Requires the `requests` package.
-    """
-    try:
-        import requests
-    except ImportError:
-        print("  WARNING: `requests` not installed; skipping image downloads.", file=sys.stderr)
-        print("  Install with: pip install requests", file=sys.stderr)
-        return content
+# ---------------------------------------------------------------------------
+# Author helpers
+# ---------------------------------------------------------------------------
 
-    img_url_pattern = re.compile(
-        r'(https?://blog\.qgis\.org/(wp-content/uploads/[^\s"\'<>?]+)(?:\?[^\s"\'<>]*)?)'
+def ensure_author(slug, name, authors_dir, dry_run):
+    author_file = authors_dir / slug / "_index.md"
+    if author_file.exists():
+        return
+    print(f"  Creating author file: {author_file}")
+    if dry_run:
+        return
+    author_file.parent.mkdir(parents=True, exist_ok=True)
+    safe_name = name.replace('"', '\\"')
+    author_file.write_text(
+        f'---\ntitle: "{slug}"\ndisplay_name: "{safe_name}"\nbio: ""\n---\n',
+        encoding="utf-8",
     )
-    seen: dict = {}
-
-    def download_and_replace(match: re.Match) -> str:
-        full_url = match.group(1)
-        rel_path = match.group(2)  # wp-content/uploads/YYYY/MM/filename.ext
-
-        if full_url in seen:
-            return seen[full_url]
-
-        local_path = static_dir / rel_path
-        if not local_path.exists():
-            local_path.parent.mkdir(parents=True, exist_ok=True)
-            try:
-                response = requests.get(full_url, timeout=20)
-                response.raise_for_status()
-                local_path.write_bytes(response.content)
-                print(f"    Downloaded: {rel_path}")
-            except Exception as exc:
-                print(f"    WARNING: Could not download {full_url}: {exc}", file=sys.stderr)
-                seen[full_url] = full_url
-                return full_url
-
-        local_url = f"/{rel_path}"
-        seen[full_url] = local_url
-        return local_url
-
-    return img_url_pattern.sub(download_and_replace, content)
 
 
-def import_wxr(
-    wxr_path: str,
-    output_dir: str = "content/posts",
-    download_images: bool = False,
-    dry_run: bool = False,
-    overwrite: bool = False,
-) -> None:
-    """Parse a WordPress WXR export file and create Hugo Markdown files."""
-    wxr_file = Path(wxr_path)
-    if not wxr_file.exists():
-        print(f"ERROR: File not found: {wxr_path}", file=sys.stderr)
-        sys.exit(1)
+# ---------------------------------------------------------------------------
+# Main import routine
+# ---------------------------------------------------------------------------
 
+def import_from_api(
+    site="blog.qgis.org",
+    output_dir="content/posts",
+    authors_dir="content/authors",
+    static_dir="static",
+    download_images=True,
+    dry_run=False,
+    overwrite=False,
+    batch_size=100,
+):
     out_dir = Path(output_dir)
-    static_dir = Path("static") if download_images else None
+    authors_path = Path(authors_dir)
+    static_path = Path(static_dir)
 
-    print(f"Parsing {wxr_file} ...")
-    tree = ET.parse(wxr_file)
-    root = tree.getroot()
-    ns = detect_ns(root)
+    print(f"Fetching all posts from {site} ...")
+    posts = fetch_all_posts(site, batch_size)
+    print(f"\nTotal posts fetched: {len(posts)}\n")
 
-    channel = root.find("channel")
-    if channel is None:
-        print("ERROR: No <channel> element found in WXR file.", file=sys.stderr)
-        sys.exit(1)
+    stats = {"total": len(posts), "imported": 0, "skipped": 0, "errors": 0}
 
-    # Collect author display names from <wp:author> elements
-    author_names: dict = {}
-    for author_el in channel.findall("wp:author", ns):
-        login = (author_el.findtext("wp:author_login", namespaces=ns) or "").strip()
-        display = (author_el.findtext("wp:author_display_name", namespaces=ns) or login).strip()
-        if login:
-            author_names[login] = display
+    for post in posts:
+        slug = post.get("slug", "").strip()
+        title = html_module.unescape(post.get("title", "").strip())
+        date = post.get("date", "").strip()
 
-    stats = {"total": 0, "imported": 0, "skipped": 0, "errors": 0}
-    categories_seen: set = set()
-    tags_seen: set = set()
-    authors_seen: set = set()
+        author = post.get("author") or {}
+        author_slug = author.get("login", "").strip()
+        author_name = author.get("name", author_slug).strip()
 
-    for item in channel.findall("item"):
-        post_type = (item.findtext("wp:post_type", namespaces=ns) or "").strip()
-        status = (item.findtext("wp:status", namespaces=ns) or "").strip()
+        content = post.get("content", "").strip()
 
-        # Only import published posts (not pages, attachments, nav menus, etc.)
-        if post_type != "post":
-            continue
+        categories = [v["name"] for v in (post.get("categories") or {}).values()]
+        tags = [v["name"] for v in (post.get("tags") or {}).values()]
 
-        stats["total"] += 1
+        post_thumbnail = post.get("post_thumbnail") or {}
+        featured_image = (
+            post_thumbnail.get("URL", "")
+            or post.get("featured_image", "")
+            or ""
+        )
 
-        if status != "publish":
-            print(f"  SKIP (status={status}): {item.findtext('title', '')}")
-            stats["skipped"] += 1
-            continue
+        if not slug:
+            slug = re.sub(r"[^\w-]", "-", title.lower())[:80].strip("-") or f"post-{stats['total']}"
 
-        # --- Extract fields ---
-        title = (item.findtext("title") or "").strip()
-        post_name = (item.findtext("wp:post_name", namespaces=ns) or "").strip()
-        post_date_str = (item.findtext("wp:post_date", namespaces=ns) or "").strip()
-        author_slug = (item.findtext("dc:creator", namespaces=ns) or "").strip()
-        content_encoded = (item.findtext("content:encoded", namespaces=ns) or "").strip()
+        local_featured = ""
+        if download_images:
+            content = rewrite_content_images(content, static_path, download=not dry_run)
+            if featured_image:
+                local_featured = localise_url(featured_image, static_path, download=not dry_run)
+        else:
+            local_featured = featured_image
 
-        # Fall back to slugified title if post_name is empty
-        if not post_name:
-            post_name = slugify(title) if title else f"post-{stats['total']}"
-
-        post_date = parse_date(post_date_str)
-        if post_date is None:
-            print(f"  WARNING: Unparseable date '{post_date_str}' for '{title}' — skipping.")
-            stats["skipped"] += 1
-            continue
-
-        # --- Parse categories and tags ---
-        # WordPress uses <category domain="category"> for categories
-        # and <category domain="post_tag"> for tags
-        post_categories: list = []
-        post_tags: list = []
-        for cat_el in item.findall("category"):
-            domain = cat_el.get("domain", "category")
-            value = (cat_el.text or "").strip()
-            if not value:
-                continue
-            if domain == "post_tag":
-                post_tags.append(value)
-                tags_seen.add(value)
-            else:
-                post_categories.append(value)
-                categories_seen.add(value)
-
-        if author_slug:
-            authors_seen.add(author_slug)
-
-        # --- Process content ---
-        content = content_encoded
-        if static_dir is not None:
-            content = rewrite_image_urls(content, static_dir)
-
-        # --- Build output ---
-        filename = f"{post_name}.md"
-        out_file = out_dir / filename
+        if author_slug and not dry_run:
+            ensure_author(author_slug, author_name, authors_path, dry_run)
 
         fm = build_front_matter(
             title=title,
-            date=post_date,
+            date=date,
             author_slug=author_slug,
-            categories=post_categories,
-            tags=post_tags,
+            categories=categories,
+            tags=tags,
+            featured_image=local_featured,
         )
         file_content = f"{fm}\n\n{content}\n"
+        filename = f"{slug}.md"
+        out_file = out_dir / filename
 
         if dry_run:
             print(f"  [DRY RUN] {out_file}")
-            print(f"    title:      {title}")
-            print(f"    date:       {post_date.strftime('%Y-%m-%d')}")
-            print(f"    author:     {author_slug}")
-            print(f"    categories: {post_categories}")
-            print(f"    tags:       {post_tags}")
+            print(f"    title:         {title}")
+            print(f"    date:          {date}")
+            print(f"    author:        {author_slug}")
+            print(f"    categories:    {categories}")
+            print(f"    featured_img:  {local_featured or '(none)'}")
             stats["imported"] += 1
             continue
 
@@ -284,73 +299,44 @@ def import_wxr(
             print(f"  ERROR writing {out_file}: {exc}", file=sys.stderr)
             stats["errors"] += 1
 
-    # --- Summary ---
     print()
     print("=" * 60)
     print("Import complete!")
-    print(f"  Total posts (published + draft): {stats['total']}")
-    print(f"  Imported:                        {stats['imported']}")
-    print(f"  Skipped:                         {stats['skipped']}")
-    print(f"  Errors:                          {stats['errors']}")
-    print(f"  Unique authors:                  {len(authors_seen)}")
-    print(f"  Unique categories:               {len(categories_seen)}")
-    print(f"  Unique tags:                     {len(tags_seen)}")
-
-    if authors_seen:
-        print()
-        print("Authors found — verify content/authors/<slug>/_index.md exists for each:")
-        for slug in sorted(authors_seen):
-            display = author_names.get(slug, "(display name not found)")
-            exists = Path(f"content/authors/{slug}/_index.md").exists()
-            status_icon = "✓" if exists else "✗ MISSING"
-            print(f"  {status_icon}  {slug}  ({display})")
-
-    if categories_seen:
-        print()
-        print(f"Categories ({len(categories_seen)}):")
-        for cat in sorted(categories_seen):
-            print(f"  - {cat}")
+    print(f"  Total posts:  {stats['total']}")
+    print(f"  Imported:     {stats['imported']}")
+    print(f"  Skipped:      {stats['skipped']}")
+    print(f"  Errors:       {stats['errors']}")
 
 
-def main() -> None:
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
+
+def main():
     parser = argparse.ArgumentParser(
-        description="Import a WordPress WXR export into Hugo content/posts/",
+        description="Import blog.qgis.org posts via the WordPress.com REST API into Hugo.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
-    parser.add_argument(
-        "wxr_file",
-        help="Path to the WordPress WXR export XML file",
-    )
-    parser.add_argument(
-        "--output-dir",
-        default="content/posts",
-        metavar="DIR",
-        help="Output directory for Hugo posts (default: content/posts)",
-    )
-    parser.add_argument(
-        "--download-images",
-        action="store_true",
-        help="Download images from wp-content/uploads into static/ and rewrite URLs",
-    )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Show what would be imported without writing any files",
-    )
-    parser.add_argument(
-        "--overwrite",
-        action="store_true",
-        help="Overwrite existing post files (default: skip existing)",
-    )
+    parser.add_argument("--site", default="blog.qgis.org")
+    parser.add_argument("--output-dir", default="content/posts", metavar="DIR")
+    parser.add_argument("--authors-dir", default="content/authors", metavar="DIR")
+    parser.add_argument("--static-dir", default="static", metavar="DIR")
+    parser.add_argument("--no-images", action="store_true")
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument("--batch-size", type=int, default=100, metavar="N")
     args = parser.parse_args()
 
-    import_wxr(
-        wxr_path=args.wxr_file,
+    import_from_api(
+        site=args.site,
         output_dir=args.output_dir,
-        download_images=args.download_images,
+        authors_dir=args.authors_dir,
+        static_dir=args.static_dir,
+        download_images=not args.no_images,
         dry_run=args.dry_run,
         overwrite=args.overwrite,
+        batch_size=min(args.batch_size, 100),
     )
 
 
