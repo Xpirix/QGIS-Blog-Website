@@ -87,7 +87,7 @@
                                 </article>
                                 <div style="display:flex; align-items:flex-start; gap:1.5rem;">
                                     {{ if .Params.featured_image }}
-                                    <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="max-width:180px; max-height:140px; object-fit:contain; border-radius:4px; flex-shrink:0;">
+                                    <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}" style="max-width:180px; max-height:140px; object-fit:contain; border-radius:4px; flex-shrink:0;">
                                     {{ end }}
                                     <div style="flex:1;">
                                         <div class="content mt-3">

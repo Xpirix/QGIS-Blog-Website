@@ -65,7 +65,7 @@
                         </article>
 
                         {{ if .Params.featured_image }}
-                        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="max-height:420px; margin-left: auto; margin-right: auto; display: block;">
+                        <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}" style="max-height:420px; margin-left: auto; margin-right: auto; display: block;">
                         {{ end }}
 
                         <div class="content mt-3">
@@ -75,7 +75,7 @@
                                 <a href="{{ .Params.link }}" class="button is-success is-outlined mt-3">Learn More</a>
                             {{ else }}
                                 {{/* Blog post: render full inline content */}}
-                                {{ .Content | safeHTML }}
+                                {{ .Content | replaceRE `(src|href)="(/wp-content/)` (printf `$1="%swp-content/` $baseURL) | safeHTML }}
                             {{ end }}
                         </div>
 
