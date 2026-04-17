@@ -23,7 +23,7 @@ jobs:
     - name: Set up Cachix
       uses: cachix/cachix-action@v16
       with:
-        name: qgisplanet
+        name: qgisblog
         # Use public cache for reading, no auth token needed
 
     - name: Run flake checks
