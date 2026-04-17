@@ -14,30 +14,6 @@
                     <span>Home</span>
                 </a>
             </li>
-            <li {{ if findRE "category" $pageUrl }} class="is-active"{{ end }}>
-                <div class="has-child">
-                    <a onclick="toggleSubMenu('categories')" class="icon-text">
-                        <span class="icon">
-                            <i class="fas fa-folder"></i>
-                        </span>
-                        <span>Categories</span>
-                    </a>
-                    <span onclick="toggleSubMenu('categories')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
-                </div>
-                <ul id="categories" class="collapsed">
-                    {{ range $.Site.Taxonomies.categories.ByCount }}
-                    <li {{ if findRE (replaceRE "/$" "" .Page.RelPermalink) $pageUrl }} class="is-active"{{ end }}>
-                        <a href="{{ .Page.RelPermalink }}" class="icon-text truncate">
-                            <span class="icon">
-                                <i class="fas fa-folder-open"></i>
-                            </span>
-                            <span>{{ .Page.Title }} ({{ .Count }})</span>
-                        </a>
-                    </li>
-                    {{ end }}
-                </ul>
-
-            </li>
 
             <li {{ if findRE "author" $pageUrl }} class="is-active"{{ end }}>
                 <div class="has-child">
@@ -64,6 +40,30 @@
                                 {{ end }}
                                 ({{ .Count }})
                             </span>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+
+            </li>
+            <li {{ if findRE "category" $pageUrl }} class="is-active"{{ end }}>
+                <div class="has-child">
+                    <a onclick="toggleSubMenu('categories')" class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-folder"></i>
+                        </span>
+                        <span>Categories</span>
+                    </a>
+                    <span onclick="toggleSubMenu('categories')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
+                </div>
+                <ul id="categories" class="collapsed">
+                    {{ range $.Site.Taxonomies.categories.ByCount }}
+                    <li {{ if findRE (replaceRE "/$" "" .Page.RelPermalink) $pageUrl }} class="is-active"{{ end }}>
+                        <a href="{{ .Page.RelPermalink }}" class="icon-text truncate">
+                            <span class="icon">
+                                <i class="fas fa-folder-open"></i>
+                            </span>
+                            <span>{{ .Page.Title }} ({{ .Count }})</span>
                         </a>
                     </li>
                     {{ end }}
