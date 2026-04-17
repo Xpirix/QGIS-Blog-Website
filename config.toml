@@ -118,5 +118,176 @@ ignoreLogs = ['warning-goldmark-raw-html']
   ## This will turn on Coockie popup. True to show popup
   cookiesstate = false
 
+# See https://gohugo.io/content-management/menus/
+[menu]
+
+[[menu.qgis_org]]
+  name = "Project"
+  url = "https://qgis.org/project/overview"
+  weight = 10
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+
+[[menu.qgis_org]]
+  parent = "Project"
+  name = "Overview"
+  url = "https://qgis.org/project/overview/"
+  weight = 10
+
+[[menu.qgis_org]]
+  parent = "Project"
+  name = "Case studies"
+  url = "https://qgis.org/project/case-studies/"
+  weight = 20
+
+[[menu.qgis_org]]
+  parent = "Project"
+  name = "Plugins"
+  url = "https://plugins.qgis.org"
+  weight = 30
+
+[[menu.qgis_org]]
+  parent = "Project"
+  name = "Visual Changelogs"
+  url = "https://qgis.org/project/visual-changelogs"
+  weight = 40
+
+
+[[menu.qgis_org]]
+  name = "Community"
+  url = "https://qgis.org/community/involve"
+  weight = 20
+
+[[menu.qgis_org]]
+  parent = "Community"
+  name = "Get involved"
+  url = "https://qgis.org/community/involve"
+  weight = 10
+
+[[menu.qgis_org]]
+  parent = "Community"
+  name = "Certification Programme"
+  url = "https://qgis.org/community/certification"
+  weight = 20
+
+[[menu.qgis_org]]
+  parent = "Community"
+  name = "QGIS Foundation"
+  url = "https://qgis.org/community/foundation"
+  weight = 30
+
+[[menu.qgis_org]]
+  parent = "Community"
+  name = "Project Organisation"
+  url = "https://qgis.org/community/organisation"
+  weight = 80
+
+
+[[menu.qgis_org]]
+  parent = "Community"
+  name = "Local User Groups"
+  url = "https://qgis.org/community/groups"
+  weight = 110
+
+  
+[[menu.qgis_org]]
+  parent = "Community"
+  name = "Members Blogs"
+  url = "https://plugins.qgis.org/planet/"
+  weight = 280
+
+[[menu.qgis_org]]
+  name = "Resources"
+  url = "https://qgis.org/resources/hub"
+  weight = 40 # Sets the menu order 
+  #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
+
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "Documentation"
+  url = "https://qgis.org/resources/hub"
+  weight = 5 # Sets the menu order 
+  #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"  
+
+# Submenus are done this way: parent -> identifier
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "Installation guide"
+  url = "https://qgis.org/resources/installation-guide/"
+  weight = 10
+
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "Testing"
+  url = "https://qgis.org/resources/testing/"
+  weight = 30
+
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "Roadmap"
+  url = "https://qgis.org/resources/roadmap/"
+  weight = 40
+
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "Reports"
+  url = "https://qgis.org/resources/reports/"
+  weight = 50
+
+
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "Books"
+  url = "https://qgis.org/resources/books/"
+  weight = 90
+
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "Contact and Support"
+  url = "https://qgis.org/resources/support/"
+  weight = 100
+
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "QGIS Metrics"
+  url = "https://analytics.qgis.org"
+  weight = 180
+
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "Plugins Metrics"
+  url = "https://plugins.qgis.org/metabase/public/dashboard/7ecd345f-7321-423d-9844-71e526a454a9"
+  weight = 190
+
+[[menu.qgis_org]]
+  parent = "Resources"
+  name = "Blog"
+  url = "https://blog.qgis.org/"
+  weight = 200
+
+[[menu.qgis_org]]
+  name = "Funding"
+  url = "https://qgis.org/funding/donate"
+  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
+  weight = 50 # Sets the menu order 
+
+[[menu.qgis_org]]
+  parent = "Funding"
+  name = "Donate"
+  url = "https://qgis.org/funding/donate"
+  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
+  weight = 30 # Sets the menu order 
+
+[[menu.qgis_org]]
+  parent = "Funding"
+  name = "Membership"
+  url = "https://qgis.org/funding/membership"
+  weight = 230
+
+[[menu.qgis_org]]
+  parent = "Membership"
+  name = "Members"
+  url = "https://qgis.org/funding/membership/members"
+  weight = 240
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
