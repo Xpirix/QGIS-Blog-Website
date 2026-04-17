@@ -1,18 +1,18 @@
 # 🌐 QGIS Blog Website [![DPG Badge](https://img.shields.io/badge/Verified-DPG-3333AB?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMzEiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMSAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjIwMDggMjEuMzY3OEwxMC4xNzM2IDE4LjAxMjRMMTEuNTIxOSAxNi40MDAzTDEzLjk5MjggMTguNDU5TDE5LjYyNjkgMTIuMjExMUwyMS4xOTA5IDEzLjYxNkwxNC4yMDA4IDIxLjM2NzhaTTI0LjYyNDEgOS4zNTEyN0wyNC44MDcxIDMuMDcyOTdMMTguODgxIDUuMTg2NjJMMTUuMzMxNCAtMi4zMzA4MmUtMDVMMTEuNzgyMSA1LjE4NjYyTDUuODU2MDEgMy4wNzI5N0w2LjAzOTA2IDkuMzUxMjdMMCAxMS4xMTc3TDMuODQ1MjEgMTYuMDg5NUwwIDIxLjA2MTJMNi4wMzkwNiAyMi44Mjc3TDUuODU2MDEgMjkuMTA2TDExLjc4MjEgMjYuOTkyM0wxNS4zMzE0IDMyLjE3OUwxOC44ODEgMjYuOTkyM0wyNC44MDcxIDI5LjEwNkwyNC42MjQxIDIyLjgyNzdMMzAuNjYzMSAyMS4wNjEyTDI2LjgxNzYgMTYuMDg5NUwzMC42NjMxIDExLjExNzdMMjQuNjI0MSA5LjM1MTI3WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==)](https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/)
 
-![Screenshot](./img/qgis-planet.webp)
+![Screenshot](./img/qgis-blog.webp)
 
 
 > ## 👋 Welcome to the QGIS Blog Website!
 >
 > **This repository hosts the source code for the official QGIS Blog Website:**  
-> 🌍 [https://planet.qgis.org](https://planet.qgis.org)
+> 🌍 [https://blog.qgis.org](https://blog.qgis.org)
 >
 > Here you'll find everything you need to **build, develop, and contribute** to the QGIS Blog Website.
 >
 > ### ⚠️ Note on Subdomain Websites
 >
-> **This repository is _only_ for the main QGIS Blog Website ([planet.qgis.org](https://planet.qgis.org)).**
+> **This repository is _only_ for the main QGIS Blog Website ([blog.qgis.org](https://blog.qgis.org)).**
 >
 > If you are looking for the source code or want to contribute to QGIS subdomain websites, please visit their respective repositories below.  
 > Each subdomain has its own codebase and contribution process:
@@ -36,8 +36,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#-project-overview"> 🚀 Project Overview </a></li>
-    <li><a href="#-how-to-be-referenced"> 🌟 How to be Referenced </a></li>
-    <li><a href="#-qa-status"> 🚥 QA Status </a></li>
+    <li><a href="#-how-to-be-referenced"> 🌟 How to be Referenced </a></li>    <li><a href="#-writing-a-blog-post"> ✍️ Writing a Blog Post </a></li>    <li><a href="#-qa-status"> 🚥 QA Status </a></li>
     <li><a href="#-license"> 📜 License </a></li>
     <li><a href="#-folder-structure"> 📂 Folder Structure </a></li>
     <li><a href="#-using-ai-large-language-models"> 🤖 Using 'AI' (Large Language Models) </a></li>
@@ -54,46 +53,24 @@
 
 ## 🚀 Project Overview
 
-![Overview](./img/planet-qgis-org.gif)
+The QGIS Blog Website ([blog.qgis.org](https://blog.qgis.org)) is the official blog for the QGIS project. It publishes news, release announcements, grant reports, sustaining member updates, and community stories. The site is built with [Hugo](https://gohugo.io/) and uses the [QGIS Hugo Website Theme](https://github.com/qgis/QGIS-Hugo-Website-Theme). Blog posts are written by QGIS team members and imported from the WordPress REST API.
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
 
 ## 🌟 How to be Referenced
 
-To make your feed appear on this Planet:
+The QGIS Blog is the **official QGIS project blog**, written by QGIS team members and contributors. It is not an RSS aggregator. To publish a post on the blog, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-- A website publishing a public and compliant RSS feed (we use [feedparser](https://feedparser.readthedocs.io/) under the hood) with content about the QGIS project
-- Add your RSS feed in the subscribers list using a Pull Request (or an issue if you don't know how to do a fork + PR). See [below for the subscriber model](#subscriber-model).
+If you are looking to have your personal QGIS-related blog listed, please visit the [QGIS Planet](https://plugins.qgis.org/planet/) instead.
 
-> **NOTE**:
-> Only feed items with, at least, the `QGIS` [category](https://www.rssboard.org/rss-specification#ltcategorygtSubelementOfLtitemgt) (= tag) will be listed. Although there was work done on a mechanism to customize tags per feed, we have disabled this for now. [See this discussion](https://github.com/qgis/QGIS-Blog-Website/pull/49#discussion_r1958152569).
+![-----------------------------------------------------](./img/green-gradient.png)
 
-### Subscriber model
 
-The file `data/subscribers.json` is the main entry to fetch all feeds for the QGIS Blog Website. **You can add or update a feed by editing this file and submitting a Pull Request to this repository.** Below is the recommended data structure:
+## ✍️ Writing a Blog Post
 
-```jsonc
-  {
-    // The RSS Feed URL
-    "feed": "https://geotribu.fr/feed_rss_created.xml",
-    // Name of the subscriber
-    "name": "Geotribu",
-    // Shortname of the subscriber
-    "shortname": "geotribu_fr",
-    // Show on the Website
-    "is_active": true,
-    // Availables and main language of the feed.
-    // The list of supported language is in the file
-    // data/languages.json. Please add yours there if not listed.
-    "languages": {
-      "available": [
-        "fr_fr"
-      ],
-      "main": "fr_fr"
-    }
-  },
-```
+Blog posts live in `content/posts/` as Markdown files with HTML front matter. See [CONTRIBUTING.md](CONTRIBUTING.md#-writing-a-blog-post) for the full guide including images and front matter reference.
+
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
@@ -104,7 +81,7 @@ The file `data/subscribers.json` is the main entry to fetch all feeds for the QG
 |-------|-------------|
 | [![E2E Tests](https://github.com/qgis/QGIS-Blog-Website/actions/workflows/playwright-e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Blog-Website/actions/workflows/playwright-e2e.yml) | End-to-end tests status (Playwright) |
 | [![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Blog-Website/actions/workflows/github-pages.yml/badge.svg)](https://github.com/qgis/QGIS-Blog-Website/actions/workflows/github-pages.yml) | Deployment status to GitHub Pages |
-| ![Website Status](https://img.shields.io/website-up-down-green-red/https/planet.qgis.org.svg) | Website availability status |
+| ![Website Status](https://img.shields.io/website-up-down-green-red/https/blog.qgis.org.svg) | Website availability status |
 | ![License](https://img.shields.io/github/license/qgis/QGIS-Blog-Website.svg) | Repository license |
 | ![](https://img.shields.io/github/issues/qgis/QGIS-Blog-Website.svg) | Open issues count |
 | ![](https://img.shields.io/github/issues-closed/qgis/QGIS-Blog-Website.svg) | Closed issues count |
@@ -171,10 +148,11 @@ The `scripts/` folder contains utility scripts to assist with data loading, and 
 
 | Script Name                       | Description                                                                                  |
 |-----------------------------------|----------------------------------------------------------------------------------------------|
-| `fetch_feeds.py`                  | Simple script to get sustaining members and other feeds and update the web site with them     |
+| `fetch_feeds.py`                  | Fetches sustaining members and other feeds to update the website                              |
 | `vscode.sh`                       | Launch VSCode with all settings and extensions needed to productively work on this project    |
-| `scripts/get_commit_hash.sh`  | Get the current commit hash of this repository and write it in config/commit.toml for the website version.                                       |
-| `scripts/resize_image.py`  | Contains utilities to optimize images (resize, transform to webp, check validity).                                    |
+| `scripts/get_commit_hash.sh`  | Get the current commit hash and write it in config/commit.toml for the website version.  |
+| `scripts/resize_image.py`  | Contains utilities to optimize images (resize, transform to webp, check validity).  |
+| `scripts/import_wordpress.py`  | Import posts from blog.qgis.org via the WordPress.com REST API into `content/posts/`.  |
 
 > ✏️ **Note:** Run each script from the project root. Some scripts may require environment variables or configuration—see comments within each script for usage details.
 

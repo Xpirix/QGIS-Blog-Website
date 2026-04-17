@@ -1,7 +1,7 @@
 # ✨ Contributing to QGIS-Blog-Website
 
 Thank you for considering contributing to QGIS Blog Website!
-We welcome contributions of all kinds, including bug fixes, feature requests,
+We welcome contributions of all kinds, including new blog posts, bug fixes, feature requests,
 documentation improvements, and more. Please follow the guidelines below to
 ensure a smooth contribution process.
 
@@ -116,19 +116,129 @@ The site will automatically refresh any page you have open if you edit it and sa
 
 ## Content Harvesting
 
-You can harvest data from various feeds using the `fetch_feeds.py` script.
-This script retrieves posts from each subscriber listed in `data/subscribers.json`
-and saves them to `content/posts`.
-Additionally, it fetches the sustaining members list and logos from the changelog
- website and saves them to `content/funders`.
+Sustaining member data and logos are harvested using the `fetch_feeds.py` script.
+This script fetches the sustaining members list and logos from the changelog
+website and saves them to `content/funders`.
 
-**Note:** Any manual changes made to the files in these folders will be overwritten by this script.
+**Note:** Any manual changes made to the files in `content/funders` will be overwritten by this script.
 
 ```bash
 ./fetch_feeds.py
 ```
 
-This script is run nightly as a github action (see .github/workflows/update-feeds.yml).
+This script is run nightly as a GitHub Action (see `.github/workflows/update-feeds.yml`).
+
+> **Importing WordPress posts:** To re-import all official blog posts from blog.qgis.org, use:
+> ```bash
+> python scripts/import_wordpress.py
+> ```
+> This fetches all published posts via the WordPress.com REST API and writes them to `content/posts/`, downloading images to `static/img/posts/`.
+
+
+![-----------------------------------------------------](./img/green-gradient.png)
+
+## 📝 Writing a Blog Post
+
+Blog posts are stored as Markdown files in `content/posts/`. Each post is a single `.md` file with TOML front matter.
+
+### Front matter reference
+
+```toml
+---
+title: "Your Post Title"
+date: "2026-04-17T10:00:00+00:00"
+draft: false
+authors: ["your-author-slug"]
+categories: ["QGIS Release Announcements"]
+tags: ["qgis", "release"]
+featured_image: "/img/posts/your-post-slug/featured.png"
+---
+```
+
+| Field | Required | Notes |
+|---|---|---|
+| `title` | Yes | The post title |
+| `date` | Yes | ISO 8601 date/time |
+| `draft` | Yes | Set to `false` to publish |
+| `authors` | Yes | Array of author slugs matching `content/authors/<slug>/` |
+| `categories` | No | Array of category names |
+| `tags` | No | Array of tag names |
+| `featured_image` | No | Root-relative path to the featured image |
+
+### Creating an author
+
+If you are a new author, create `content/authors/<your-slug>/_index.md`:
+
+```toml
+---
+title: "your-slug"
+display_name: "Your Full Name"
+bio: "Short bio about you."
+---
+```
+
+### Adding images
+
+Store images for new blog posts under `static/img/posts/<your-post-slug>/`. **Do not use `static/wp-content/`** — that folder is reserved for posts imported from WordPress.
+
+```
+static/
+  img/
+    posts/
+      your-post-slug/
+        featured.png      ← referenced as /img/posts/your-post-slug/featured.png
+        screenshot-1.png
+```
+
+Reference images in your post content using root-relative paths:
+
+```markdown
+![Alt text](/img/posts/your-post-slug/screenshot-1.png)
+```
+
+Or in HTML (supported because `markup.goldmark.renderer.unsafe = true`):
+
+```html
+<img src="/img/posts/your-post-slug/screenshot-1.png" alt="Alt text" style="max-width:100%;">
+```
+
+### Naming and filing conventions
+
+- File name: `content/posts/your-post-slug.md` — use lowercase, hyphen-separated words matching the post title
+- The URL will be `/:year/:month/:day/:slug/` (e.g. `/2026/04/17/your-post-slug/`)
+- Optimise images before committing: `python scripts/resize_image.py`
+
+### Example minimal post
+
+```markdown
+---
+title: "QGIS 4.1 is Released"
+date: "2026-06-01T09:00:00+00:00"
+draft: false
+authors: ["timlinux"]
+categories: ["QGIS Release Announcements"]
+featured_image: "/img/posts/qgis-4-1-released/featured.png"
+---
+
+We are pleased to announce QGIS 4.1!
+
+<img src="/img/posts/qgis-4-1-released/screenshot.png" alt="QGIS 4.1 screenshot" style="max-width:100%;">
+
+More details below...
+```
+
+
+![-----------------------------------------------------](./img/green-gradient.png)
+
+## 📸 Optimising Images
+
+Before committing images, either:
+- Optimize them for the web (rescale and use WebP)
+- run the resize script to convert to WebP and cap dimensions:
+
+```bash
+python scripts/resize_image.py static/img/posts/your-post-slug/
+```
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
@@ -144,15 +254,7 @@ Content folders need to be excluded from search, by making them [headless bundle
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
-## Referencing URLs in templates
-
-The site needs to work in production, where the links of the site are all below the root URL, and in staging, where the site is deployed to GitHub pages in a subpath. To ensure both deployment strategies work, please use the following method of constructing URLs in templates.
-
-```html
-<a class="button is-primary" href="{{ "donate/" | absURL }}">
-```
-
-**Note:** We do not use a leading slash, only an ending slash.
+## Referencing URLs in templates\n\nThe site needs to work in production, where the links of the site are all below the root URL, and in staging, where the site is deployed to GitHub Pages in a subpath. To ensure both deployment strategies work, please use the following method of constructing URLs in templates:\n\n```html\n<a class=\"button is-primary\" href=\"{{ \"donate/\" | absURL }}\">\n```\n\nFor images referenced in **front matter** (e.g. `featured_image`), templates use `| strings.TrimPrefix \"/\" | absURL` to ensure the subpath is preserved on GitHub Pages.\n\n**Note:** We do not use a leading slash in `absURL` calls, only a trailing slash.
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
