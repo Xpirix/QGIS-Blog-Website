@@ -3,7 +3,7 @@ title: "QGIS User Conference 2026 in LAAX"
 date: "2026-01-08T06:35:00+00:00"
 draft: false
 authors: ["mbernasocchi"]
-categories: ["Uncategorized"]
+categories: ["QGIS User Conference"]
 featured_image: "/wp-content/uploads/2026/01/blog-laax.png"
 ---
 
