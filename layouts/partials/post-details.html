@@ -1,5 +1,6 @@
 
 {{ $baseURL := .Site.BaseURL }}
+{{ $base := strings.TrimSuffix "/" .Site.BaseURL }}
 <section class="section">
     <div class="container content">
         <div class="columns is-multiline is-centered">
@@ -75,7 +76,9 @@
                                 <a href="{{ .Params.link }}" class="button is-success is-outlined mt-3">Learn More</a>
                             {{ else }}
                                 {{/* Blog post: render full inline content */}}
-                                {{ .Content | replaceRE `(src|href)="(/wp-content/)` (printf `$1="%swp-content/` $baseURL) | safeHTML }}
+                                {{/* Prefix every imported WordPress media path with the site base URL.
+                                     Covers src, href, srcset candidates and the data-* attributes. */}}
+                                {{ .Content | replaceRE `(["\s,])/wp-content/` (printf `${1}%s/wp-content/` $base) | safeHTML }}
                             {{ end }}
                         </div>
 
