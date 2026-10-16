@@ -62,7 +62,7 @@ The QGIS Blog Website ([blog.qgis.org](https://blog.qgis.org)) is the official b
 
 The QGIS Blog is the **official QGIS project blog**, written by QGIS team members and contributors. It is not an RSS aggregator. To publish a post on the blog, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-If you are looking to have your personal QGIS-related blog listed, please visit the [QGIS Planet](https://plugins.qgis.org/planet/) instead.
+If you are looking to have your personal QGIS-related blog listed, please visit the [QGIS Planet](https://planet.qgis.org/) instead.
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
@@ -168,8 +168,6 @@ Start the Nix development environment by running:
 ```sh
 nix develop # Add  --experimental-features 'nix-command flakes' if you haven't enable Nix flakes
 hugo server
-# If you want to run VSCode:
-./vscode
 ```
 
 To build the website:

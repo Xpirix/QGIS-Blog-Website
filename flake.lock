@@ -1,28 +1,28 @@
 {
   "nodes": {
-    "nixpkgs-25-11": {
+    "nixpkgs-26-05": {
       "locked": {
-        "lastModified": 1772822230,
-        "narHash": "sha256-yf3iYLGbGVlIthlQIk5/4/EQDZNNEmuqKZkQssMljuw=",
+        "lastModified": 1780453794,
+        "narHash": "sha256-bXMRa9VTsHSPXL4Cw8R6JJLQeY3Y/IP4+YJCYVmQ7FY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "71caefce12ba78d84fe618cf61644dce01cf3a96",
+        "rev": "6b316287bae2ee04c9b93c8c858d930fd07d7338",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-25.11",
+        "ref": "nixos-26.05",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1773389992,
-        "narHash": "sha256-wvfdLLWJ2I9oEpDd9PfMA8osfIZicoQ5MT1jIwNs9Tk=",
+        "lastModified": 1791594108,
+        "narHash": "sha256-XK4KceonkwD8LuMAt/vNrz982mXJM5jeHAxMwsUXXAQ=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c06b4ae3d6599a672a6210b7021d699c351eebda",
+        "rev": "6510408d147d8c5e6d76043e899e9251756f6a75",
         "type": "github"
       },
       "original": {
@@ -34,15 +34,15 @@
     },
     "nixpkgs-version": {
       "inputs": {
-        "nixpkgs-25-11": "nixpkgs-25-11",
+        "nixpkgs-26-05": "nixpkgs-26-05",
         "nixpkgs-unstable": "nixpkgs-unstable"
       },
       "locked": {
-        "lastModified": 1773734009,
-        "narHash": "sha256-GZVpEm7zCjhEm7aTuKUiOMVBr0yU1rNpIVcNmLy/KX8=",
+        "lastModified": 1791682604,
+        "narHash": "sha256-1P4WM5j2C/Un38f8TtPK8Z6NNk8mHmNYk0grIOadYiQ=",
         "owner": "QGIS",
         "repo": "qgis-nixpkgs-version",
-        "rev": "c58192e0b343c6d70586d10d7e75278b6146cb90",
+        "rev": "9237dcb28b3d32b6564e9eb612a22bd25c6dff1c",
         "type": "github"
       },
       "original": {
@@ -54,16 +54,17 @@
     "qgis-website-theme": {
       "flake": false,
       "locked": {
-        "lastModified": 1772458186,
-        "narHash": "sha256-CXrBtLJR3WLt5xHdpkGAS9wLeBBmDTtzkcKGf9xIF2A=",
+        "lastModified": 1792040550,
+        "narHash": "sha256-94NrYgM522vWm8wGYRfZGEx4+ZdFDuD/zDIFT0REzbE=",
         "owner": "qgis",
         "repo": "QGIS-Hugo-Website-Theme",
-        "rev": "8749b834d4864f70d55e687d82b5d9e3dc49fd2e",
+        "rev": "f597cd106b7d8e1ece2d7a06fdd9693b1d01883a",
         "type": "github"
       },
       "original": {
         "owner": "qgis",
         "repo": "QGIS-Hugo-Website-Theme",
+        "rev": "f597cd106b7d8e1ece2d7a06fdd9693b1d01883a",
         "type": "github"
       }
     },
@@ -71,7 +72,7 @@
       "inputs": {
         "nixpkgs": [
           "nixpkgs-version",
-          "nixpkgs-25-11"
+          "nixpkgs-26-05"
         ],
         "nixpkgs-version": "nixpkgs-version",
         "qgis-website-theme": "qgis-website-theme"
