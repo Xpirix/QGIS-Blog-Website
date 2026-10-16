@@ -118,6 +118,8 @@ export class Header {
         this.donateLink = this.mainNavigation.getByRole("link", {
             name: "Donate",
         });
-        this.searchInput = this.page.getByPlaceholder("Search");
+        // The search prompt carries the same placeholder as this input, so match
+        // on the id to keep this pointing at the one in the header.
+        this.searchInput = this.page.locator("#search-query");
     }
 }

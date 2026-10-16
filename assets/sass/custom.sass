@@ -37,3 +37,25 @@
 .content figure table
   text-align: left !important
 
+
+
+// Search results. The card cannot be an <a>: <a> is a formatting element, so
+// block children make the parser clone it into one empty bordered box per
+// child, and the tag links inside would be nested anchors, which the parser
+// pushes out of the card entirely. So the card is a div, the title carries the
+// link, and the link is stretched over the card to keep the whole card
+// clickable. The tags sit above it so they stay clickable in their own right.
+.search-cantainer .search-item
+  position: relative
+  .list-item-title a
+    color: inherit
+    &::after
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+  .tags
+    position: relative
+    z-index: 1

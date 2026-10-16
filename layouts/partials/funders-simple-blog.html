@@ -4,8 +4,15 @@
      link at qgis.org.
 
      We wrap the theme partial instead of copying it, so the blog keeps up with
-     theme changes without us maintaining a second copy of the markup. */}}
+     theme changes without us maintaining a second copy of the markup.
+
+     Match both URL shapes: the theme has built this link with absURL in the
+     past and with relLangURL now, and the two render differently. Replacing
+     only the current one would leave the dead link back in place the next time
+     the theme switches. */}}
 {{ $membershipURL := .Site.Params.membershipUrl }}
-{{ $themeURL := absURL "funding/membership" }}
 {{ $html := partial "funders-simple.html" . }}
-{{ replace $html (printf `href="%s"` $themeURL) (printf `href="%s"` $membershipURL) | safeHTML }}
+{{ range slice (absURL "funding/membership") (relLangURL "funding/membership") }}
+    {{ $html = replace $html (printf `href="%s"` .) (printf `href="%s"` $membershipURL) }}
+{{ end }}
+{{ $html | safeHTML }}

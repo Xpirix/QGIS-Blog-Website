@@ -47,11 +47,11 @@
                                         {{ end }}
                                     {{ end }}
                                 </article>
-                                <div style="display:flex; align-items:flex-start; gap:1.5rem;">
+                                <div style="display:flex; align-items:flex-start; gap:1.5rem; flex-wrap:wrap;">
                                     {{ if .Params.featured_image }}
                                     <img src="{{ .Params.featured_image | strings.TrimPrefix "/" | absURL }}" alt="{{ .Title }}" style="max-width:180px; max-height:140px; object-fit:contain; border-radius:4px; flex-shrink:0;">
                                     {{ end }}
-                                    <div style="flex:1;">
+                                    <div style="flex:1; min-width: 200px;">
                                         <div class="content mt-3">
                                             {{ if .Params.link }}
                                                 {{ .Page.RawContent | safeHTML }}

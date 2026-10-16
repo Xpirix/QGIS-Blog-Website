@@ -3,41 +3,50 @@
 {{ partial "banner.html" . }}
 {{ partial "contextmenu.html" . }}
 
-
+{{/* The blog keeps its own copy of this page so the results sit beside the
+     sidebar, next to the authors and categories lists. The header, the result
+     count and the context line come from the theme's own search page. */}}
 <section class="section">
-    <div class="container content search-cantainer" >
+    <div class="container content search-cantainer">
         <div class="columns is-multiline is-centered">
             {{ partial "sidebar.html" . }}
             <div class="content column is-9">
-                <h1 class="title">Search Results</h1>
-                    <div class="search-loading">Loading...</div>
-                    <div class="list">
-                        <div id="search-results"></div>
+                <header class="search-header">
+                    <h1 class="title">
+                        {{ i18n "searchResults" }}
+                        {{/* Filled in by search.js from the ?q= parameter. */}}
+                        <span class="search-header-query" id="search-header-query"></span>
+                    </h1>
+                    <p class="search-header-count" id="search-header-count"></p>
+                </header>
+                <div class="search-loading">{{ i18n "loading" }}</div>
+                <div class="list">
+                    <div id="search-results"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {{/* This javascript template will get iteratively rendered into the
+         div above with id of search-results. See search.js for
+         logic of how this template is called. */}}
+    <script id="search-result-template" type="text/x-js-template">
+        <div class="search-item box">
+            <div class="list-item">
+                <div id="summary-${key}" class="list-item-content">
+                    ${ isset context }<div class="list-item-context">${context}</div>${ end }
+                    <div class="list-item-title"><a href="${link}">${title}</a></div>
+                    <div class="list-item-description">
+                        ${snippet}
+                    </div>
+                    <div class="tags is-pulled-right mt-3">
+                        ${ isset categories }${categories}${ end }
+                        ${ isset tags }${tags}${ end }
                     </div>
                 </div>
             </div>
         </div>
-</section>  
-    
-    {{/* This javascript template will get iteratively rendered into the 
-         div above with id of search-results. See search.js for
-         logic of how this template is called. */}}
-    <script id="search-result-template" type="text/x-js-template">
-        <a href="${link}" class="search-item">
-                <div class="list-item">
-                <div id="summary-${key}" class="list-item-content">
-                    <div class="list-item-title">${title}
-                    </div>
-                    <div class="list-item-description">
-                        ${snippet}
-                    </div>
-                    <div class="tags is-pulled-right">  
-                        ${ isset categories }${categories}${ end } 
-                        ${ isset tags }${tags}${ end }
-                    </div>        
-                </div>
-            </div>
-        </a>    
     </script>
 
 
