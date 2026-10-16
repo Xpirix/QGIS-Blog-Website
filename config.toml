@@ -48,6 +48,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # commit hash file
   commitFile = "config/commit.toml"
   githubRepo = "https://github.com/qgis/QGIS-Blog-Website"
+  # Membership page lives on qgis.org, not on the blog
+  membershipUrl = "https://qgis.org/funding/membership"
   # Brand colours:
   primary1 = "#589632"
   primary2 = "#55828b"

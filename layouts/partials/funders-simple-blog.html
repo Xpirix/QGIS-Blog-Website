@@ -1,0 +1,11 @@
+{{/* The theme points the "Add your logo here?" card at this site's own
+     funding/membership path. That page lives on qgis.org, not on the blog, so
+     the theme link is dead here. Render the theme partial, then point that one
+     link at qgis.org.
+
+     We wrap the theme partial instead of copying it, so the blog keeps up with
+     theme changes without us maintaining a second copy of the markup. */}}
+{{ $membershipURL := .Site.Params.membershipUrl }}
+{{ $themeURL := absURL "funding/membership" }}
+{{ $html := partial "funders-simple.html" . }}
+{{ replace $html (printf `href="%s"` $themeURL) (printf `href="%s"` $membershipURL) | safeHTML }}
