@@ -7,19 +7,19 @@ categories: ["Public Service Announcement", "QGIS Board"]
 featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 ---
 
-<p class="wp-block-paragraph">We’re happy to share some major updates coming to the QGIS platform over the next few months. These changes are part of a long-planned technical migration that will bring new possibilities and ensure QGIS stays modern, fast, and future-ready.</p>
+<p>We’re happy to share some major updates coming to the QGIS platform over the next few months. These changes are part of a long-planned technical migration that will bring new possibilities and ensure QGIS stays modern, fast, and future-ready.</p>
 
 
 
-<h3 class="wp-block-heading">🚀 QGIS Is Migrating to Qt6</h3>
+<h3>🚀 QGIS Is Migrating to Qt6</h3>
 
 
 
-<p class="wp-block-paragraph">Qt6 is the latest version of the cross-platform application framework that QGIS is built upon. Moving to Qt6 allows us to:</p>
+<p>Qt6 is the latest version of the cross-platform application framework that QGIS is built upon. Moving to Qt6 allows us to:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>Future-proof the QGIS codebase.</li>
 
 
@@ -33,23 +33,23 @@ featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 
 
 
-<p class="wp-block-paragraph">While most of the migration is complete, a few final tasks remain, especially around Continuous Integration (the automated processes that run on each change to the QGIS code base to help reduce bugs), layout rendering, and PDF output. The core team is actively working on these and making significant progress.</p>
+<p>While most of the migration is complete, a few final tasks remain, especially around Continuous Integration (the automated processes that run on each change to the QGIS code base to help reduce bugs), layout rendering, and PDF output. The core team is actively working on these and making significant progress.</p>
 
 
 
-<h3 class="wp-block-heading">🌟 Enter QGIS 4.0</h3>
+<h3>🌟 Enter QGIS 4.0</h3>
 
 
 
-<p class="wp-block-paragraph">To mark this significant backend shift, we’ve decided to align the Qt6 migration with a new major release: <strong>QGIS 4.0</strong>, which will arrive after <strong>QGIS 3.44</strong>, in <strong>October 2025</strong>.</p>
+<p>To mark this significant backend shift, we’ve decided to align the Qt6 migration with a new major release: <strong>QGIS 4.0</strong>, which will arrive after <strong>QGIS 3.44</strong>, in <strong>October 2025</strong>.</p>
 
 
 
-<p class="wp-block-paragraph">Here’s what you need to know:</p>
+<p>Here’s what you need to know:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><strong>QGIS 4.0 will be Qt6-only</strong></li>
 
 
@@ -63,23 +63,23 @@ featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 
 
 
-<p class="wp-block-paragraph">This strategy allows us to modernise QGIS without forcing a major rewrite of existing plugins. Some adjustments will be needed to ensure QGIS 4.0 compatibility.</p>
+<p>This strategy allows us to modernise QGIS without forcing a major rewrite of existing plugins. Some adjustments will be needed to ensure QGIS 4.0 compatibility.</p>
 
 
 
-<p class="wp-block-paragraph"><strong>Note on Features:</strong> While QGIS 4.0 marks a major version jump, it’s essential to understand that this release will include only a few new user-facing features. The primary focus is on the transition to Qt6, which involves significant changes under the hood. <br>In the QGIS project, a major version number doesn&#8217;t necessarily mean a flood of new features—it signals a break in the API. This ensures that developers are aware of potential compatibility updates needed for their plugins or integrations, even if the visible functionality remains largely unchanged.</p>
+<p><strong>Note on Features:</strong> While QGIS 4.0 marks a major version jump, it’s essential to understand that this release will include only a few new user-facing features. The primary focus is on the transition to Qt6, which involves significant changes under the hood. <br>In the QGIS project, a major version number doesn&#8217;t necessarily mean a flood of new features—it signals a break in the API. This ensures that developers are aware of potential compatibility updates needed for their plugins or integrations, even if the visible functionality remains largely unchanged.</p>
 
 
 
-<h3 class="wp-block-heading">💡 Why This Matters</h3>
+<h3>💡 Why This Matters</h3>
 
 
 
-<p class="wp-block-paragraph">This isn’t just about upgrading for the sake of it — it’s about keeping QGIS secure, modern, and maintainable.</p>
+<p>This isn’t just about upgrading for the sake of it — it’s about keeping QGIS secure, modern, and maintainable.</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><strong>Qt 5.15 enters Extended Support (EOS)</strong> in <strong>May 2025</strong>, with continued security updates available only under commercial terms</li>
 
 
@@ -97,15 +97,15 @@ featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 
 
 
-<h3 class="wp-block-heading">📆 Release Strategy</h3>
+<h3>📆 Release Strategy</h3>
 
 
 
-<p class="wp-block-paragraph">To ensure a smooth transition for users and developers, we’re taking a phased approach:</p>
+<p>To ensure a smooth transition for users and developers, we’re taking a phased approach:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><strong>QGIS 3.40 LTR</strong> will be extended by <strong>4 months</strong>, until <strong>May 2026</strong>, giving plugin developers and organisations extra time to adapt</li>
 
 
@@ -119,19 +119,19 @@ featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 
 
 
-<p class="wp-block-paragraph">This gradual rollout ensures users who depend on stable environments can continue with 3.40 LTR, while early adopters and plugin developers move forward with Qt6 in 4.0.</p>
+<p>This gradual rollout ensures users who depend on stable environments can continue with 3.40 LTR, while early adopters and plugin developers move forward with Qt6 in 4.0.</p>
 
 
 
-<h3 class="wp-block-heading">🔌 What About Plugins?</h3>
+<h3>🔌 What About Plugins?</h3>
 
 
 
-<p class="wp-block-paragraph">We’re making it easier than ever for plugin developers to prepare:</p>
+<p>We’re making it easier than ever for plugin developers to prepare:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>The QGIS Plugin Repository will begin accepting <strong>4.x-compatible plugins</strong></li>
 
 
@@ -145,11 +145,11 @@ featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 
 
 
-<p class="wp-block-paragraph">If you maintain a plugin, now’s the perfect time to start testing and preparing for Qt6 compatibility!<br>👉 See:</p>
+<p>If you maintain a plugin, now’s the perfect time to start testing and preparing for Qt6 compatibility!<br>👉 See:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><a href="https://github.com/qgis/pyqgis4-checker">pyqgis4-checker</a></li>
 
 
@@ -159,15 +159,15 @@ featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 
 
 
-<h3 class="wp-block-heading">🧪 Try Qt6 Today</h3>
+<h3>🧪 Try Qt6 Today</h3>
 
 
 
-<p class="wp-block-paragraph">The migration to Qt6 isn’t just theoretical — it’s already happening and ready for testing:</p>
+<p>The migration to Qt6 isn’t just theoretical — it’s already happening and ready for testing:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><strong>Windows</strong>: Qt6 builds of <strong>all release branches and master</strong> are available now via the <a href="https://trac.osgeo.org/osgeo4w/">OSGeo4W installer</a></li>
 
 
@@ -181,19 +181,19 @@ featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 
 
 
-<p class="wp-block-paragraph">Start exploring Qt6 builds today and help us shape the future of QGIS.</p>
+<p>Start exploring Qt6 builds today and help us shape the future of QGIS.</p>
 
 
 
-<h3 class="wp-block-heading">🤝 Get Involved</h3>
+<h3>🤝 Get Involved</h3>
 
 
 
-<p class="wp-block-paragraph">We’ll share more updates in the coming weeks. In the meantime:</p>
+<p>We’ll share more updates in the coming weeks. In the meantime:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>Try the Qt6 builds</li>
 
 
@@ -207,8 +207,8 @@ featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 
 
 
-<p class="wp-block-paragraph">A massive thank you to all contributors, developers, testers, and organisations supporting this transition.<br><strong>QGIS 4.0 is shaping to be a big leap forward, and we can’t wait to share it with you!</strong></p>
+<p>A massive thank you to all contributors, developers, testers, and organisations supporting this transition.<br><strong>QGIS 4.0 is shaping to be a big leap forward, and we can’t wait to share it with you!</strong></p>
 
 
 
-<pre class="wp-block-preformatted"><br>Edited on 24.04.25<br>- Removed leftover texts<br>- Added a note on new features in QGIS 4.0<br></pre>
+<pre><br>Edited on 24.04.25<br>- Removed leftover texts<br>- Added a note on new features in QGIS 4.0<br></pre>

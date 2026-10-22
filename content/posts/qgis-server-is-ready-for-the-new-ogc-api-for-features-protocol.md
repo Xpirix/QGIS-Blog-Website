@@ -15,7 +15,7 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 <div>
 <div></div>
 <div>
-<table dir="ltr" border="1" cellspacing="0" cellpadding="0">
+<table class="table is-fullwidth is-striped is-hoverable" dir="ltr" border="1" cellspacing="0" cellpadding="0">
 <colgroup>
 <col width="322" /></colgroup>
 <tbody>

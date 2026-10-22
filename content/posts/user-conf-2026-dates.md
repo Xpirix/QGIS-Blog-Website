@@ -7,11 +7,11 @@ categories: ["QGIS Hackfest", "QGIS User Conference"]
 featured_image: "/wp-content/uploads/2025/12/file_0000000052a0720aafcf6786f77d3c98.png"
 ---
 
-<p class="wp-block-paragraph">We’re happy to announce that the next QGIS User Conference will take place in Switzerland in October 2026.<br /><br />Please mark the following dates in your calendar:</p>
+<p>We’re happy to announce that the next QGIS User Conference will take place in Switzerland in October 2026.<br /><br />Please mark the following dates in your calendar:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>4 October 2026 – Informal active outdoor pre-event day</li>
 
 
@@ -29,16 +29,16 @@ featured_image: "/wp-content/uploads/2025/12/file_0000000052a0720aafcf6786f77d3c
 
 
 
-<p class="wp-block-paragraph">As always, the conference will bring together users, developers, contributors, public administrations, companies, and educators from all over the world to share experiences, workflows, and ideas around QGIS and open-source GIS.</p>
+<p>As always, the conference will bring together users, developers, contributors, public administrations, companies, and educators from all over the world to share experiences, workflows, and ideas around QGIS and open-source GIS.</p>
 
 
 
-<p class="wp-block-paragraph">📍 Location and further details will be published in January 2026.<br /><br />For now, save the date and keep an eye out for the updates in January.</p>
+<p>📍 Location and further details will be published in January 2026.<br /><br />For now, save the date and keep an eye out for the updates in January.</p>
 
 
 
-<p class="wp-block-paragraph">We’re looking forward to welcoming the global QGIS community to Switzerland.</p>
+<p>We’re looking forward to welcoming the global QGIS community to Switzerland.</p>
 
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>

@@ -7,43 +7,43 @@ categories: ["QGIS Funding"]
 featured_image: "/wp-content/uploads/2023/04/members-1-3419685632-e1680472890579.png"
 ---
 
-<p class="wp-block-paragraph">On January 16th, we launched the <a href="https://blog.qgis.org/2023/01/16/crowd-funding-call-2023/">largest crowd-funding call</a> for QGIS.ORG so far. Our goal was to increase <a href="https://qgis.org/en/site/about/sustaining_members.html">sustaining membership contributions</a> and bring the total member contributions up to €200k. And today, we are happy to announce that, thanks to all our new and returning sustaining members, we have succeeded and even exceeded our goal: raising a total of €206.5k in contributions for 2023.</p>
+<p>On January 16th, we launched the <a href="https://blog.qgis.org/2023/01/16/crowd-funding-call-2023/">largest crowd-funding call</a> for QGIS.ORG so far. Our goal was to increase <a href="https://qgis.org/en/site/about/sustaining_members.html">sustaining membership contributions</a> and bring the total member contributions up to €200k. And today, we are happy to announce that, thanks to all our new and returning sustaining members, we have succeeded and even exceeded our goal: raising a total of €206.5k in contributions for 2023.</p>
 
 
 
-<p class="wp-block-paragraph">In total, 42 new sustaining members have answered our call &#8211; these are in addition to already existing sustaining members, who started their memberships in previous years &#8211; some of them already many years in a row.</p>
+<p>In total, 42 new sustaining members have answered our call &#8211; these are in addition to already existing sustaining members, who started their memberships in previous years &#8211; some of them already many years in a row.</p>
 
 
 
-<p class="wp-block-paragraph">We are particularly happy that we are able to welcome <a href="https://blog.qgis.org/2023/03/21/felt-is-our-first-sustaining-member/">our new and first Flagship sustaining member Felt</a>.  </p>
+<p>We are particularly happy that we are able to welcome <a href="https://blog.qgis.org/2023/03/21/felt-is-our-first-sustaining-member/">our new and first Flagship sustaining member Felt</a>.  </p>
 
 
-<div class="wp-block-image is-style-default">
-<figure class="aligncenter size-medium"><img loading="lazy" width="300" height="167" data-attachment-id="2673" data-permalink="http://blog.qgis.org/2023/04/02/crowd-funding-2023-results/felt/" data-orig-file="/wp-content/uploads/2023/04/felt.png" data-orig-size="1454,813" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="felt" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2023/04/felt.png" src="/wp-content/uploads/2023/04/felt.png" alt="Felt" class="wp-image-2673" srcset="/wp-content/uploads/2023/04/felt.png 300w, /wp-content/uploads/2023/04/felt.png 600w, /wp-content/uploads/2023/04/felt.png 150w" sizes="(max-width: 300px) 100vw, 300px" /><figcaption class="wp-element-caption"><a href="https://felt.com">felt.com</a></figcaption></figure>
+<div>
+<figure><img loading="lazy" width="300" height="167" src="/wp-content/uploads/2023/04/felt.png" alt="Felt" srcset="/wp-content/uploads/2023/04/felt.png 300w, /wp-content/uploads/2023/04/felt.png 600w, /wp-content/uploads/2023/04/felt.png 150w" sizes="(max-width: 300px) 100vw, 300px" /><figcaption><a href="https://felt.com">felt.com</a></figcaption></figure>
 </div>
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>
 
 
 
-<p class="wp-block-paragraph">A huge thank you also goes to our returning sustaining member, the <a href="http://www.opw.ie/">Office of Public Works</a> (Ireland) who have increased their contribution to the large membership level.</p>
+<p>A huge thank you also goes to our returning sustaining member, the <a href="http://www.opw.ie/">Office of Public Works</a> (Ireland) who have increased their contribution to the large membership level.</p>
 
 
-<div class="wp-block-image is-style-default">
-<figure class="aligncenter size-thumbnail"><img loading="lazy" width="150" height="128" data-attachment-id="2674" data-permalink="http://blog.qgis.org/2023/04/02/crowd-funding-2023-results/opw/" data-orig-file="/wp-content/uploads/2023/04/opw.jpg" data-orig-size="591,508" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="opw" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2023/04/opw.jpg" src="/wp-content/uploads/2023/04/opw.jpg" alt="" class="wp-image-2674" srcset="/wp-content/uploads/2023/04/opw.jpg 150w, /wp-content/uploads/2023/04/opw.jpg 300w" sizes="(max-width: 150px) 100vw, 150px" /></figure>
+<div>
+<figure><img loading="lazy" width="150" height="128" src="/wp-content/uploads/2023/04/opw.jpg" alt="" srcset="/wp-content/uploads/2023/04/opw.jpg 150w, /wp-content/uploads/2023/04/opw.jpg 300w" sizes="(max-width: 150px) 100vw, 150px" /></figure>
 </div>
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>
 
 
 
-<p class="wp-block-paragraph">We are also delighted to welcome seven new medium sustaining members, including the first two university institutes supporting us on this level: </p>
+<p>We are also delighted to welcome seven new medium sustaining members, including the first two university institutes supporting us on this level: </p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><a href="https://www.limnowak.com/">Institut Dr. Nowak GmbH, Germany</a> </li>
 
 
@@ -73,11 +73,11 @@ featured_image: "/wp-content/uploads/2023/04/members-1-3419685632-e1680472890579
 
 
 
-<p class="wp-block-paragraph">And finally, our thanks go out to the stunning 33 new small sustaining members from all over the world: </p>
+<p>And finally, our thanks go out to the stunning 33 new small sustaining members from all over the world: </p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><a href="https://pacgeo.com/">Pacific Geomatics Limited, Canada</a></li>
 
 
@@ -211,4 +211,4 @@ featured_image: "/wp-content/uploads/2023/04/members-1-3419685632-e1680472890579
 
 
 
-<figure class="wp-block-image size-large is-style-default"><a href="https://qgis.org/en/site/about/sustaining_members.html"><img loading="lazy" width="1024" height="986" data-attachment-id="2682" data-permalink="http://blog.qgis.org/2023/04/02/crowd-funding-2023-results/members/" data-orig-file="/wp-content/uploads/2023/04/members.png" data-orig-size="1134,1092" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="members" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2023/04/members.png" src="/wp-content/uploads/2023/04/members.png" alt="" class="wp-image-2682" srcset="/wp-content/uploads/2023/04/members.png 1024w, /wp-content/uploads/2023/04/members.png 150w, /wp-content/uploads/2023/04/members.png 300w, /wp-content/uploads/2023/04/members.png 768w, /wp-content/uploads/2023/04/members.png 1134w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">All sustaining members on flagship, large and medium level </figcaption></figure>
+<figure><a href="https://qgis.org/en/site/about/sustaining_members.html"><img loading="lazy" width="1024" height="986" src="/wp-content/uploads/2023/04/members.png" alt="" srcset="/wp-content/uploads/2023/04/members.png 1024w, /wp-content/uploads/2023/04/members.png 150w, /wp-content/uploads/2023/04/members.png 300w, /wp-content/uploads/2023/04/members.png 768w, /wp-content/uploads/2023/04/members.png 1134w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption>All sustaining members on flagship, large and medium level </figcaption></figure>

@@ -6,20 +6,20 @@ authors: ["timlinux"]
 categories: ["Uncategorized"]
 ---
 
-<div class="wp-block-image">
-<figure class="aligncenter size-large"><a href="/wp-content/uploads/2026/04/image.png"><img data-attachment-id="3517" data-permalink="http://blog.qgis.org/2026/04/13/were-hiring-qgis-administrative-assistant-wanted/image-20/" data-orig-file="/wp-content/uploads/2026/04/image.png" data-orig-size="336,328" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="image" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2026/04/image.png" loading="lazy" width="336" height="328" src="/wp-content/uploads/2026/04/image.png" alt="" class="wp-image-3517" srcset="/wp-content/uploads/2026/04/image.png 336w, /wp-content/uploads/2026/04/image.png 150w, /wp-content/uploads/2026/04/image.png 300w" sizes="(max-width: 336px) 100vw, 336px" /></a></figure>
+<div>
+<figure><a href="/wp-content/uploads/2026/04/image.png"><img loading="lazy" width="336" height="328" src="/wp-content/uploads/2026/04/image.png" alt="" srcset="/wp-content/uploads/2026/04/image.png 336w, /wp-content/uploads/2026/04/image.png 150w, /wp-content/uploads/2026/04/image.png 300w" sizes="(max-width: 336px) 100vw, 336px" /></a></figure>
 </div>
 
 
-<p class="wp-block-paragraph">QGIS.org is pleased to announce that we will be using some of the funding that is donated to us by our users and sustaining members to fund a dedicated administrative role for the project.&nbsp;</p>
+<p>QGIS.org is pleased to announce that we will be using some of the funding that is donated to us by our users and sustaining members to fund a dedicated administrative role for the project.&nbsp;</p>
 
 
 
-<p class="wp-block-paragraph"><strong>Principle duties:</strong></p>
+<p><strong>Principle duties:</strong></p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>Support the PSC in activities such as organisation of the annual QGIS user conference, logistics for project initiatives, dealing with partner organisations, dealing with recurring queries about licensing, trademarks, use restrictions, initiatives from our country user groups etc. </li>
 
 
@@ -41,11 +41,11 @@ categories: ["Uncategorized"]
 
 
 
-<p class="wp-block-paragraph"><strong>Key personal attributes needed:</strong></p>
+<p><strong>Key personal attributes needed:</strong></p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><strong>Highly articulate</strong>, especially in English which is the primary language of communication for the QGIS project. The ability to speak additional languages in order to communicate well with our diverse international contributor base would be an advantage.</li>
 
 
@@ -63,11 +63,11 @@ categories: ["Uncategorized"]
 
 
 
-<p class="wp-block-paragraph"><strong>Technical skills:</strong></p>
+<p><strong>Technical skills:</strong></p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><strong>Word processing</strong> &#8211; you need to be able to craft gorgeous looking documents for every communication interaction that follow the QGIS Brand Guidelines and make the reader feel like they are engaging with a professional, well organised project.</li>
 
 
@@ -85,21 +85,21 @@ categories: ["Uncategorized"]
 
 
 
-<p class="wp-block-paragraph"><strong>Job Hours:</strong></p>
+<p><strong>Job Hours:</strong></p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>This is intended for someone looking for a part time position, ideally 20 hours per week to start (or more; ideally, e.g. mornings daily)</li>
 </ul>
 
 
 
-<p class="wp-block-paragraph"><strong>Questions about this role:</strong></p>
+<p><strong>Questions about this role:</strong></p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><strong>Can I work remotely?</strong>: This is in fact a <strong>requirement</strong>. Most of the people you will interact with are in one of the European timezones, so if you are in a similar longitude, that would be a big plus.</li>
 
 
@@ -125,16 +125,16 @@ categories: ["Uncategorized"]
 
 
 
-<p class="wp-block-paragraph"><strong>Submitting your application:</strong></p>
+<p><strong>Submitting your application:</strong></p>
 
 
 
-<p class="wp-block-paragraph">Please use <a href="https://forms.gle/3shtZhn4eDpmXbjd6">this form</a> to submit your application. Deadline for applications is midnight wherever you live, 30 April 2026.</p>
+<p>Please use <a href="https://forms.gle/3shtZhn4eDpmXbjd6">this form</a> to submit your application. Deadline for applications is midnight wherever you live, 30 April 2026.</p>
 
 
 
-<p class="wp-block-paragraph"><strong>AI Statement:</strong></p>
+<p><strong>AI Statement:</strong></p>
 
 
 
-<p class="wp-block-paragraph">No LLM / AI was used in writing this job description.</p>
+<p>No LLM / AI was used in writing this job description.</p>

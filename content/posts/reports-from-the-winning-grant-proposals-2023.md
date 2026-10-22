@@ -33,4 +33,4 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 <p>Thank you to everyone who participated and made this round of grants a great success and thank you to all our <a href="https://qgis.org/en/site/about/sustaining_members.html">sustaining members</a> and donors who make this initiative possible!</p>
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>

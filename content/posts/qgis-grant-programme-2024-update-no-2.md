@@ -8,25 +8,25 @@ tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 
-<p class="wp-block-paragraph">Thanks to generous supporters, we are in the wonderful position to be able to announce that another project is successfully funded: </p>
+<p>Thanks to generous supporters, we are in the wonderful position to be able to announce that another project is successfully funded: </p>
 
 
 
-<ul class="wp-block-list"></ul>
+<ul></ul>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/248">QEP#248 Authentication System: allow Database storage for authentication DB</a></li>
 </ul>
 
 
 
-<p class="wp-block-paragraph">Our thanks go out to:</p>
+<p>Our thanks go out to:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><a href="https://gis3w.it/">Gis3W </a></li>
 
 
@@ -44,15 +44,15 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<p class="wp-block-paragraph">for providing the additional funding to top up the QGIS Grant Programme contribution for QEP#248.</p>
+<p>for providing the additional funding to top up the QGIS Grant Programme contribution for QEP#248.</p>
 
 
 
-<p class="wp-block-paragraph">The next proposals on the wait list are:</p>
+<p>The next proposals on the wait list are:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/294">QEP#294 Fix access to remote data sources in WebAssembly builds</a></li>
 
 
@@ -66,8 +66,8 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<p class="wp-block-paragraph">If you want to help make these improvement a reality, please <a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/248#issuecomment-2099990437">get in touch</a>.</p>
+<p>If you want to help make these improvement a reality, please <a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/248#issuecomment-2099990437">get in touch</a>.</p>
 
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>

@@ -38,7 +38,7 @@ featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 <li>If you are an individual user please consider <a href="https://www.qgis.org/en/site/getinvolved/donations.html">making a donation to the project</a> (donations can be made by PayPal or by direct bank transfer).</li>
 <li>If you work for a company, please consider <a href="https://www.qgis.org/en/site/getinvolved/governance/sponsorship/sponsorship.html?highlight=sponsoring">becoming a project sponsor</a>. Our entry level sponsorship is not a lot of money and will make a great contribution to the project. We are still looking for our first platinum sponsor &#8211; perhaps your company could be the first! Here is the list of sponsorship levels for quick reference:</li>
 </ul>
-<table class="table" border="0">
+<table class="table is-fullwidth is-striped is-hoverable" border="0">
 <thead valign="bottom">
 <tr class="row-odd">
 <th class="head">Euros</th>

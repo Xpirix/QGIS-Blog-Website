@@ -7,20 +7,20 @@ categories: ["QGIS Board"]
 ---
 
 <p>&nbsp;</p>
-<p><img loading="lazy" data-attachment-id="339" data-permalink="http://blog.qgis.org/2016/02/10/qgis-3-0-plans/qgis-icon-60x60/" data-orig-file="/wp-content/uploads/2016/02/qgis-icon-60x60.png" data-orig-size="60,60" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="qgis-icon-60&amp;#215;60" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2016/02/qgis-icon-60x60.png" class="alignnone size-full wp-image-339 aligncenter" src="/wp-content/uploads/2016/02/qgis-icon-60x60.png" alt="qgis-icon-60x60" width="60" height="60" /></p>
+<p><img loading="lazy" class="is-block mx-auto" src="/wp-content/uploads/2016/02/qgis-icon-60x60.png" alt="qgis-icon-60x60" width="60" height="60" /></p>
 <p>Ok so quick spoiler here: there is no QGIS 3.0 ready yet, nor will there be a QGIS 3.0 for some time. This article provides a bit more detail on the plans for QGIS 3.0. A few weeks ago I wrote about some of the considerations for the 3.0 release, so you may want to <a href="http://blog.qgis.org/2016/01/17/help-us-to-plan-for-qgis-3-0/">read that first</a> before continuing with this article as I do not cover the same ground here.</p>
 <p>A <strong>lot</strong> of consideration has gone into deciding what the approach will be for the development of QGIS 3.0. Unfortunately the first PSC vote regarding which proposal to follow was a <a href="https://www.loomio.org/d/5MCdPwoL/vote-to-approve-the-process-for-qgis-3-0">split</a> decision (4 for, 3 against, 1 abstention and 1 suggestion for an alternative in the discussion). During our PSC meeting this week we re-tabled the topic and eventually agreed on Jürgen Fischer&#8217;s proposal (Jürgen is a QGIS PSC Member and the QGIS Release Manager) by a much more unanimous margin of 8 for, 1 neutral and 1 absent. Jürgen&#8217;s proposal is largely similar to the Proposal 2 described in my <a href="http://blog.qgis.org/2016/01/17/help-us-to-plan-for-qgis-3-0/">previous posting</a>. I want to make some special notes here about our discussion and subsequent decision which will hopefully help to clarify the thinking behind our decision for other interested observers.  First let me lay out Jürgen&#8217;s plan in his own words:</p>
-<p><span style="font-weight:400;">&#8220;</span><span style="font-weight:400;">My preferred approach would still be:</span></p>
+<p><span>&#8220;</span><span>My preferred approach would still be:</span></p>
 <ul>
-<li style="font-weight:400;"><span style="font-weight:400;">Do a Qt5/PyQt5/Python3 branch in parallel, actually work on it until it&#8217;s ready, make it master and release it as 3.0</span></li>
-<li style="font-weight:400;"><span style="font-weight:400;">Meantime keep working on master (2.x) and keep releasing them every 4 months as usual</span></li>
+<li><span>Do a Qt5/PyQt5/Python3 branch in parallel, actually work on it until it&#8217;s ready, make it master and release it as 3.0</span></li>
+<li><span>Meantime keep working on master (2.x) and keep releasing them every 4 months as usual</span></li>
 </ul>
-<p><span style="font-weight:400;">Everyone can work on the branch (s)he wants (or is hired to), but needs to consider if (s)he want to do it (or spend funds on):</span></p>
+<p><span>Everyone can work on the branch (s)he wants (or is hired to), but needs to consider if (s)he want to do it (or spend funds on):</span></p>
 <ul>
-<li style="font-weight:400;"><span style="font-weight:400;">only for 2.x: knowing that it will be released soon; but might become unusable because platforms drop support for stuff it depends on sooner or later</span></li>
-<li style="font-weight:400;"><span style="font-weight:400;">only for 3.x: not knowing when that will ever release or</span></li>
-<li style="font-weight:400;"><span style="font-weight:400;">for both: knowing that work needs to be done twice.</span></li>
-<li style="font-weight:400;"><span style="font-weight:400;">People adding features to the master branch will be responsible to ensure that their work gets merged to 3.0 branch.</span></li>
+<li><span>only for 2.x: knowing that it will be released soon; but might become unusable because platforms drop support for stuff it depends on sooner or later</span></li>
+<li><span>only for 3.x: not knowing when that will ever release or</span></li>
+<li><span>for both: knowing that work needs to be done twice.</span></li>
+<li><span>People adding features to the master branch will be responsible to ensure that their work gets merged to 3.0 branch.</span></li>
 </ul>
 <p>As PSC we should maintain the environment for people to do something for QGIS &#8211; but we cannot tell them to &#8211; so we don&#8217;t have resources we can actually plan with and that means we can either release something when the big thing is ready or what we have in fixed intervals.&#8221; &#8211; Jürgen Fischer</p>
 <p>What follows are some further details and clarifications to our preferred approach:</p>
@@ -54,5 +54,5 @@ categories: ["QGIS Board"]
 <p>&nbsp;</p>
 <p><strong>Looking forward to 3.0</strong></p>
 <p>Personally I am very much looking forward to the release of QGIS 3.0 &#8211; it represents another huge milestone in our project, it affords us a great opportunity to get rid of a lot of cruft out of our code base and API&#8217;s and it will arm us with a set of modern, new libraries that will see us through the next several years. Rock on QGIS 3.0!</p>
-<p><img loading="lazy" data-attachment-id="124" data-permalink="http://blog.qgis.org/2015/11/03/introducing-the-qgis-board/timsutton/" data-orig-file="/wp-content/uploads/2015/10/timsutton.png" data-orig-size="336,191" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="timsutton" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2015/10/timsutton.png" class="alignnone size-full wp-image-124" src="/wp-content/uploads/2015/10/timsutton.png" alt="timsutton" width="336" height="191" srcset="/wp-content/uploads/2015/10/timsutton.png 336w, /wp-content/uploads/2015/10/timsutton.png 150w, /wp-content/uploads/2015/10/timsutton.png 300w" sizes="(max-width: 336px) 100vw, 336px" /></p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/10/timsutton.png" alt="timsutton" width="336" height="191" srcset="/wp-content/uploads/2015/10/timsutton.png 336w, /wp-content/uploads/2015/10/timsutton.png 150w, /wp-content/uploads/2015/10/timsutton.png 300w" sizes="(max-width: 336px) 100vw, 336px" /></p>
 <p>QGIS PSC Chairman</p>

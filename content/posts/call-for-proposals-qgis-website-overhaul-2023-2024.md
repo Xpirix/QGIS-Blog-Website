@@ -7,39 +7,39 @@ categories: ["Uncategorized"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 
-<h1 class="wp-block-heading">📒 Background</h1>
+<h1>📒 Background</h1>
 
 
 
-<figure class="wp-block-image"><a href="https://lh6.googleusercontent.com/hDASS4X9bsAQTS6qxzJ-srPESLjLQKQeG6nMB_aVvDuWFuEZp76YeVC7sm5lwPID--129Na5jcrEXqTjuUtjCXaFxmk4JoNohXp7IZqMiRwB-jb5jU2QV3bs66fXecZqi7yuOGwvWvbz1xEkplhxePQ"><img src="https://lh6.googleusercontent.com/hDASS4X9bsAQTS6qxzJ-srPESLjLQKQeG6nMB_aVvDuWFuEZp76YeVC7sm5lwPID--129Na5jcrEXqTjuUtjCXaFxmk4JoNohXp7IZqMiRwB-jb5jU2QV3bs66fXecZqi7yuOGwvWvbz1xEkplhxePQ" alt="" /></a></figure>
+<figure><a href="https://lh6.googleusercontent.com/hDASS4X9bsAQTS6qxzJ-srPESLjLQKQeG6nMB_aVvDuWFuEZp76YeVC7sm5lwPID--129Na5jcrEXqTjuUtjCXaFxmk4JoNohXp7IZqMiRwB-jb5jU2QV3bs66fXecZqi7yuOGwvWvbz1xEkplhxePQ"><img src="https://lh6.googleusercontent.com/hDASS4X9bsAQTS6qxzJ-srPESLjLQKQeG6nMB_aVvDuWFuEZp76YeVC7sm5lwPID--129Na5jcrEXqTjuUtjCXaFxmk4JoNohXp7IZqMiRwB-jb5jU2QV3bs66fXecZqi7yuOGwvWvbz1xEkplhxePQ" alt="" /></a></figure>
 
 
 
-<p class="wp-block-paragraph">Our web site (<a href="https://qgis.org">https://qgis.org</a>) dates back to 2013, it is time for a revision!</p>
+<p>Our web site (<a href="https://qgis.org">https://qgis.org</a>) dates back to 2013, it is time for a revision!</p>
 
 
 
-<p class="wp-block-paragraph">As well as modernizing the look and feel of the site, we want the content to be updated to represent changes in the maturity of the project.</p>
+<p>As well as modernizing the look and feel of the site, we want the content to be updated to represent changes in the maturity of the project.</p>
 
 
 
-<p class="wp-block-paragraph">We want to appeal to new audiences, especially business and NGO decision makers (in particular the experience for the front pages), whilst still maintaining appeal to grass roots users (especially the lower level pages which contain many technical details and community collaboration notes).</p>
+<p>We want to appeal to new audiences, especially business and NGO decision makers (in particular the experience for the front pages), whilst still maintaining appeal to grass roots users (especially the lower level pages which contain many technical details and community collaboration notes).</p>
 
 
 
-<p class="wp-block-paragraph">We want to enhance our fund raising efforts through a site that encourages people to contribute to, as well as take from, the project.</p>
+<p>We want to enhance our fund raising efforts through a site that encourages people to contribute to, as well as take from, the project.</p>
 
 
 
-<h1 class="wp-block-heading">🏋️‍♂️Existing effort</h1>
+<h1>🏋️‍♂️Existing effort</h1>
 
 
 
-<p class="wp-block-paragraph">First some key links:</p>
+<p>First some key links:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>Current web site:<a href="https://github.com/qgis/QGIS-Website" target="_blank" rel="noreferrer noopener"> https://github.com/qgis/QGIS-Website</a></li>
 
 
@@ -93,11 +93,11 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<p class="wp-block-paragraph">The above websites were created with a mix of technologies:</p>
+<p>The above websites were created with a mix of technologies:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>Sphinx (rst)</li>
 
 
@@ -111,33 +111,33 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<p class="wp-block-paragraph">It will not be possible to unify the technology used for all of the above sites, <strong>but we want all of the web sites to have a cohesive appearance and the navigation flow between them to be seamless</strong>. For the main website at <a rel="noreferrer noopener" href="https://qgis.org" target="_blank">https://qgis.org</a> and its child pages, we want to re-implement the site to provide a new experience &#8211; <strong>according to the design we have laid out in our figma board</strong>. Note that we want to follow this design. Some small tweaks will be fine but we are not looking for a &#8216;from scratch&#8217; re-implementation of our design.</p>
+<p>It will not be possible to unify the technology used for all of the above sites, <strong>but we want all of the web sites to have a cohesive appearance and the navigation flow between them to be seamless</strong>. For the main website at <a rel="noreferrer noopener" href="https://qgis.org" target="_blank">https://qgis.org</a> and its child pages, we want to re-implement the site to provide a new experience &#8211; <strong>according to the design we have laid out in our figma board</strong>. Note that we want to follow this design. Some small tweaks will be fine but we are not looking for a &#8216;from scratch&#8217; re-implementation of our design.</p>
 
 
 
-<figure class="wp-block-image"><a href="https://lh5.googleusercontent.com/1oGZS_bUcspX24wxoAQym54cMm8oTeY9cMiGrkdlMA7mGfscDbbmK38tHD02n35hMfDbUMFYdTyytX9Fahz3z584jVPYCOhTXpjPddG4VAFBtAanUFDP8wCTJpslvFw0LIq3BCSwy6MoqF0U3lm1V1o"><img src="https://lh5.googleusercontent.com/1oGZS_bUcspX24wxoAQym54cMm8oTeY9cMiGrkdlMA7mGfscDbbmK38tHD02n35hMfDbUMFYdTyytX9Fahz3z584jVPYCOhTXpjPddG4VAFBtAanUFDP8wCTJpslvFw0LIq3BCSwy6MoqF0U3lm1V1o" alt="" /></a></figure>
+<figure><a href="https://lh5.googleusercontent.com/1oGZS_bUcspX24wxoAQym54cMm8oTeY9cMiGrkdlMA7mGfscDbbmK38tHD02n35hMfDbUMFYdTyytX9Fahz3z584jVPYCOhTXpjPddG4VAFBtAanUFDP8wCTJpslvFw0LIq3BCSwy6MoqF0U3lm1V1o"><img src="https://lh5.googleusercontent.com/1oGZS_bUcspX24wxoAQym54cMm8oTeY9cMiGrkdlMA7mGfscDbbmK38tHD02n35hMfDbUMFYdTyytX9Fahz3z584jVPYCOhTXpjPddG4VAFBtAanUFDP8wCTJpslvFw0LIq3BCSwy6MoqF0U3lm1V1o" alt="" /></a></figure>
 
 
 
-<p class="wp-block-paragraph">This will be our website for the next 10 years &#8211; you need to hand it over to us in a way that we can continue working on it and maintaining it without your intervention.</p>
+<p>This will be our website for the next 10 years &#8211; you need to hand it over to us in a way that we can continue working on it and maintaining it without your intervention.</p>
 
 
 
-<p class="wp-block-paragraph">We are calling for proposals to help us with this migration as per the phases described below.</p>
+<p>We are calling for proposals to help us with this migration as per the phases described below.</p>
 
 
 
-<h1 class="wp-block-heading">Phase 1️⃣: Project planning</h1>
+<h1>Phase 1️⃣: Project planning</h1>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>⌚️Timeline</li>
 
 
 
 <li>🏗️ Proposed site structure
-<ul class="wp-block-list">
+<ul>
 <li>What content will be kept</li>
 
 
@@ -153,7 +153,7 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 <li>Keep front page as starting point
-<ul class="wp-block-list">
+<ul>
 <li>Suggest tweaks if needed</li>
 </ul>
 </li>
@@ -161,13 +161,13 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 <li>Establish a clear vocabulary of page types
-<ul class="wp-block-list">
+<ul>
 <li>Second and third level page design</li>
 
 
 
 <li>Special pages such as
-<ul class="wp-block-list">
+<ul>
 <li>Download</li>
 
 
@@ -197,7 +197,7 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 <li>Establish a plan for auxiliary sites:
-<ul class="wp-block-list">
+<ul>
 <li>Plugins.qgis.org</li>
 
 
@@ -221,51 +221,51 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<p class="wp-block-paragraph">🏆️ <strong>Outcome:</strong> We have a clear roadmap and design guide for migrating all of our websites to a consistent unified experience. </p>
+<p>🏆️ <strong>Outcome:</strong> We have a clear roadmap and design guide for migrating all of our websites to a consistent unified experience. </p>
 
 
 
-<h1 class="wp-block-heading">Phase 2️⃣: Content migration of the main site</h1>
+<h1>Phase 2️⃣: Content migration of the main site</h1>
 
 
 
-<p class="wp-block-paragraph">During this phase the contractor will focus on migrating the content of the main site to the new platform.</p>
+<p>During this phase the contractor will focus on migrating the content of the main site to the new platform.</p>
 
 
 
-<p class="wp-block-paragraph">There will be an iterative review and feedback from the QGIS web team should be incorporated from biweekly check-in calls.</p>
+<p>There will be an iterative review and feedback from the QGIS web team should be incorporated from biweekly check-in calls.</p>
 
 
 
-<p class="wp-block-paragraph">🏆️<strong> Outcome:</strong> <a href="https://qgis.org">https://qgis.org</a> new site goes live! (<strong>Target date end of <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-green-cyan-color">February 2024</mark></strong>)</p>
+<p>🏆️<strong> Outcome:</strong> <a href="https://qgis.org">https://qgis.org</a> new site goes live! (<strong>Target date end of <mark>February 2024</mark></strong>)</p>
 
 
 
-<h1 class="wp-block-heading">Phase 3️⃣: Auxiliary sites migrations</h1>
+<h1>Phase 3️⃣: Auxiliary sites migrations</h1>
 
 
 
-<p class="wp-block-paragraph"><em><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color"><strong>This is out of scope of the current call for proposals but should be part of the overall planning process:</strong></mark></em></p>
+<p><em><mark><strong>This is out of scope of the current call for proposals but should be part of the overall planning process:</strong></mark></em></p>
 
 
 
-<p class="wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">This would be a collaborative process involving a QGIS funded web developer and the consultant. </mark></p>
+<p><mark>This would be a collaborative process involving a QGIS funded web developer and the consultant. </mark></p>
 
 
 
-<p class="wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color">Iterative review and feedback from the QGIS web team should be incorporated from biweekly check in calls.</mark></p>
+<p><mark>Iterative review and feedback from the QGIS web team should be incorporated from biweekly check in calls.</mark></p>
 
 
 
-<p class="wp-block-paragraph">🏆️ <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-cyan-blue-color"><strong>Outcome:</strong> Auxiliary sites goes live with a cohesive look and feel to match the main site.</mark></p>
+<p>🏆️ <mark><strong>Outcome:</strong> Auxiliary sites goes live with a cohesive look and feel to match the main site.</mark></p>
 
 
 
-<h1 class="wp-block-heading">☕️ What we will provide</h1>
+<h1>☕️ What we will provide</h1>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>Maps and screenshots, videos, animations (with inputs from design team)</li>
 
 
@@ -275,61 +275,61 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<h1 class="wp-block-heading">🎓️ Qualification criteria</h1>
+<h1>🎓️ Qualification criteria</h1>
 
 
 
-<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
-<p class="wp-block-paragraph">✅ Must have an established track record of website design and content creation.</p>
+<div><div>
+<p>✅ Must have an established track record of website design and content creation.</p>
 
 
 
-<p class="wp-block-paragraph">✅ Individuals or companies equally welcome to apply.</p>
+<p>✅ Individuals or companies equally welcome to apply.</p>
 
 
 
-<p class="wp-block-paragraph">✅ Any potential conflict of interest should be declared in your application.</p>
+<p>✅ Any potential conflict of interest should be declared in your application.</p>
 
 
 
-<p class="wp-block-paragraph">✅ Discussions will happen in English, with live discussions as well as written communication via issues or Pull request. Being reasonably fluent in English and understand the soft skills required to interact in a community project will be more than appreciated</p>
+<p>✅ Discussions will happen in English, with live discussions as well as written communication via issues or Pull request. Being reasonably fluent in English and understand the soft skills required to interact in a community project will be more than appreciated</p>
 </div></div>
 
 
 
-<h2 class="wp-block-heading">🗓️ Payment milestones</h2>
+<h2>🗓️ Payment milestones</h2>
 
 
 
-<p class="wp-block-paragraph">10 % Kick off</p>
+<p>10 % Kick off</p>
 
 
 
-<p class="wp-block-paragraph">40 % Phase 1 Completion</p>
+<p>40 % Phase 1 Completion</p>
 
 
 
-<p class="wp-block-paragraph">50 % Phase 2 Completion</p>
+<p>50 % Phase 2 Completion</p>
 
 
 
-<h2 class="wp-block-heading">💸 Indicative budget</h2>
+<h2>💸 Indicative budget</h2>
 
 
 
-<p class="wp-block-paragraph">We would like to point you to the QGIS Annual Budget so that you have a sense of our broad financial means (i.e. we will not be able to afford proposals in excess of <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-green-cyan-color">€25,000</mark></strong> for phase 1+2).</p>
+<p>We would like to point you to the QGIS Annual Budget so that you have a sense of our broad financial means (i.e. we will not be able to afford proposals in excess of <strong><mark>€25,000</mark></strong> for phase 1+2).</p>
 
 
 
-<p class="wp-block-paragraph"><a href="https://www.qgis.org/en/site/getinvolved/governance/annual_reports/index.html" rel="nofollow">https://www.qgis.org/en/site/getinvolved/governance/annual_reports/index.html</a></p>
+<p><a href="https://www.qgis.org/en/site/getinvolved/governance/annual_reports/index.html" rel="nofollow">https://www.qgis.org/en/site/getinvolved/governance/annual_reports/index.html</a></p>
 
 
 
-<h2 class="wp-block-heading">👩‍💻 Technology choices and IP:</h2>
+<h2>👩‍💻 Technology choices and IP:</h2>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>Must be wholly based on Open Source tooling (e.g. javascript, css, web frameworks)</li>
 
 
@@ -355,19 +355,19 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<figure class="wp-block-image"><a href="https://lh3.googleusercontent.com/DY5Ukae5M9NRV26JVyK3DZ0kMnEFBIXYwJSMfdCeAIBKhpwDtqUVAz9uulp_MHpDhEDZdPlAS2v-PePvRi3CqzxNx2glD463lqtRmESQCz5d3r8MxvadMFsoh-OXcSN1f7rXGxQbfB0l_GTZabjsDVI"><img src="https://lh3.googleusercontent.com/DY5Ukae5M9NRV26JVyK3DZ0kMnEFBIXYwJSMfdCeAIBKhpwDtqUVAz9uulp_MHpDhEDZdPlAS2v-PePvRi3CqzxNx2glD463lqtRmESQCz5d3r8MxvadMFsoh-OXcSN1f7rXGxQbfB0l_GTZabjsDVI" alt="" /></a></figure>
+<figure><a href="https://lh3.googleusercontent.com/DY5Ukae5M9NRV26JVyK3DZ0kMnEFBIXYwJSMfdCeAIBKhpwDtqUVAz9uulp_MHpDhEDZdPlAS2v-PePvRi3CqzxNx2glD463lqtRmESQCz5d3r8MxvadMFsoh-OXcSN1f7rXGxQbfB0l_GTZabjsDVI"><img src="https://lh3.googleusercontent.com/DY5Ukae5M9NRV26JVyK3DZ0kMnEFBIXYwJSMfdCeAIBKhpwDtqUVAz9uulp_MHpDhEDZdPlAS2v-PePvRi3CqzxNx2glD463lqtRmESQCz5d3r8MxvadMFsoh-OXcSN1f7rXGxQbfB0l_GTZabjsDVI" alt="" /></a></figure>
 
 
 
-<h1 class="wp-block-heading">📃 Proposal submission</h1>
+<h1>📃 Proposal submission</h1>
 
 
 
-<p class="wp-block-paragraph">Your proposal should consist of no more than 5 pages (include links to relevant annexes if needed) covering the following:</p>
+<p>Your proposal should consist of no more than 5 pages (include links to relevant annexes if needed) covering the following:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>Overview of yourself / your organization</li>
 
 
@@ -393,8 +393,8 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<p class="wp-block-paragraph">Please send your proposal to finance@qgis.org by <strong><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-green-cyan-color">October 29nd 2023 midnight,</mark></strong> anywhere on earth. </p>
+<p>Please send your proposal to finance@qgis.org by <strong><mark>October 29nd 2023 midnight,</mark></strong> anywhere on earth. </p>
 
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>
