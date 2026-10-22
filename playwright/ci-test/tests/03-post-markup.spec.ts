@@ -1,9 +1,13 @@
 import { test, expect } from "@playwright/test";
 
 /**
- * The imported WordPress markup was translated to Bulma classes. These tests
- * check the result in a real browser, which is the only layer that shows the
- * rendering actually improved rather than just that the markup changed.
+ * The posts imported from WordPress have raw HTML bodies styled with Bulma
+ * classes. These tests check that they render correctly in a real browser:
+ * tables readable and scrollable, embeds in a true 16:9 box, gallery images
+ * loading and linking to their originals, and nothing overflowing on mobile.
+ *
+ * They also assert that no WordPress class or dead data-* attribute reaches the
+ * browser, which catches someone pasting WordPress markup back into a post.
  */
 
 const TABLE_POST = "/2024/07/14/plugin-update-june-2024/";
@@ -84,8 +88,8 @@ test.describe("Imported post markup", () => {
             .locator(".content .image.is-16by9 iframe")
             .first()
             .getAttribute("src");
-        // The imported URL carries entity-escaped ampersands; the transform must
-        // not have rewritten them into something YouTube cannot parse.
+        // The imported URL carries entity-escaped ampersands. If an editor ever
+        // "tidies" them, YouTube stops parsing the query string.
         expect(src).toContain("youtube.com/embed/");
         expect(src).toContain("q7O819lFKc4");
     });

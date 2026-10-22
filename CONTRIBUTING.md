@@ -37,8 +37,6 @@ Start the Nix development environment by running:
 ```sh
 nix develop # Add  --experimental-features 'nix-command flakes' if you haven't enable Nix flakes
 hugo server
-# If you want to run VSCode:
-./vscode
 ```
 
 To build the website:
@@ -70,7 +68,7 @@ You can find the extended version in the [releases page](https://github.com/gohu
 Download the deb above and then do
 
 ```sh
-sudo dpkg -i hugo_extended_0.107.0_linux-amd64.deb
+sudo dpkg -i hugo_extended_0.161.1_linux-amd64.deb
 ```
 
 #### 🪟 Windows
@@ -128,39 +126,32 @@ website and saves them to `content/funders`.
 
 This script is run nightly as a GitHub Action (see `.github/workflows/update-feeds.yml`).
 
-> **Importing WordPress posts:** To re-import all official blog posts from blog.qgis.org, use:
-> ```bash
-> python scripts/import_wordpress.py
-> ```
-> This fetches all published posts via the WordPress.com REST API and writes them to `content/posts/`, downloading images to `static/img/posts/`.
-> The importer translates the WordPress markup into Bulma classes as it writes, so you should not need a second step.
-
 ### Content markup
 
-Post bodies are raw HTML using Bulma classes. Two rules keep them that way.
-
-**Do not reintroduce WordPress classes.** Nothing in this repo or the theme
-styles `wp-block-*`, `alignnone`, `size-large` or `wp-caption`, so they do
-nothing except make the markup harder to read. Before you push, run:
-
-```bash
-make check-wp-markup
-```
-
-If that fails, `make clean-wp-markup` fixes it. To see what it would change
-first, run `python3 scripts/clean_wordpress_markup.py --diff`.
+The posts imported from WordPress have raw HTML bodies that use Bulma classes.
+The migration is finished and the import tooling is gone, so these files are now
+maintained by hand like any other content. Two rules keep them working.
 
 **Do not rename a post file or change its `date`.** The permalink is built from
 both (`config.toml` sets `posts = "/:year/:month/:day/:slug/"`), so changing
 either moves the page and breaks every link to it.
 
-The same goes for media paths. Images live at `/wp-content/uploads/...` and
-`layouts/partials/post-details.html` rewrites that prefix at render time, so
-keep the path exactly as it is and keep the quoting around it intact.
+**Leave the `/wp-content/` media paths alone.** 194 posts and 184
+`featured_image` entries point at `/wp-content/uploads/...`, the files live in
+`static/wp-content/`, and `layouts/partials/post-details.html` rewrites that
+prefix at render time so the site also works from a subpath on GitHub Pages.
+That rewrite needs a quote, whitespace or comma immediately before
+`/wp-content/`, so keep the path and the quoting around it exactly as they are.
+Renaming the folder to something tidier would break every image on the site.
 
-The mapping from WordPress classes to Bulma, and the reasoning for each choice,
-is documented at the top of `scripts/wp_to_bulma.py`. Run `make test-scripts`
-after changing it.
+New posts do not use `/wp-content/` at all. See "Adding images" below.
+
+If you write HTML in a post, use Bulma classes: `table is-fullwidth is-striped
+is-hoverable` inside a `table-container` for tables, `image is-16by9` with a
+`has-ratio` iframe for video embeds, and `columns is-multiline` with
+`column is-one-third` for image grids. Do not paste WordPress markup back in
+(`wp-block-*`, `alignnone`, `size-large`, `wp-caption`); nothing styles those
+classes, so they do nothing but add noise.
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)

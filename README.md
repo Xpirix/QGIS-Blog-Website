@@ -152,9 +152,6 @@ The `scripts/` folder contains utility scripts to assist with data loading, and 
 | `vscode.sh`                       | Launch VSCode with all settings and extensions needed to productively work on this project    |
 | `scripts/get_commit_hash.sh`  | Get the current commit hash and write it in config/commit.toml for the website version.  |
 | `scripts/resize_image.py`  | Contains utilities to optimize images (resize, transform to webp, check validity).  |
-| `scripts/import_wordpress.py`  | Import posts from blog.qgis.org via the WordPress.com REST API into `content/posts/`.  |
-| `scripts/wp_to_bulma.py`  | Translates WordPress markup in post bodies into Bulma classes. Shared by the importer and the cleanup script.  |
-| `scripts/clean_wordpress_markup.py`  | Applies that translation to `content/posts/`. Run `--check` to fail if any post still carries WordPress markup.  |
 
 > ✏️ **Note:** Run each script from the project root. Some scripts may require environment variables or configuration—see comments within each script for usage details.
 
