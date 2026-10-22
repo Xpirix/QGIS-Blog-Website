@@ -55,3 +55,27 @@
   .tags
     position: relative
     z-index: 1
+
+
+// Post tables.
+//
+// Imported post tables carry Bulma's `.table` inside a `.table-container`, so a
+// wide table scrolls sideways instead of blowing out the page. The theme's
+// s3-file-explorer styles add an unscoped `+tablet` rule for `.table-container`
+// and `.table thead th` (bulma/custom/s3-file-explorer.sass), which is meant for
+// that one component but reaches every table on the site. In a post body it caps
+// the table at 500px and sticks a white header row over it, so the reader ends up
+// scrolling inside a box instead of down the page.
+//
+// Undo just that, for post content only. The horizontal scroll, which is the
+// reason the container is there, is untouched.
+.content
+  .table-container
+    max-height: none
+    border-radius: 0
+
+  .table thead th
+    position: static
+    background: transparent
+    box-shadow: none
+    z-index: auto
