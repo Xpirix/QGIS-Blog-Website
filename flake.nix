@@ -11,7 +11,7 @@
     nixpkgs.follows = "nixpkgs-version/nixpkgs-26-05";
     # Fetch the Hugo theme submodule directly as a flake input
     qgis-website-theme = {
-      url = "github:qgis/QGIS-Hugo-Website-Theme/3444b18b4da6d2a0e4b96d00d0007215d703e646";
+      url = "github:qgis/QGIS-Hugo-Website-Theme/default-theme";
       flake = false; # it's not a flake, just a source tree
     };
   };
