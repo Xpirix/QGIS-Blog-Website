@@ -95,16 +95,20 @@ from html.parser import HTMLParser
 # attributes here would make those eight assets unreachable. All eight live in
 # the two tiled-gallery files below, so the rule holds *because* of this list.
 # assert_no_orphaned_media() enforces the coupling rather than trusting it.
-HAND_CONVERTED = frozenset(
-    {
-        "new-qgis-3-0-logo-candidate.md",
-        "report-back-on-the-20th-qgis-hackfest-in-zanzibar.md",
-        # Jetpack slideshow. The JS was never ported, so this page currently
-        # renders only its "This slideshow requires JavaScript." fallback, i.e.
-        # it is already broken live. Hand conversion fixes it.
-        "report-back-on-the-3rd-qgis-conference-in-nodebo-denmark.md",
-    }
-)
+# The three gallery/slideshow posts were converted by hand, because turning
+# nested tiled-gallery / gallery-row / gallery-group div grids (and a slideshow
+# whose images lived only inside a data-gallery JSON blob) into Bulma columns is
+# genuine restructuring, not a class rewrite. They are now clean, so the set is
+# empty and the automated pass covers every post.
+#
+# Keep this hook. If a future import brings back a gallery, add its filename
+# here rather than letting the transform strip attributes it cannot safely
+# restructure around. assert_no_orphaned_media() is the tripwire that tells you
+# when that is necessary: eight full-size originals in these posts were
+# reachable only through a data-orig-file attribute, and stripping it without
+# first promoting the original into a real <a href> would have orphaned them.
+HAND_CONVERTED: frozenset[str] = frozenset()
+
 
 # ---------------------------------------------------------------------------
 # Class mapping

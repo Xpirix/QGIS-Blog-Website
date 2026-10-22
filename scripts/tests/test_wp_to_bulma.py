@@ -428,12 +428,14 @@ class TestGoldenRuleAssertion(unittest.TestCase):
         got = w.transform_markdown_file("---\ntitle: x\n---\n\n" + src)
         self.assertIn('src="/wp-content/uploads/a.png"', got)
 
-    def test_hand_converted_list_covers_the_gallery_posts(self):
-        self.assertIn("new-qgis-3-0-logo-candidate.md", w.HAND_CONVERTED)
-        self.assertIn("report-back-on-the-20th-qgis-hackfest-in-zanzibar.md", w.HAND_CONVERTED)
-        self.assertIn(
-            "report-back-on-the-3rd-qgis-conference-in-nodebo-denmark.md", w.HAND_CONVERTED
-        )
+    def test_hand_converted_hook_still_exists(self):
+        """The galleries are converted, so the set is empty, but the hook stays.
+
+        If a future import reintroduces a gallery, its filename goes here. The
+        orphan assertion above is what tells you that is needed.
+        """
+        self.assertIsInstance(w.HAND_CONVERTED, frozenset)
+        self.assertEqual(w.HAND_CONVERTED, frozenset())
 
 
 class TestIdempotency(unittest.TestCase):
