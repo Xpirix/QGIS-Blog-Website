@@ -36,17 +36,17 @@ featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 <div class="columns is-multiline is-centered">
 <div class="column is-one-third">
 <figure class="image">
-<a href="/wp-content/uploads/2016/12/qgis-monochrome-black2.png"><img src="https://i0.wp.com/qgisblog.wordpress.com/wp-content/uploads/2016/12/qgis-monochrome-black2.png?w=246&#038;h=226&#038;ssl=1" alt="qgis-monochrome-black" width="246" height="226" loading="lazy" /></a>
+<a href="/wp-content/uploads/2016/12/qgis-monochrome-black2.png"><img src="/wp-content/uploads/2016/12/qgis-monochrome-black2.png" alt="qgis-monochrome-black" width="246" height="226" loading="lazy" /></a>
 </figure>
 </div>
 <div class="column is-one-third">
 <figure class="image">
-<a href="/wp-content/uploads/2016/12/qgis-icon_anita02.png"><img src="https://i0.wp.com/qgisblog.wordpress.com/wp-content/uploads/2016/12/qgis-icon_anita02.png?w=246&#038;h=226&#038;ssl=1" alt="qgis-icon_anita0" width="246" height="226" loading="lazy" /></a>
+<a href="/wp-content/uploads/2016/12/qgis-icon_anita02.png"><img src="/wp-content/uploads/2016/12/qgis-icon_anita02.png" alt="qgis-icon_anita0" width="246" height="226" loading="lazy" /></a>
 </figure>
 </div>
 <div class="column is-one-third">
 <figure class="image">
-<a href="/wp-content/uploads/2016/12/qgis-logo_anita02.png"><img src="https://i0.wp.com/qgisblog.wordpress.com/wp-content/uploads/2016/12/qgis-logo_anita02.png?w=496&#038;h=238&#038;ssl=1" alt="qgis-logo_anita0" width="496" height="238" loading="lazy" /></a>
+<a href="/wp-content/uploads/2016/12/qgis-logo_anita02.png"><img src="/wp-content/uploads/2016/12/qgis-logo_anita02-thumb.png" alt="qgis-logo_anita0" width="496" height="238" loading="lazy" /></a>
 </figure>
 </div>
 </div>

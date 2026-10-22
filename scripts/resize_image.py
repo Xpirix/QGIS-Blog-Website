@@ -37,6 +37,46 @@ def resize_image(image_filename, max_height=120):
     else:
         print(f'File not found: {image_filename}')
 
+def make_thumbnail(source_filename, dest_filename, max_width=700, quality=82):
+    """Write a width-limited copy of an image, leaving the source untouched.
+
+    Unlike resize_image(), which rewrites the file in place, this creates a
+    derivative. Use it when the original must survive: the galleries link each
+    thumbnail to its full size original, so resizing in place would both destroy
+    the original and change the bytes of a media file that something links to.
+
+    Returns True if a thumbnail was written, False if the source is already
+    narrow enough or missing.
+    """
+    if not os.path.exists(source_filename):
+        print(f'File not found: {source_filename}')
+        return False
+
+    with Image.open(source_filename) as img:
+        width, height = img.size
+        if width <= max_width:
+            return False
+
+        new_width = max_width
+        new_height = max(1, round(height * max_width / width))
+        resized = img.resize((new_width, new_height), Image.LANCZOS)
+
+        file_format = dest_filename.split('.')[-1].upper()
+        if file_format == 'JPG':
+            file_format = 'JPEG'
+        if file_format == 'JPEG' and resized.mode in ('RGBA', 'P'):
+            resized = resized.convert('RGB')
+
+        os.makedirs(os.path.dirname(dest_filename) or '.', exist_ok=True)
+        resized.save(
+            dest_filename,
+            format=file_format,
+            optimize=True,
+            quality=quality,
+        )
+    return True
+
+
 # Transform an image into webp format
 def convert_to_webp(image_filename, replace=False):
     """

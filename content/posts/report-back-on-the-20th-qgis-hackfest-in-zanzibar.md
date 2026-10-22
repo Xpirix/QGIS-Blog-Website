@@ -11,32 +11,32 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 <div class="columns is-multiline is-centered">
 <div class="column is-one-third">
 <figure class="image">
-<a href="/wp-content/uploads/2018/11/img_1278.jpg"><img src="https://i0.wp.com/qgisblog.wordpress.com/wp-content/uploads/2018/11/img_1278.jpg?w=330&#038;h=247&#038;ssl=1" alt="IMG_1278" width="330" height="247" loading="lazy" /></a>
+<a href="/wp-content/uploads/2018/11/img_1278.jpg"><img src="/wp-content/uploads/2018/11/img_1278-thumb.jpg" alt="IMG_1278" width="330" height="247" loading="lazy" /></a>
 </figure>
 </div>
 <div class="column is-one-third">
 <figure class="image">
-<a href="/wp-content/uploads/2018/11/img_4550.jpg"><img src="https://i0.wp.com/qgisblog.wordpress.com/wp-content/uploads/2018/11/img_4550.jpg?w=162&#038;h=122&#038;ssl=1" alt="IMG_4550" width="162" height="122" loading="lazy" /></a>
+<a href="/wp-content/uploads/2018/11/img_4550.jpg"><img src="/wp-content/uploads/2018/11/img_4550-thumb.jpg" alt="IMG_4550" width="162" height="122" loading="lazy" /></a>
 </figure>
 </div>
 <div class="column is-one-third">
 <figure class="image">
-<a href="/wp-content/uploads/2018/11/img_9694-2.jpg"><img src="https://i0.wp.com/qgisblog.wordpress.com/wp-content/uploads/2018/11/img_9694-2.jpg?w=162&#038;h=121&#038;ssl=1" alt="IMG_9694 2" width="162" height="121" loading="lazy" /></a>
+<a href="/wp-content/uploads/2018/11/img_9694-2.jpg"><img src="/wp-content/uploads/2018/11/img_9694-2-thumb.jpg" alt="IMG_9694 2" width="162" height="121" loading="lazy" /></a>
 </figure>
 </div>
 <div class="column is-one-third">
 <figure class="image">
-<a href="/wp-content/uploads/2018/11/img_9949.jpg"><img src="https://i0.wp.com/qgisblog.wordpress.com/wp-content/uploads/2018/11/img_9949.jpg?w=230&#038;h=173&#038;ssl=1" alt="IMG_9949" width="230" height="173" loading="lazy" /></a>
+<a href="/wp-content/uploads/2018/11/img_9949.jpg"><img src="/wp-content/uploads/2018/11/img_9949-thumb.jpg" alt="IMG_9949" width="230" height="173" loading="lazy" /></a>
 </figure>
 </div>
 <div class="column is-one-third">
 <figure class="image">
-<a href="/wp-content/uploads/2018/11/img_0199.jpg"><img src="https://i0.wp.com/qgisblog.wordpress.com/wp-content/uploads/2018/11/img_0199.jpg?w=230&#038;h=172&#038;ssl=1" alt="IMG_0199" width="230" height="172" loading="lazy" /></a>
+<a href="/wp-content/uploads/2018/11/img_0199.jpg"><img src="/wp-content/uploads/2018/11/img_0199-thumb.jpg" alt="IMG_0199" width="230" height="172" loading="lazy" /></a>
 </figure>
 </div>
 <div class="column is-one-third">
 <figure class="image">
-<a href="/wp-content/uploads/2018/11/2659cda7-2ab9-4822-a9af-4408492a2685.jpg"><img src="https://i0.wp.com/qgisblog.wordpress.com/wp-content/uploads/2018/11/2659cda7-2ab9-4822-a9af-4408492a2685.jpg?w=262&#038;h=349&#038;ssl=1" alt="2659cda7-2ab9-4822-a9af-4408492a2685" width="262" height="349" loading="lazy" /></a>
+<a href="/wp-content/uploads/2018/11/2659cda7-2ab9-4822-a9af-4408492a2685.jpg"><img src="/wp-content/uploads/2018/11/2659cda7-2ab9-4822-a9af-4408492a2685-thumb.jpg" alt="2659cda7-2ab9-4822-a9af-4408492a2685" width="262" height="349" loading="lazy" /></a>
 </figure>
 </div>
 </div>
