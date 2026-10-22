@@ -8,11 +8,11 @@ tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 
-<p class="wp-block-paragraph">With the <a href="https://blog.qgis.org/2025/04/24/qgis-grant-programme-2025-results/">QGIS Grant Programme 2025</a>, we were able to support <a href="https://github.com/qgis/PSC/issues/63">6 enhancement proposals</a> that improve the QGIS project. The following reports summarize the work performed:  </p>
+<p>With the <a href="https://blog.qgis.org/2025/04/24/qgis-grant-programme-2025-results/">QGIS Grant Programme 2025</a>, we were able to support <a href="https://github.com/qgis/PSC/issues/63">6 enhancement proposals</a> that improve the QGIS project. The following reports summarize the work performed:  </p>
 
 
 
-<ol class="wp-block-list">
+<ol>
 <li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/pull/332">QEP 332: Port SQL Query History to Browser</a> &#8212; <a href="https://lists.osgeo.org/pipermail/qgis-psc/2025-September/010645.html">Report</a><br>This enhancement has ported the &#8220;history&#8221; component of the DB Manager SQL dialog to the main QGIS browser &#8220;Execute SQL&#8221; dialog. The new command history is fully searchable, and shows historic commands grouped nicely in chronological groups. The history also includes the details of the associated connection, row count and execution time. This change was introduced in QGIS 3.44. <a href="https://github.com/qgis/QGIS/pull/61525">Screencasts of the work are available in the original pull request</a>.</li>
 
 
@@ -38,8 +38,8 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<p class="wp-block-paragraph">Thank you to everyone who participated and made this round of grants a great success and thank you to all our <a href="https://qgis.org/en/site/about/sustaining_members.html">sustaining members</a> and donors who make this initiative possible!</p>
+<p>Thank you to everyone who participated and made this round of grants a great success and thank you to all our <a href="https://qgis.org/en/site/about/sustaining_members.html">sustaining members</a> and donors who make this initiative possible!</p>
 
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>

@@ -28,7 +28,7 @@ categories: ["Uncategorized"]
 </ul>
 <p><strong>Mitigating 3.0 API breakages</strong></p>
 <p>As I mentioned the 3.0 release will break API from the 2.x release of QGIS and there is the potential that many existing plugins, applications and other code that rely on the current API will be broken. So what can we do to mitigate the changes? Matthias Kuhn, Jürgen Fischer, Nyall Dawson, Martin Dobias and other core developers have been looking at ways to mitigate the number of API breaking changes whilst still advancing the QGIS codebase to be based on the next generation of libraries and its own internal API. During our last QGIS Project Steering Committee meeting we ran through various possibilities. Matthias Kuhn kindly joined the meeting to help clarify our options going forward which I have tried to summarise in the table below:</p>
-<table>
+<table class="table is-fullwidth is-striped is-hoverable">
 <tbody>
 <tr>
 <td></td>
@@ -38,79 +38,79 @@ categories: ["Uncategorized"]
 </tr>
 <tr>
 <td><b>Release date</b></td>
-<td><span style="font-weight:400;">End Feb</span></td>
-<td><span style="font-weight:400;">4 months after 2.14</span></td>
-<td><span style="font-weight:400;">8 month cycle?</span></td>
+<td><span>End Feb</span></td>
+<td><span>4 months after 2.14</span></td>
+<td><span>8 month cycle?</span></td>
 </tr>
 <tr>
 <td><b>Notes</b></td>
 <td></td>
-<td><span style="font-weight:400;">Update python code of core QGIS to be Python 3 compatible and PyQt5 compatible (partial implementation for key functionality e.g. console, python core plugins etc.)</span></td>
+<td><span>Update python code of core QGIS to be Python 3 compatible and PyQt5 compatible (partial implementation for key functionality e.g. console, python core plugins etc.)</span></td>
 <td></td>
 </tr>
 <tr>
 <td><b>Qt4</b></td>
-<td><span style="font-weight:400;">Yes</span></p>
-<p><span style="font-weight:400;">Deprecated in Debian Stretch (due in a year)</span></p>
-<p><span style="font-weight:400;">(webkit removed)</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
-<td><span style="font-weight:400;">No</span></td>
+<td><span>Yes</span></p>
+<p><span>Deprecated in Debian Stretch (due in a year)</span></p>
+<p><span>(webkit removed)</span></td>
+<td><span>Yes</span></td>
+<td><span>No</span></td>
 </tr>
 <tr>
 <td><b>Qt5</b></td>
-<td><span style="font-weight:400;">No</span></p>
-<p><span style="font-weight:400;">Misses QWebView &#8211; new replacement not on all platforms. Also misses QPainter Engine.</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
+<td><span>No</span></p>
+<p><span>Misses QWebView &#8211; new replacement not on all platforms. Also misses QPainter Engine.</span></td>
+<td><span>Yes</span></td>
+<td><span>Yes</span></td>
 </tr>
 <tr>
 <td><b>PyQt4</b></td>
-<td><span style="font-weight:400;">Yes</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
-<td><span style="font-weight:400;">No</span></td>
+<td><span>Yes</span></td>
+<td><span>Yes</span></td>
+<td><span>No</span></td>
 </tr>
 <tr>
 <td><b>PyQt5</b></td>
-<td><span style="font-weight:400;">No</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
+<td><span>No</span></td>
+<td><span>Yes</span></td>
+<td><span>Yes</span></td>
 </tr>
 <tr>
 <td><b>Python 2</b></td>
-<td><span style="font-weight:400;">Yes</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
-<td><span style="font-weight:400;">No</span></td>
+<td><span>Yes</span></td>
+<td><span>Yes</span></td>
+<td><span>No</span></td>
 </tr>
 <tr>
 <td><b>Python 3</b></td>
-<td><span style="font-weight:400;">No</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
+<td><span>No</span></td>
+<td><span>Yes</span></td>
+<td><span>Yes</span></td>
 </tr>
 <tr>
 <td><b>API Cleanup</b></td>
-<td><span style="font-weight:400;">No</span></td>
-<td><span style="font-weight:400;">No</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
+<td><span>No</span></td>
+<td><span>No</span></td>
+<td><span>Yes</span></td>
 </tr>
 <tr>
 <td><b>Wrappers </b><b><br />
-</b><span style="font-weight:400;">PyQt5 -&gt; PyQt4</span><span style="font-weight:400;"><br />
-</span><span style="font-weight:400;">Provide ~90% backwards compatibility</span></td>
-<td><span style="font-weight:400;">No</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
-<td><span style="font-weight:400;">Yes</span></td>
+</b><span>PyQt5 -&gt; PyQt4</span><span><br />
+</span><span>Provide ~90% backwards compatibility</span></td>
+<td><span>No</span></td>
+<td><span>Yes</span></td>
+<td><span>Yes</span></td>
 </tr>
 <tr>
 <td><b>Mainstream Binary</b></td>
-<td><span style="font-weight:400;">Qt4 Based</span></td>
-<td><span style="font-weight:400;">Qt4 Based</span></td>
-<td><span style="font-weight:400;">Qt5 Based</span></td>
+<td><span>Qt4 Based</span></td>
+<td><span>Qt4 Based</span></td>
+<td><span>Qt5 Based</span></td>
 </tr>
 <tr>
 <td><b>Funding priority</b></td>
 <td></td>
-<td><span style="font-weight:400;">Python wrappers</span></td>
+<td><span>Python wrappers</span></td>
 <td></td>
 </tr>
 </tbody>
@@ -132,14 +132,14 @@ categories: ["Uncategorized"]
 <p><strong>Proposals</strong></p>
 <p>In the light of all the above information, we propose one of two courses of action:</p>
 <p><b>Proposal 1:</b></p>
-<p><span style="font-weight:400;">Do an interim release of 2.16 and then commence work on 3.0 in master with an 8 month development window. Work on 3.0 related stuff could already begin in 2.16  (see python3/pytq5), only incompatible changes have to be postponed to post 2.16.</span></p>
-<p><b>Advantage</b><span style="font-weight:400;">: Main focus of work would be in master branch. Work scheduled for the near future can be released in expected timelines. Plugins will continue to work with master. People can start to write and test their code in a portable manner.</span></p>
-<p><b>Disadvantage</b><span style="font-weight:400;">: Difficult to determine timelines as we don’t have funding </span></p>
+<p><span>Do an interim release of 2.16 and then commence work on 3.0 in master with an 8 month development window. Work on 3.0 related stuff could already begin in 2.16  (see python3/pytq5), only incompatible changes have to be postponed to post 2.16.</span></p>
+<p><b>Advantage</b><span>: Main focus of work would be in master branch. Work scheduled for the near future can be released in expected timelines. Plugins will continue to work with master. People can start to write and test their code in a portable manner.</span></p>
+<p><b>Disadvantage</b><span>: Difficult to determine timelines as we don’t have funding </span></p>
 <p>&nbsp;</p>
 <p><b>Proposal 2:</b></p>
-<p><span style="font-weight:400;">Create a long running 3.0 branch for the port to Qt5, Python 3.0 and PyQt5 and call for developers to get their 3.0 work in there. Continue with 2.x releases with the usual frequency until 3.0 is ready.</span></p>
-<p><b>Advantage</b><span style="font-weight:400;">: We can release it ‘when it’s ready’. If there is no funding for 3.0 work subsequent releases are not jeopardised.</span></p>
-<p><b>Disadvantage:</b><span style="font-weight:400;"> Duplication of effort as work in master coming in needs to be ported over to the 3.0 branch.</span></p>
+<p><span>Create a long running 3.0 branch for the port to Qt5, Python 3.0 and PyQt5 and call for developers to get their 3.0 work in there. Continue with 2.x releases with the usual frequency until 3.0 is ready.</span></p>
+<p><b>Advantage</b><span>: We can release it ‘when it’s ready’. If there is no funding for 3.0 work subsequent releases are not jeopardised.</span></p>
+<p><b>Disadvantage:</b><span> Duplication of effort as work in master coming in needs to be ported over to the 3.0 branch.</span></p>
 <p><strong>Alternative proposals</strong></p>
 <p>Do you have an alternative proposal? We would like to get all the proposals on the table so that we (the PSC in consultation with core developers) can make the best judgement of how to approach the nitty-gritty process of managing the QGIS 3.0 development process. If you wish to submit a proposal, please send it to me (<a href="mailto:tim@qgis.org">tim@qgis.org</a>) with the subject line &#8216;<strong>QGIS 3.0 Proposal</strong>&#8216;. Please keep your proposal very short and succinct as we just need the high level concepts.</p>
 <hr />

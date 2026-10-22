@@ -56,4 +56,3 @@ hugo-run-dev: ## Run the server at localhost:1313 with hugo
 	@echo "Building site in development"
 	@echo "------------------------------------------------------------------"
 	hugo server --config config.toml,config/config.dev.toml
-

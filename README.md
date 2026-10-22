@@ -152,7 +152,6 @@ The `scripts/` folder contains utility scripts to assist with data loading, and 
 | `vscode.sh`                       | Launch VSCode with all settings and extensions needed to productively work on this project    |
 | `scripts/get_commit_hash.sh`  | Get the current commit hash and write it in config/commit.toml for the website version.  |
 | `scripts/resize_image.py`  | Contains utilities to optimize images (resize, transform to webp, check validity).  |
-| `scripts/import_wordpress.py`  | Import posts from blog.qgis.org via the WordPress.com REST API into `content/posts/`.  |
 
 > ✏️ **Note:** Run each script from the project root. Some scripts may require environment variables or configuration—see comments within each script for usage details.
 

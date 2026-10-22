@@ -8,23 +8,23 @@ tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 
-<p class="wp-block-paragraph">Dear QGIS Community,</p>
+<p>Dear QGIS Community,</p>
 
 
 
-<p class="wp-block-paragraph">We are very pleased to announce that this year’s round of grants is now available. The call is open to anybody who wants to make a contribution to QGIS funded by our grant fund, subject to the call conditions outlined in the application form.</p>
+<p>We are very pleased to announce that this year’s round of grants is now available. The call is open to anybody who wants to make a contribution to QGIS funded by our grant fund, subject to the call conditions outlined in the application form.</p>
 
 
 
-<p class="wp-block-paragraph">This year&#8217;s budget is <strong>€40k</strong> and the deadline for the proposals is in four weeks, on Monday, <strong>13 April 2026</strong>. Here&#8217;s the full timeline:</p>
+<p>This year&#8217;s budget is <strong>€40k</strong> and the deadline for the proposals is in four weeks, on Monday, <strong>13 April 2026</strong>. Here&#8217;s the full timeline:</p>
 
 
 
-<h2 class="wp-block-heading">Timeline</h2>
+<h2>Timeline</h2>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>2026-03-16: Call for proposals (4 weeks)</li>
 
 
@@ -54,15 +54,15 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<h2 class="wp-block-heading">Procedures</h2>
+<h2>Procedures</h2>
 
 
 
-<p class="wp-block-paragraph">Please note the following guidelines:&nbsp;</p>
+<p>Please note the following guidelines:&nbsp;</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>In the week after the QEP discussion period, the proposal authors are expected to write a short summary of the discussion that is suitable for use as a basis on which voting members make their decisions.</li>
 
 
@@ -84,16 +84,16 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<p class="wp-block-paragraph">The PSC of QGIS.ORG will examine the proposals, and has a veto power in case a proposal does not follow guidelines or is not in line with project priorities.&nbsp;</p>
+<p>The PSC of QGIS.ORG will examine the proposals, and has a veto power in case a proposal does not follow guidelines or is not in line with project priorities.&nbsp;</p>
 
 
 
-<p class="wp-block-paragraph">For more details, please read the introduction provided in <strong><a href="https://forms.gle/A2yrcrJ1auXmzmeo8" target="_blank" rel="noreferrer noopener">the application form</a></strong>.</p>
+<p>For more details, please read the introduction provided in <strong><a href="https://forms.gle/A2yrcrJ1auXmzmeo8" target="_blank" rel="noreferrer noopener">the application form</a></strong>.</p>
 
 
 
-<p class="wp-block-paragraph">We look forward to seeing all your great ideas for improving QGIS!</p>
+<p>We look forward to seeing all your great ideas for improving QGIS!</p>
 
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>

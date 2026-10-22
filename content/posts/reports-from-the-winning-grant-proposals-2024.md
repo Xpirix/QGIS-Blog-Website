@@ -8,11 +8,11 @@ tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 
-<p class="wp-block-paragraph">With the <a href="https://blog.qgis.org/2024/05/01/qgis-grant-programme-2024-results/">QGIS Grant Programme 2024</a> (Updates <a href="https://blog.qgis.org/2024/05/08/qgis-grant-programme-2024-update/">#1</a> &amp; <a href="https://blog.qgis.org/2024/06/14/qgis-grant-programme-2024-update-no-2/">#2</a>), we were able to support <a href="https://github.com/qgis/PSC/issues/60">7 enhancement proposals</a> that improve the QGIS project. The following reports summarize the work performed:  </p>
+<p>With the <a href="https://blog.qgis.org/2024/05/01/qgis-grant-programme-2024-results/">QGIS Grant Programme 2024</a> (Updates <a href="https://blog.qgis.org/2024/05/08/qgis-grant-programme-2024-update/">#1</a> &amp; <a href="https://blog.qgis.org/2024/06/14/qgis-grant-programme-2024-update-no-2/">#2</a>), we were able to support <a href="https://github.com/qgis/PSC/issues/60">7 enhancement proposals</a> that improve the QGIS project. The following reports summarize the work performed:  </p>
 
 
 
-<ol class="wp-block-list">
+<ol>
 <li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269">QEP#269 Update older annotation items to new framework</a> &#8212; <a href="https://lists.osgeo.org/pipermail/qgis-psc/2024-August/010304.html">report</a><br>This enhancement introduced new annotation types, improved callout options, and a rich text editor for better formatting. Annotations can now link to a &#8220;visibility layer,&#8221; and older types are automatically upgraded for a cleaner UI. Future improvements may include handling HTML annotations, deprecating the &#8220;Form&#8221; annotation, and refining the user experience.</li>
 
 
@@ -42,8 +42,8 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 
 
 
-<p class="wp-block-paragraph">Thank you to everyone who participated and made this round of grants a great success and thank you to all our <a href="https://qgis.org/en/site/about/sustaining_members.html">sustaining members</a> and donors who make this initiative possible!</p>
+<p>Thank you to everyone who participated and made this round of grants a great success and thank you to all our <a href="https://qgis.org/en/site/about/sustaining_members.html">sustaining members</a> and donors who make this initiative possible!</p>
 
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>

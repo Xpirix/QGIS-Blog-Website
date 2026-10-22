@@ -6,23 +6,23 @@ authors: ["timlinux"]
 categories: ["Uncategorized"]
 ---
 
-<p class="wp-block-paragraph">Dear QGIS community<br></p>
+<p>Dear QGIS community<br></p>
 
 
 
-<figure class="wp-block-image size-large"><a href="/wp-content/uploads/2026/10/qgis-ltr.png"><img loading="lazy" width="1024" height="538" data-attachment-id="3567" data-permalink="http://blog.qgis.org/2026/10/03/release-schedule-changes-for-next-qgis-ltr/qgis-ltr/" data-orig-file="/wp-content/uploads/2026/10/qgis-ltr.png" data-orig-size="2504,1316" data-comments-opened="0" data-image-title="qgis-ltr" data-image-description="" data-image-caption="" data-large-file="/wp-content/uploads/2026/10/qgis-ltr.png" src="/wp-content/uploads/2026/10/qgis-ltr.png" alt="" class="wp-image-3567" srcset="/wp-content/uploads/2026/10/qgis-ltr.png 1024w, /wp-content/uploads/2026/10/qgis-ltr.png 2048w, /wp-content/uploads/2026/10/qgis-ltr.png 150w, /wp-content/uploads/2026/10/qgis-ltr.png 300w, /wp-content/uploads/2026/10/qgis-ltr.png 768w, /wp-content/uploads/2026/10/qgis-ltr.png 1440w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a></figure>
+<figure><a href="/wp-content/uploads/2026/10/qgis-ltr.png"><img loading="lazy" width="1024" height="538" src="/wp-content/uploads/2026/10/qgis-ltr.png" alt="" srcset="/wp-content/uploads/2026/10/qgis-ltr.png 1024w, /wp-content/uploads/2026/10/qgis-ltr.png 2048w, /wp-content/uploads/2026/10/qgis-ltr.png 150w, /wp-content/uploads/2026/10/qgis-ltr.png 300w, /wp-content/uploads/2026/10/qgis-ltr.png 768w, /wp-content/uploads/2026/10/qgis-ltr.png 1440w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a></figure>
 
 
 
-<p class="wp-block-paragraph"><br>We know that many of you were waiting patiently for the next LTR release based on QGIS 4.x and Qt6.</p>
+<p><br>We know that many of you were waiting patiently for the next LTR release based on QGIS 4.x and Qt6.</p>
 
 
 
-<p class="wp-block-paragraph">However, there are still a number of issues with the 4.x builds which leave us hesitant to assign LTR status to a 4.2.x release as originally planned. To address this, we will be taking the following steps:</p>
+<p>However, there are still a number of issues with the 4.x builds which leave us hesitant to assign LTR status to a 4.2.x release as originally planned. To address this, we will be taking the following steps:</p>
 
 
 
-<ul class="wp-block-list">
+<ul>
 <li>Create a new <em>LTR 4.x Blocker</em> tag for issues that need to be resolved</li>
 
 
@@ -52,20 +52,20 @@ categories: ["Uncategorized"]
 
 
 
-<p class="wp-block-paragraph">As per the table above, the currently anticipated date for the QGIS 4.4.4 release (which is scheduled to become LTR) is 5 March 2027.</p>
+<p>As per the table above, the currently anticipated date for the QGIS 4.4.4 release (which is scheduled to become LTR) is 5 March 2027.</p>
 
 
 
-<p class="wp-block-paragraph">For now, future LTR releases are keeping their original schedule. Please watch the news feed in QGIS for further updates if you want to keep track of our progress. You can also follow our plans on the <a href="https://qgis.org/resources/roadmap/">release roadmap page</a>.</p>
+<p>For now, future LTR releases are keeping their original schedule. Please watch the news feed in QGIS for further updates if you want to keep track of our progress. You can also follow our plans on the <a href="https://qgis.org/resources/roadmap/">release roadmap page</a>.</p>
 
 
 
-<p class="wp-block-paragraph">Thank you,</p>
+<p>Thank you,</p>
 
 
 
-<p class="wp-block-paragraph">Tim Sutton, on behalf of the QGIS PSC</p>
+<p>Tim Sutton, on behalf of the QGIS PSC</p>
 
 
 
-<p class="wp-block-paragraph"></p>
+<p></p>

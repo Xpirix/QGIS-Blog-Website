@@ -11,7 +11,7 @@ featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 <p>Nevertheless, we found a developer, Denis Rouzaud, who wants to specifically look into investigating and hopefully solving several of these issues. If you are a MacOS user and care about a better QGIS experience on this platform, we invite you to financially support this effort. As a private person, and for smaller amounts, please use the usual <a href="https://www.qgis.org/en/site/getinvolved/donations.html#qgis-donations">donation channel</a> &#8211; if you are a company or organization and want to contribute to this specific effort, please consider <a href="https://www.qgis.org/en/site/getinvolved/governance/sponsorship/sponsorship.html#qgis-sponsorship-program">becoming a sponsor</a>. In any case &#8211; please add &#8220;MacOS bug fixing campaign&#8221; as a remark when donating/sponsoring or inform <a href="mailto:finance@qgis.org">finance@qgis.org</a> about your earmarked donation.</p>
 <p>This effort runs from the 14th September 2018 until the 3.4 release date, due on October 26, 2018. See the <a href="https://www.qgis.org/en/site/getinvolved/development/roadmap.html#release-schedule">QGIS road map</a> for more details about our release schedule.</p>
 <p>Specific issues that are looked into, are:</p>
-<table width="0">
+<table class="table is-fullwidth is-striped is-hoverable" width="0">
 <tbody>
 <tr>
 <td>issue</td>
