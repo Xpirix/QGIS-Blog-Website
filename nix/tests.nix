@@ -124,6 +124,35 @@
       echo "Dev shell verification passed" > $out
     '';
 
+  # Unit tests for the WordPress-to-Bulma markup transform, plus the corpus
+  # guard tests that enforce the golden rule: media and page link structures
+  # must survive the transform unchanged.
+  test-wp-to-bulma = pkgs.runCommand "test-wp-to-bulma"
+    {
+      nativeBuildInputs = [ pkgs.python3 ];
+      scriptsSrc = ../scripts;
+      postsSrc = ../content/posts;
+    }
+    ''
+      echo "Running WordPress-to-Bulma transform tests..."
+
+      # The guard tests read the real post corpus, so both trees are copied in.
+      cp -r "$scriptsSrc" scripts
+      cp -r "$postsSrc" posts
+      chmod -R u+w scripts posts
+
+      export WP_CORPUS="$PWD/posts"
+
+      if ! python3 -m unittest discover -s scripts/tests -t . -v; then
+        echo "❌ WordPress-to-Bulma tests FAILED"
+        exit 1
+      fi
+
+      echo ""
+      echo "✅ WordPress-to-Bulma tests passed"
+      echo "wp_to_bulma tests passed" > $out
+    '';
+
   # Package builds successfully (implicit check)
   build-website = website;
 }

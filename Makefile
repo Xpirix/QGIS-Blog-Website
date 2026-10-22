@@ -57,3 +57,28 @@ hugo-run-dev: ## Run the server at localhost:1313 with hugo
 	@echo "------------------------------------------------------------------"
 	hugo server --config config.toml,config/config.dev.toml
 
+
+# ----------------------------------------------------------------------------
+#    C O N T E N T     M A I N T E N A N C E
+# ----------------------------------------------------------------------------
+
+test-scripts: ## Run the Python unit tests for scripts/
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Running script tests"
+	@echo "------------------------------------------------------------------"
+	python3 -m unittest discover -s scripts/tests -t . -v
+
+check-wp-markup: ## Fail if any post still contains WordPress markup
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Checking posts for leftover WordPress markup"
+	@echo "------------------------------------------------------------------"
+	python3 ./scripts/clean_wordpress_markup.py --check
+
+clean-wp-markup: ## Translate WordPress markup in content/posts to Bulma classes
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Translating WordPress markup to Bulma"
+	@echo "------------------------------------------------------------------"
+	python3 ./scripts/clean_wordpress_markup.py --write
