@@ -70,7 +70,17 @@
 // Undo just that, for post content only. The horizontal scroll, which is the
 // reason the container is there, is untouched.
 .content
-  .table-container
+  // `figure.table-container` on purpose, so this wins on specificity rather
+  // than on load order.
+  figure.table-container
+    // Bulma's `.content figure` centres its contents, which is right for an
+    // image and wrong for a table. It also cannot be fixed on the cells: the
+    // reset rule `table td:not([align]) { text-align: inherit }` is more
+    // specific (0,1,2) than Bulma's own `.table td { text-align: left }`
+    // (0,1,1), so the cells inherit whatever the figure says. Setting it here,
+    // at the source, lets `left` flow down to every cell.
+    text-align: left
+
     max-height: none
     border-radius: 0
 
