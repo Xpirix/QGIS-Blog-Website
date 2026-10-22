@@ -28,6 +28,13 @@ jobs:
           hugo-version: '0.139.4'
           extended: true
 
+      - name: 🧪 Script tests and WordPress markup check
+        # Fails the PR if a re-import has reintroduced WordPress markup, and
+        # guards the rule that media and page links survive the transform.
+        run: |
+          python3 -m unittest discover -s scripts/tests -t . -v
+          python3 ./scripts/clean_wordpress_markup.py --check
+
       - name: 🧱 Hugo build
         run: hugo --gc --config ./config.toml -b http://127.0.0.1:1313
 

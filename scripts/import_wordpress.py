@@ -18,6 +18,7 @@ Options:
     --dry-run            Print what would be created without writing any files
     --overwrite          Overwrite existing post files (default: skip)
     --batch-size N       Posts per API request (default: 100, max: 100)
+    --no-bulma           Keep raw WordPress markup instead of translating it
 """
 
 import argparse
@@ -28,6 +29,11 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import wp_to_bulma
 from pathlib import Path
 
 API_BASE = "https://public-api.wordpress.com/rest/v1.1/sites"
@@ -216,6 +222,7 @@ def import_from_api(
     dry_run=False,
     overwrite=False,
     batch_size=100,
+    bulma=True,
 ):
     out_dir = Path(output_dir)
     authors_path = Path(authors_dir)
@@ -258,6 +265,14 @@ def import_from_api(
                 local_featured = localise_url(featured_image, static_path, download=not dry_run)
         else:
             local_featured = featured_image
+
+        # Translate the WordPress markup to Bulma classes. This must run AFTER
+        # rewrite_content_images, which is what turns the remote
+        # qgisblog.files.wordpress.com URLs into local /wp-content/ paths: the
+        # transform's orphaned-media assertion compares against those final
+        # paths, so reversing the order would check the wrong URL space.
+        if bulma:
+            content = wp_to_bulma.transform_html(content)
 
         if author_slug and not dry_run:
             ensure_author(author_slug, author_name, authors_path, dry_run)
@@ -326,6 +341,12 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--batch-size", type=int, default=100, metavar="N")
+    parser.add_argument(
+        "--no-bulma",
+        action="store_true",
+        help="keep the raw WordPress markup instead of translating it to Bulma "
+             "(for debugging an import; the site expects the translated form)",
+    )
     args = parser.parse_args()
 
     import_from_api(
@@ -337,6 +358,7 @@ def main():
         dry_run=args.dry_run,
         overwrite=args.overwrite,
         batch_size=min(args.batch_size, 100),
+        bulma=not args.no_bulma,
     )
 
 
