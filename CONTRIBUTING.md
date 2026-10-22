@@ -133,6 +133,34 @@ This script is run nightly as a GitHub Action (see `.github/workflows/update-fee
 > python scripts/import_wordpress.py
 > ```
 > This fetches all published posts via the WordPress.com REST API and writes them to `content/posts/`, downloading images to `static/img/posts/`.
+> The importer translates the WordPress markup into Bulma classes as it writes, so you should not need a second step.
+
+### Content markup
+
+Post bodies are raw HTML using Bulma classes. Two rules keep them that way.
+
+**Do not reintroduce WordPress classes.** Nothing in this repo or the theme
+styles `wp-block-*`, `alignnone`, `size-large` or `wp-caption`, so they do
+nothing except make the markup harder to read. Before you push, run:
+
+```bash
+make check-wp-markup
+```
+
+If that fails, `make clean-wp-markup` fixes it. To see what it would change
+first, run `python3 scripts/clean_wordpress_markup.py --diff`.
+
+**Do not rename a post file or change its `date`.** The permalink is built from
+both (`config.toml` sets `posts = "/:year/:month/:day/:slug/"`), so changing
+either moves the page and breaks every link to it.
+
+The same goes for media paths. Images live at `/wp-content/uploads/...` and
+`layouts/partials/post-details.html` rewrites that prefix at render time, so
+keep the path exactly as it is and keep the quoting around it intact.
+
+The mapping from WordPress classes to Bulma, and the reasoning for each choice,
+is documented at the top of `scripts/wp_to_bulma.py`. Run `make test-scripts`
+after changing it.
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
