@@ -4,14 +4,14 @@ date: "2026-01-08T06:35:00+00:00"
 draft: false
 authors: ["mbernasocchi"]
 categories: ["QGIS User Conference"]
-featured_image: "/wp-content/uploads/2026/01/blog-laax.png"
+featured_image: "blog-laax.png"
 ---
 
 <p>We are happy to announce that the <strong>QGIS User Conference 2026</strong> will take place on <strong>5–6 October 2026</strong> in <strong>Laax</strong>, in the heart of the Swiss Alps. Visit the <a href="https://conference.qgis.org/">conference website</a> to find out all details.</p>
 
 
 
-<figure><a href="/wp-content/uploads/2026/01/hero.webp"><img loading="lazy" width="1024" height="574" src="/wp-content/uploads/2026/01/hero.webp" alt="" srcset="/wp-content/uploads/2026/01/hero.webp 1024w, /wp-content/uploads/2026/01/hero.webp 150w, /wp-content/uploads/2026/01/hero.webp 300w, /wp-content/uploads/2026/01/hero.webp 768w, /wp-content/uploads/2026/01/hero.webp 1440w, /wp-content/uploads/2026/01/hero.webp 1532w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+<figure><a href="hero.webp"><img loading="lazy" width="1024" height="574" src="hero.webp" alt="" srcset="hero.webp 1024w, hero.webp 150w, hero.webp 300w, hero.webp 768w, hero.webp 1440w, hero.webp 1532w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
 
 
 
@@ -23,7 +23,7 @@ featured_image: "/wp-content/uploads/2026/01/blog-laax.png"
 
 
 
-<figure><a href="/wp-content/uploads/2026/01/venue_2.webp"><img loading="lazy" width="1024" height="682" src="/wp-content/uploads/2026/01/venue_2.webp" alt="" srcset="/wp-content/uploads/2026/01/venue_2.webp 1024w, /wp-content/uploads/2026/01/venue_2.webp 150w, /wp-content/uploads/2026/01/venue_2.webp 300w, /wp-content/uploads/2026/01/venue_2.webp 768w, /wp-content/uploads/2026/01/venue_2.webp 1440w, /wp-content/uploads/2026/01/venue_2.webp 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+<figure><a href="venue_2.webp"><img loading="lazy" width="1024" height="682" src="venue_2.webp" alt="" srcset="venue_2.webp 1024w, venue_2.webp 150w, venue_2.webp 300w, venue_2.webp 768w, venue_2.webp 1440w, venue_2.webp 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
 
 
 
@@ -31,7 +31,7 @@ featured_image: "/wp-content/uploads/2026/01/blog-laax.png"
 
 
 
-<figure><a href="/wp-content/uploads/2026/01/attending_2.webp"><img loading="lazy" width="1024" height="682" src="/wp-content/uploads/2026/01/attending_2.webp" alt="" srcset="/wp-content/uploads/2026/01/attending_2.webp 1024w, /wp-content/uploads/2026/01/attending_2.webp 150w, /wp-content/uploads/2026/01/attending_2.webp 300w, /wp-content/uploads/2026/01/attending_2.webp 768w, /wp-content/uploads/2026/01/attending_2.webp 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
+<figure><a href="attending_2.webp"><img loading="lazy" width="1024" height="682" src="attending_2.webp" alt="" srcset="attending_2.webp 1024w, attending_2.webp 150w, attending_2.webp 300w, attending_2.webp 768w, attending_2.webp 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
 
 
 
