@@ -15,37 +15,6 @@
                 </a>
             </li>
 
-            <li {{ if findRE "author" $pageUrl }} class="is-active"{{ end }}>
-                <div class="has-child">
-                    <a onclick="toggleSubMenu('authors')" class="icon-text">
-                        <span class="icon">
-                            <i class="fas fa-user-edit"></i>
-                        </span>
-                        <span>Authors</span>
-                    </a>
-                    <span onclick="toggleSubMenu('authors')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
-                </div>
-                <ul id="authors" class="collapsed">
-                    {{ range $.Site.Taxonomies.authors.ByCount }}
-                    <li {{ if findRE (replaceRE "/$" "" .Page.RelPermalink) $pageUrl }} class="is-active"{{ end }}>
-                        <a href="{{ .Page.RelPermalink }}" class="icon-text truncate">
-                            <span class="icon">
-                                <i class="fas fa-user"></i>
-                            </span>
-                            <span>
-                                {{ with $.Site.GetPage (printf "/authors/%s" .Page.Title) }}
-                                    {{ .Params.display_name | default .Title }}
-                                {{ else }}
-                                    {{ .Page.Title }}
-                                {{ end }}
-                                ({{ .Count }})
-                            </span>
-                        </a>
-                    </li>
-                    {{ end }}
-                </ul>
-
-            </li>
             <li {{ if findRE "category" $pageUrl }} class="is-active"{{ end }}>
                 <div class="has-child">
                     <a onclick="toggleSubMenu('categories')" class="icon-text">
@@ -95,11 +64,13 @@ function toggleMenu() {
 // compose title for menu button: contatenate parent section titles
 let activeListItem = document.getElementsByClassName('is-active')[0];
 let ham = document.getElementById('ham-title');
-let hamTitle = activeListItem.querySelector('a').textContent;
-if (activeListItem.parentElement.previousElementSibling != null) {
-        hamTitle = activeListItem.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
+if (activeListItem) {
+        let hamTitle = activeListItem.querySelector('a').textContent;
+        if (activeListItem.parentElement.previousElementSibling != null) {
+                hamTitle = activeListItem.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
+        }
+        ham.textContent = hamTitle;
 }
-ham.textContent = hamTitle;
 
 // expand active section
 document.querySelectorAll('li.is-active,li:has(.is-active)').forEach(li => {
