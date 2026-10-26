@@ -3,7 +3,7 @@ title: "Results of the QGIS user survey 2015"
 date: "2016-08-23T15:36:04+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 ---
 

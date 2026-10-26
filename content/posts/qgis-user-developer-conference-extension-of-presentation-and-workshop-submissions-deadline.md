@@ -3,7 +3,7 @@ title: "QGIS User & Developer conference – Extension of presentation and work
 date: "2016-02-16T12:01:11+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS User Conference"]
+categories: ["User Conference"]
 featured_image: "/wp-content/uploads/2016/02/screen-shot-2016-02-16-at-13-57-25.png"
 ---
 

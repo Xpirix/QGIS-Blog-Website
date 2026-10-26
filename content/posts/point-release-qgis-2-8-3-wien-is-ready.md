@@ -3,7 +3,7 @@ title: "Point release QGIS 2.8.3 ‘Wien’ is ready!"
 date: "2015-08-06T19:13:00+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 featured_image: "/wp-content/uploads/2015/08/qgis28_wien.png"
 ---
 

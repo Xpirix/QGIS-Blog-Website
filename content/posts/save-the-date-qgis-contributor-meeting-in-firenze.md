@@ -3,7 +3,7 @@ title: "Save the date: QGIS contributor meeting in Firenze"
 date: "2022-05-03T13:58:10+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Hackfest"]
+categories: ["Hackfest"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

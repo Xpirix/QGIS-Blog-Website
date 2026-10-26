@@ -3,7 +3,7 @@ title: "Presentation and feedback from the QGIS-fr Users Meeting in Avignon"
 date: "2025-07-06T12:20:55+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS User Conference"]
+categories: ["User Conference"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

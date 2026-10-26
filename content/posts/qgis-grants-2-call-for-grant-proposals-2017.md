@@ -3,7 +3,7 @@ title: "QGIS Grants #2: Call for Grant Proposals 2017"
 date: "2017-02-19T19:03:50+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Grant Programme"]
+categories: ["Grant Programme"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

@@ -3,7 +3,7 @@ title: "QGIS 2.16 ‘Nødebo’ is released!"
 date: "2016-07-22T14:41:23+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 featured_image: "/wp-content/uploads/2016/07/splash216.png"
 ---
 

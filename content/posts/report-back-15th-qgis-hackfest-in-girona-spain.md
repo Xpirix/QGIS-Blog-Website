@@ -3,7 +3,7 @@ title: "Report back: 15th QGIS hackfest in Girona, Spain"
 date: "2016-06-30T05:49:19+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Hackfest"]
+categories: ["Hackfest"]
 featured_image: "/wp-content/uploads/2016/06/dsc05950.jpg"
 ---
 

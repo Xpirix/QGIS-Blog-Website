@@ -3,7 +3,7 @@ title: "Felt renews their Flagship-level Sustaining Membership"
 date: "2024-05-30T06:55:16+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Funding", "Sustaining Membership Updates"]
+categories: ["Funding", "Sustaining Membership Updates"]
 featured_image: "/wp-content/uploads/2024/05/qgisfelt_2024.jpeg"
 ---
 

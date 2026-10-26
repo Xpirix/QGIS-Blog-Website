@@ -3,7 +3,7 @@ title: "QGIS 3.20 Odense is released!"
 date: "2021-06-22T13:26:20+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

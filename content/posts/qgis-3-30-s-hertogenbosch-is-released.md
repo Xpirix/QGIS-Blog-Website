@@ -3,7 +3,7 @@ title: "QGIS 3.30 ‘s-Hertogenbosch is released!"
 date: "2023-03-07T07:55:00+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2023/03/splash330.png"
 ---

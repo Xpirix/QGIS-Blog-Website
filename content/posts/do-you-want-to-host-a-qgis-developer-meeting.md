@@ -3,7 +3,7 @@ title: "Do you want to host a QGIS developer meeting?"
 date: "2017-09-02T21:49:45+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Hackfest", "QGIS User Conference", "Uncategorized"]
+categories: ["Hackfest", "User Conference", "Uncategorized"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

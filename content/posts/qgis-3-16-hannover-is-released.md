@@ -3,7 +3,7 @@ title: "QGIS 3.16 Hannover is released!"
 date: "2020-10-27T10:27:58+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

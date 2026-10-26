@@ -3,7 +3,7 @@ title: "QGIS 4.0 Norrköping is released!"
 date: "2026-03-09T20:00:45+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2026/03/blog-qgis40.png"
 ---

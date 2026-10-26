@@ -3,7 +3,7 @@ title: "Danish User Group becomes Flagship Member"
 date: "2024-06-07T05:34:00+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Funding", "Sustaining Membership Updates"]
+categories: ["Funding", "Sustaining Membership Updates"]
 featured_image: "/wp-content/uploads/2024/06/image.png"
 ---
 

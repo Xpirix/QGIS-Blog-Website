@@ -3,7 +3,7 @@ title: "QGIS Server is ready for the new OGC API for Features protocol."
 date: "2019-11-26T22:21:55+00:00"
 draft: false
 authors: ["neumannandreas"]
-categories: ["QGIS Server"]
+categories: ["Server"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

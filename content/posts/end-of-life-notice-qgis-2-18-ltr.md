@@ -3,7 +3,7 @@ title: "End of life notice: QGIS 2.18 LTR"
 date: "2019-03-09T08:13:52+00:00"
 draft: false
 authors: ["pcav"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

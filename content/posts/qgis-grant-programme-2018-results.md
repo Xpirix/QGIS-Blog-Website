@@ -3,7 +3,7 @@ title: "QGIS Grant Programme 2018 Results"
 date: "2018-06-22T19:03:27+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme", "Uncategorized"]
+categories: ["Grant Programme", "Uncategorized"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

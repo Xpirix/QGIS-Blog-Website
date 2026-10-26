@@ -3,7 +3,7 @@ title: "Present at the 2nd International QGIS User and Developer Conference!"
 date: "2016-01-20T10:48:08+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS User Conference"]
+categories: ["User Conference"]
 tags: ["QGIS User Conference"]
 ---
 

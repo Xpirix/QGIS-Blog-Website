@@ -3,7 +3,7 @@ title: "QGIS Grants: Call for applications"
 date: "2016-08-04T06:55:41+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Funding"]
+categories: ["Funding"]
 tags: ["grants"]
 featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 ---

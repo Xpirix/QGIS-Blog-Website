@@ -3,7 +3,7 @@ title: "A word of thanks to the hosts of the 14th QGIS Hackfest in Gran Canaria"
 date: "2015-11-15T12:27:59+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Hackfest"]
+categories: ["Hackfest"]
 tags: ["hackfest"]
 featured_image: "/wp-content/uploads/2015/11/splash.png"
 ---

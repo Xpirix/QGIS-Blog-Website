@@ -3,7 +3,7 @@ title: "QGIS Grant Programme 2020 Results"
 date: "2020-07-10T10:03:22+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme"]
+categories: ["Grant Programme"]
 tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

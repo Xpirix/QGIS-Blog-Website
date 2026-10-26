@@ -3,7 +3,7 @@ title: "QGIS Grants #10: Call for Grant Proposals 2025"
 date: "2025-02-23T08:13:06+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme"]
+categories: ["Grant Programme"]
 tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

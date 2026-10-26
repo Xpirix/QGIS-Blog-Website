@@ -3,7 +3,7 @@ title: "Winning QGIS Grant Proposals for 2016"
 date: "2016-10-04T21:35:50+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Board", "QGIS Grant Programme"]
+categories: ["Board", "Grant Programme"]
 featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 ---
 

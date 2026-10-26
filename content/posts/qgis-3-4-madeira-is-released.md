@@ -3,7 +3,7 @@ title: "QGIS 3.4 Madeira is released!"
 date: "2018-10-28T12:11:17+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

@@ -3,7 +3,7 @@ title: "3rd Crowdfunding on Point Clouds, Elevation Profiles and 3D Map View Enh
 date: "2022-10-06T09:20:44+00:00"
 draft: false
 authors: ["neumannandreas"]
-categories: ["QGIS Funding"]
+categories: ["Funding"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

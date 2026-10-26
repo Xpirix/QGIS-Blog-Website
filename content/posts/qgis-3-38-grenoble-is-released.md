@@ -3,7 +3,7 @@ title: "QGIS 3.38 Grenoble is released!"
 date: "2024-06-27T21:55:07+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2025/03/77e273e90ec2f1953a8c0b5b0097a235c85f2425-e1741989488741.png"
 ---

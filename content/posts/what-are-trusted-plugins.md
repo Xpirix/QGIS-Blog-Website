@@ -3,7 +3,7 @@ title: "What are trusted plugins?"
 date: "2016-08-26T10:16:21+00:00"
 draft: false
 authors: ["faunaliagis"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 ---
 

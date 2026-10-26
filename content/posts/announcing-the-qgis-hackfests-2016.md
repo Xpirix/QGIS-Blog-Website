@@ -3,7 +3,7 @@ title: "Announcing the QGIS hackfests 2016"
 date: "2016-01-25T20:17:07+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Hackfest"]
+categories: ["Hackfest"]
 ---
 
 <p>Dear QGIS developers</p>

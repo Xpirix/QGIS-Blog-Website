@@ -3,7 +3,7 @@ title: "QGIS 3.26 Buenos Aires is released!"
 date: "2022-06-24T13:40:57+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

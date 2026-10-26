@@ -3,7 +3,7 @@ title: "QGIS 3.34 Prizren is released!"
 date: "2023-11-05T09:07:56+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2023/11/splash334.png"
 ---

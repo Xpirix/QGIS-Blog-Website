@@ -3,7 +3,7 @@ title: "Reports from the winning grant proposals 2019"
 date: "2020-02-23T09:36:35+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme"]
+categories: ["Grant Programme"]
 tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

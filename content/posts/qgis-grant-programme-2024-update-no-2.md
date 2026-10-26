@@ -3,7 +3,7 @@ title: "QGIS Grant Programme 2024 Update no. 2"
 date: "2024-06-14T06:30:00+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme"]
+categories: ["Grant Programme"]
 tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

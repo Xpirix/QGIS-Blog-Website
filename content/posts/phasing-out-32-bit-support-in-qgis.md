@@ -3,7 +3,7 @@ title: "QGIS Phasing out 32-bit support on Windows"
 date: "2020-10-15T06:05:18+00:00"
 draft: false
 authors: ["mbernasocchi"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 featured_image: "/wp-content/uploads/2017/04/logo_evolution.png"
 ---
 

@@ -3,7 +3,7 @@ title: "PyQGIS Cookbook revision 2020"
 date: "2020-04-19T16:48:40+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Documentation"]
+categories: ["Documentation"]
 tags: ["documentation", "PyQGIS"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

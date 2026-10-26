@@ -3,7 +3,7 @@ title: "QGIS Annual General Meeting – 2020"
 date: "2020-05-06T14:05:47+00:00"
 draft: false
 authors: ["pcav"]
-categories: ["QGIS Board", "Uncategorized"]
+categories: ["Board", "Uncategorized"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

@@ -3,7 +3,7 @@ title: "Update on the QGIS Grant Programme"
 date: "2016-09-25T21:32:54+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Funding", "QGIS Grant Programme"]
+categories: ["Funding", "Grant Programme"]
 featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 ---
 

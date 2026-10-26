@@ -3,7 +3,7 @@ title: "Call for presentations and workshop proposals: QGIS Conference 2017"
 date: "2017-05-01T11:26:43+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Hackfest", "QGIS User Conference", "Uncategorized"]
+categories: ["Hackfest", "User Conference", "Uncategorized"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

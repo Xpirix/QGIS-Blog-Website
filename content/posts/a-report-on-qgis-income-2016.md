@@ -3,7 +3,7 @@ title: "A report on QGIS Income 2016"
 date: "2017-02-25T07:33:34+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Funding"]
+categories: ["Funding"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

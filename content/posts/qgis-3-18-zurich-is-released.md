@@ -3,7 +3,7 @@ title: "QGIS 3.18 Zürich is released!"
 date: "2021-02-23T17:35:15+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

@@ -3,7 +3,7 @@ title: "QGIS 3.0 plans"
 date: "2016-02-10T07:38:13+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 ---
 
 <p>&nbsp;</p>

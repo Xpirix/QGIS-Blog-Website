@@ -3,7 +3,7 @@ title: "Crowd-Funding Call 2023"
 date: "2023-01-16T10:55:00+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Funding"]
+categories: ["Funding"]
 featured_image: "/wp-content/uploads/2023/01/qgis-crowdfunding-2023.png"
 ---
 

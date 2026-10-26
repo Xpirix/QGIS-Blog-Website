@@ -3,7 +3,7 @@ title: "Save the date: QGIS user conference and contributor meeting in ‘s-Hert
 date: "2023-01-02T10:51:50+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Hackfest", "QGIS User Conference"]
+categories: ["Hackfest", "User Conference"]
 tags: ["hackfest", "QGIS User Conference"]
 featured_image: "/wp-content/uploads/2023/02/qgis_uc23_news_item-2.png"
 ---

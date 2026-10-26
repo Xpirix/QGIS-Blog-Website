@@ -3,7 +3,7 @@ title: "MacOS specific bug fixing campaign"
 date: "2018-09-12T08:51:38+00:00"
 draft: false
 authors: ["neumannandreas"]
-categories: ["QGIS Funding"]
+categories: ["Funding"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

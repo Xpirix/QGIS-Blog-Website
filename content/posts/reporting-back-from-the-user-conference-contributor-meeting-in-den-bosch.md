@@ -3,7 +3,7 @@ title: "Reporting Back From the User Conference & Contributor Meeting in Den Bos
 date: "2023-04-27T00:02:51+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Hackfest", "QGIS User Conference"]
+categories: ["Hackfest", "User Conference"]
 featured_image: "/wp-content/uploads/2023/04/groupphoto-qgis-1298188687-e1682597400171.jpg"
 ---
 

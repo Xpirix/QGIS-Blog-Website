@@ -3,7 +3,7 @@ title: "Documentation for QGIS 3.0 – call for contributions!"
 date: "2017-12-04T17:48:30+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Documentation"]
+categories: ["Documentation"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

@@ -3,7 +3,7 @@ title: "Call for presentations: QGIS User Conference and Developer Meeting, 2019
 date: "2018-12-03T18:07:08+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS User Conference"]
+categories: ["User Conference"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

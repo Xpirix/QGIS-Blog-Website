@@ -3,7 +3,7 @@ title: "New PyQGIS documentation"
 date: "2018-05-20T17:42:55+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Documentation"]
+categories: ["Documentation"]
 tags: ["documentation", "PyQGIS"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

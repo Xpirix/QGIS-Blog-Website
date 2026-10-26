@@ -3,7 +3,7 @@ title: "Call for contributions: QGIS User Conference & Contributor Meeting 2026"
 date: "2026-03-05T21:23:24+00:00"
 draft: false
 authors: ["mbernasocchi"]
-categories: ["QGIS Hackfest", "QGIS User Conference"]
+categories: ["Hackfest", "User Conference"]
 featured_image: "/wp-content/uploads/2026/03/attending_0.webp"
 ---
 

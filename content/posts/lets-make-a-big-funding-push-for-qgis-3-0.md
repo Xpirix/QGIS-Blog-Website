@@ -3,7 +3,7 @@ title: "Let’s make a big funding push for QGIS 3.0!"
 date: "2016-11-19T08:09:01+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Funding"]
+categories: ["Funding"]
 featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 ---
 

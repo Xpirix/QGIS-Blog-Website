@@ -3,7 +3,7 @@ title: "Licensing requirements for QGIS plugins"
 date: "2016-05-29T08:09:27+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 tags: ["licensing"]
 ---
 

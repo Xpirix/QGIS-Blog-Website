@@ -3,7 +3,7 @@ title: "QGIS 3.2 Bonn is released!"
 date: "2018-06-24T19:57:25+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements", "Uncategorized"]
+categories: ["Release Announcements", "Uncategorized"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

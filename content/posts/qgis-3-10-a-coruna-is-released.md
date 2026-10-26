@@ -3,7 +3,7 @@ title: "QGIS 3.10 A Coruña is released!"
 date: "2019-11-02T12:28:32+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

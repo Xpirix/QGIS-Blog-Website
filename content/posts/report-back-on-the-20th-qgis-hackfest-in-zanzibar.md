@@ -3,7 +3,7 @@ title: "Report back on the 20th QGIS Hackfest in Zanzibar"
 date: "2018-11-05T20:35:59+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Hackfest"]
+categories: ["Hackfest"]
 tags: ["hackfest"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

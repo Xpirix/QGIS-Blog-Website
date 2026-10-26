@@ -3,7 +3,7 @@ title: "Happy new year 2017!"
 date: "2017-01-04T22:34:24+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 ---
 

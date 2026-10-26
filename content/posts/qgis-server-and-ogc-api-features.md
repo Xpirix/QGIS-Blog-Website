@@ -3,7 +3,7 @@ title: "QGIS Server and OGC API Features"
 date: "2020-05-13T19:23:46+00:00"
 draft: false
 authors: ["neumannandreas"]
-categories: ["QGIS Server"]
+categories: ["Server"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

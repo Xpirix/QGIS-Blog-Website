@@ -3,7 +3,7 @@ title: "QGIS 2.14 ‘Essen’ is released!"
 date: "2016-03-01T21:57:43+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 featured_image: "/wp-content/uploads/2016/03/596e7e353771d2802f065352548e512b8d902d83.png"
 ---
 

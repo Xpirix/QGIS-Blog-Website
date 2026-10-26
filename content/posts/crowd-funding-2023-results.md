@@ -3,7 +3,7 @@ title: "Crowd-Funding 2023 Results"
 date: "2023-04-02T21:59:48+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Funding"]
+categories: ["Funding"]
 featured_image: "/wp-content/uploads/2023/04/members-1-3419685632-e1680472890579.png"
 ---
 

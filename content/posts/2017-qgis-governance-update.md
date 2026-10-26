@@ -3,7 +3,7 @@ title: "2017 QGIS Governance Update"
 date: "2017-05-22T16:37:39+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Board", "Uncategorized"]
+categories: ["Board", "Uncategorized"]
 tags: ["governance", "qgis"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

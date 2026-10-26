@@ -3,7 +3,7 @@ title: "QGIS Annual General Meeting – 2018"
 date: "2018-04-13T13:26:51+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Board", "Uncategorized"]
+categories: ["Board", "Uncategorized"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

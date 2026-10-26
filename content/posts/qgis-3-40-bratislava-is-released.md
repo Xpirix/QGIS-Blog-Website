@@ -3,7 +3,7 @@ title: "QGIS 3.40 Bratislava is released!"
 date: "2024-11-03T21:45:23+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2025/03/splash340-e1741989237715.png"
 ---

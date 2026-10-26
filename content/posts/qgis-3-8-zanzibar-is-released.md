@@ -3,7 +3,7 @@ title: "QGIS 3.8 Zanzibar is released!"
 date: "2019-07-23T12:10:02+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

@@ -3,7 +3,7 @@ title: "Promoting and using QGIS for the enterprise"
 date: "2016-04-23T10:24:12+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 tags: ["QGIS Community"]
 featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
 ---

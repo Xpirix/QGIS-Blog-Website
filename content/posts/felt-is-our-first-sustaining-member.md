@@ -3,7 +3,7 @@ title: "Welcoming our first flagship sustaining member – Felt"
 date: "2023-03-21T15:30:00+00:00"
 draft: false
 authors: ["mbernasocchi"]
-categories: ["QGIS Funding"]
+categories: ["Funding"]
 featured_image: "/wp-content/uploads/2023/03/6418aa27ff36fa6e508f6d90_tv_qgis2bfelt_800x420px1.jpg"
 ---
 

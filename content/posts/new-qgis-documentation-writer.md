@@ -3,7 +3,7 @@ title: "New QGIS documentation writer"
 date: "2025-11-07T19:24:43+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Documentation"]
+categories: ["Documentation"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

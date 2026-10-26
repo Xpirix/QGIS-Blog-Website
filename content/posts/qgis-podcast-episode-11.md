@@ -3,7 +3,7 @@ title: "QGIS Podcast Episode 11"
 date: "2015-10-30T22:02:30+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Podcast"]
+categories: ["Podcast"]
 ---
 
 <p>The Official QGIS Podcast is back! In this episode we discuss the QGIS User Survey, the release of QGIS 2.12, highlight an interesting QGIS based study and much more!</p>

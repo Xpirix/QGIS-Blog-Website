@@ -3,7 +3,7 @@ title: "Save the date & call for contributions: QGIS user conference and contrib
 date: "2024-02-20T19:17:52+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Hackfest", "QGIS User Conference"]
+categories: ["Hackfest", "User Conference"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

@@ -3,7 +3,7 @@ title: "QGIS Open Day – 26 Feb 2021"
 date: "2021-02-19T11:09:05+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Hackfest"]
+categories: ["Hackfest"]
 featured_image: "/wp-content/uploads/2021/02/qgis-plugged-in.jpg"
 ---
 

@@ -3,7 +3,7 @@ title: "QGIS Contributor meeting at BIDS ‘23 Vienna"
 date: "2023-07-26T15:18:25+00:00"
 draft: false
 authors: ["mbernasocchi"]
-categories: ["QGIS Hackfest"]
+categories: ["Hackfest"]
 tags: ["hackfest"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

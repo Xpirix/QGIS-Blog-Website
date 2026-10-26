@@ -3,7 +3,7 @@ title: "A Coruña contributors meeting: another step forward for the QGIS.ORG pr
 date: "2019-03-10T18:09:47+00:00"
 draft: false
 authors: ["pcav"]
-categories: ["QGIS Hackfest", "QGIS User Conference"]
+categories: ["Hackfest", "User Conference"]
 tags: ["hackfest"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

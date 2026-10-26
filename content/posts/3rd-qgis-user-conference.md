@@ -3,7 +3,7 @@ title: "3rd QGIS User Conference"
 date: "2017-06-13T20:16:06+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Hackfest", "QGIS User Conference"]
+categories: ["Hackfest", "User Conference"]
 tags: ["hackfest", "QGIS User Conference"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

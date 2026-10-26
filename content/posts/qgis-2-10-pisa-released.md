@@ -3,7 +3,7 @@ title: "QGIS 2.10 ‘Pisa’ released!"
 date: "2015-07-26T14:04:19+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2015/07/splash210.png"
 ---

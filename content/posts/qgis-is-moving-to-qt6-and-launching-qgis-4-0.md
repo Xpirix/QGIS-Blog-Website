@@ -3,7 +3,7 @@ title: "🎉 Changes Ahead: QGIS Is Moving to Qt6 and Launching QGIS 4.0!"
 date: "2025-04-17T07:17:00+00:00"
 draft: false
 authors: ["mbernasocchi"]
-categories: ["Public Service Announcement", "QGIS Board"]
+categories: ["Public Service Announcement", "Board"]
 featured_image: "/wp-content/uploads/2025/10/blog-qgis40-soon.png"
 ---
 

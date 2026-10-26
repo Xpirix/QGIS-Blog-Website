@@ -3,7 +3,7 @@ title: "QGIS Grant Programme 2023 Results"
 date: "2023-06-26T18:32:29+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme"]
+categories: ["Grant Programme"]
 tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

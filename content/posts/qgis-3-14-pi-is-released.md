@@ -3,7 +3,7 @@ title: "QGIS 3.14 Pi is released!"
 date: "2020-06-25T18:47:50+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

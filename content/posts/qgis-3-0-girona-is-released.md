@@ -3,7 +3,7 @@ title: "QGIS 3.0 Girona is released!"
 date: "2018-02-23T18:28:26+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

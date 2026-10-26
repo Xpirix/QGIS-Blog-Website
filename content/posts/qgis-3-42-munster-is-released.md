@@ -3,7 +3,7 @@ title: "QGIS 3.42 Münster is released!"
 date: "2025-02-24T21:36:00+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2025/02/splash342-e1741989212668.png"
 ---

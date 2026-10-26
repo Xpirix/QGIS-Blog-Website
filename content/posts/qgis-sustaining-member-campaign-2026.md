@@ -3,7 +3,7 @@ title: "QGIS Sustaining Member Campaign 2026"
 date: "2026-03-18T00:45:27+00:00"
 draft: false
 authors: ["mbernasocchi"]
-categories: ["QGIS Funding"]
+categories: ["Funding"]
 featured_image: "/wp-content/uploads/2026/03/muhammad-afandi-g8pbjf7wfzm-unsplash.jpg"
 ---
 

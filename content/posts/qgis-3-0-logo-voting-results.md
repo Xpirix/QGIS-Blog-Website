@@ -3,7 +3,7 @@ title: "QGIS 3.0 logo voting results"
 date: "2017-01-08T09:48:48+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

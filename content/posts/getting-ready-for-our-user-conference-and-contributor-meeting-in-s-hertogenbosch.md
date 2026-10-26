@@ -3,7 +3,7 @@ title: "Getting ready for our user conference and contributor meeting in ‘s-He
 date: "2023-02-27T20:36:32+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Hackfest", "QGIS User Conference"]
+categories: ["Hackfest", "User Conference"]
 featured_image: "/wp-content/uploads/2023/02/qgis_uc23_news_item-2.png"
 ---
 

@@ -3,7 +3,7 @@ title: "QGIS Events Cancellation"
 date: "2020-03-30T21:11:15+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS User Conference", "Uncategorized"]
+categories: ["User Conference", "Uncategorized"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

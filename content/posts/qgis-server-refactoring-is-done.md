@@ -3,7 +3,7 @@ title: "QGIS Server refactoring is done!"
 date: "2017-10-29T22:31:10+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Server"]
+categories: ["Server"]
 tags: ["QGIS Server"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

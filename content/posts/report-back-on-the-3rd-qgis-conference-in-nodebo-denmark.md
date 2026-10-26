@@ -3,7 +3,7 @@ title: "Report back on the 3rd QGIS Conference in Nødebo, Denmark"
 date: "2017-08-15T23:38:37+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Funding", "QGIS User Conference"]
+categories: ["Funding", "User Conference"]
 featured_image: "/wp-content/uploads/2017/08/audience.jpg"
 ---
 

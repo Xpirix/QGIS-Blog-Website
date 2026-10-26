@@ -3,7 +3,7 @@ title: "Call for nominations for voting members of the QGIS.org board."
 date: "2016-05-04T22:29:59+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 tags: ["QGIS Board"]
 ---
 

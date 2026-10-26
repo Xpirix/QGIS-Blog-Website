@@ -3,7 +3,7 @@ title: "QGIS 3.12 București is released!"
 date: "2020-02-26T10:48:41+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

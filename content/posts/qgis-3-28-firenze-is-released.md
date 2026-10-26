@@ -3,7 +3,7 @@ title: "QGIS 3.28 Firenze is released!"
 date: "2022-10-25T18:03:45+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

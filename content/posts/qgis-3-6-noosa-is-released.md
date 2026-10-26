@@ -3,7 +3,7 @@ title: "QGIS 3.6 Noosa is released!"
 date: "2019-03-24T20:57:21+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

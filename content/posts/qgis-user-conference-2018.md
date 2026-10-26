@@ -3,7 +3,7 @@ title: "QGIS User Conference 2018"
 date: "2018-06-03T19:18:54+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS User Conference"]
+categories: ["User Conference"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

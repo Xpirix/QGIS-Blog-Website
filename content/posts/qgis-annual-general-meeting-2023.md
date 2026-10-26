@@ -3,7 +3,7 @@ title: "QGIS Annual General Meeting – 2023"
 date: "2023-12-23T22:00:00+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

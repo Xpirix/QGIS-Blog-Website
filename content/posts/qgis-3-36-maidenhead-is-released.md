@@ -3,7 +3,7 @@ title: "QGIS 3.36 Maidenhead is released!"
 date: "2024-02-28T22:01:29+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 tags: ["release"]
 featured_image: "/wp-content/uploads/2025/03/fc93f461b927dd4960936f3391cf00321f9552cc.png"
 ---

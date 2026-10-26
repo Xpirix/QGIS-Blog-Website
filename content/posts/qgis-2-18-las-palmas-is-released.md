@@ -3,7 +3,7 @@ title: "QGIS 2.18 ‘Las Palmas’ is released!"
 date: "2016-11-08T20:07:46+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Release Announcements"]
+categories: ["Release Announcements"]
 featured_image: "/wp-content/uploads/2016/11/splash218.png"
 ---
 

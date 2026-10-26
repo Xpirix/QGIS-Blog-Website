@@ -3,7 +3,7 @@ title: "QGIS Server certified as official OGC reference implementation"
 date: "2018-06-27T17:34:46+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Server"]
+categories: ["Server"]
 tags: ["OGC", "QGIS Server"]
 featured_image: "/wp-content/uploads/2019/04/ogc-1.png"
 ---

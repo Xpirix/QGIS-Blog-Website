@@ -3,7 +3,7 @@ title: "QGIS Server 3.4.6 certified for WMS 1.3"
 date: "2019-04-08T15:09:18+00:00"
 draft: false
 authors: ["haubourg"]
-categories: ["QGIS Server"]
+categories: ["Server"]
 tags: ["OGC", "QGIS Server"]
 featured_image: "/wp-content/uploads/2019/04/ogc-1.png"
 ---

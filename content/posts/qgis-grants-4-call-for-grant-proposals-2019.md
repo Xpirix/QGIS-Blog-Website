@@ -3,7 +3,7 @@ title: "QGIS Grants #4: Call for Grant Proposals 2019"
 date: "2019-05-06T19:20:02+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme"]
+categories: ["Grant Programme"]
 tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

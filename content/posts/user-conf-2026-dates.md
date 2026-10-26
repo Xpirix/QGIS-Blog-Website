@@ -3,7 +3,7 @@ title: "Save the date: QGIS User Conference 2026🇨🇭"
 date: "2025-12-15T05:22:49+00:00"
 draft: false
 authors: ["mbernasocchi"]
-categories: ["QGIS Hackfest", "QGIS User Conference"]
+categories: ["Hackfest", "User Conference"]
 featured_image: "/wp-content/uploads/2025/12/file_0000000052a0720aafcf6786f77d3c98.png"
 ---
 

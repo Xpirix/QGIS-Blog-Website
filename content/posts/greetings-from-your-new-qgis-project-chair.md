@@ -3,7 +3,7 @@ title: "Greetings from your new QGIS project Chair"
 date: "2020-05-13T05:15:51+00:00"
 draft: false
 authors: ["mbernasocchi"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 featured_image: "/wp-content/uploads/2020/05/marcob.jpg"
 ---
 

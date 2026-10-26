@@ -3,7 +3,7 @@ title: "QGIS Grants #7: Call for Grant Proposals 2022"
 date: "2022-01-16T15:00:55+00:00"
 draft: false
 authors: ["underdark"]
-categories: ["QGIS Grant Programme"]
+categories: ["Grant Programme"]
 tags: ["grants"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---

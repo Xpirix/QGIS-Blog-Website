@@ -3,7 +3,7 @@ title: "Registration open for QGIS hackfest in Gran Canaria, November 2015"
 date: "2015-08-30T17:39:24+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Hackfest"]
+categories: ["Hackfest"]
 ---
 
 <p>Dear QGIS developers</p>

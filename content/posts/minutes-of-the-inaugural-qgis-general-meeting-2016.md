@@ -3,7 +3,7 @@ title: "Minutes of the Inaugural QGIS General Meeting (2016)"
 date: "2017-02-05T22:03:57+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Board"]
+categories: ["Board"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 

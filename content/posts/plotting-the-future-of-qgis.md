@@ -3,7 +3,7 @@ title: "Plotting the future of QGIS"
 date: "2017-08-25T11:42:14+00:00"
 draft: false
 authors: ["timlinux"]
-categories: ["QGIS Funding", "QGIS Hackfest", "QGIS User Conference"]
+categories: ["Funding", "Hackfest", "User Conference"]
 featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
 ---
 
