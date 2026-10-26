@@ -1,0 +1,17 @@
+---
+title: "Happy new year 2017!"
+date: "2017-01-04T22:34:24+00:00"
+draft: false
+authors: ["underdark"]
+categories: ["QGIS Board"]
+featured_image: "/wp-content/uploads/2016/02/qgis-icon-60x60.png"
+---
+
+<p>2016 was an exciting year for us. It was a year with three great releases (<a href="http://blog.qgis.org/2016/03/01/qgis-2-14-essen-is-released/">2.14 LTR</a>, <a href="http://blog.qgis.org/2016/07/22/qgis-2-16-nodebo-is-released/">2.16</a> &amp; <a href="http://blog.qgis.org/2016/11/08/qgis-2-18-las-palmas-is-released/">2.18</a>), lots of developer and community events (including <a href="http://blog.qgis.org/2016/06/30/report-back-15th-qgis-hackfest-in-girona-spain/">our 2nd user conference in Girona</a>, the developer meeting in Bonn before FOSS4G &amp; a <a href="https://www.itopen.it/qgis-developer-sprint-in-lyon/">QGIS Server sprint in Lyon</a>) and many firsts, including the first round of <a href="http://blog.qgis.org/2016/10/04/winning-qgis-grant-proposals-for-2016/">QGIS grants</a> and our new QGIS.org <a href="http://blog.qgis.org/2016/05/04/call-for-nominations-for-voting-members-of-the-qgis-org-board/">organizational structure</a>.</p>
+<p><div id="attachment_632" class="has-text-centered"><img aria-describedby="caption-attachment-632" loading="lazy" src="/wp-content/uploads/2016/06/dsc05950.jpg" alt="Group picture from Girona" width="780" height="526" srcset="/wp-content/uploads/2016/06/dsc05950.jpg 780w, /wp-content/uploads/2016/06/dsc05950.jpg 1560w, /wp-content/uploads/2016/06/dsc05950.jpg 150w, /wp-content/uploads/2016/06/dsc05950.jpg 300w, /wp-content/uploads/2016/06/dsc05950.jpg 768w, /wp-content/uploads/2016/06/dsc05950.jpg 1024w, /wp-content/uploads/2016/06/dsc05950.jpg 1440w" sizes="(max-width: 780px) 100vw, 780px" /><p id="caption-attachment-632" class="has-text-centered is-size-7">Group picture from Girona</p></div></p>
+<p>Many of these initiatives would not be possible without support by our community, dedicated developers and <a href="http://qgis.org/en/site/about/sponsorship.html">our sponsors</a>, who enable us to keep up our infrastructure and improve software and documentation. We&#8217;re particularly proud to welcome three user groups among our top sponsors, with the Swiss user group as our most prominent Gold sponsor:</p>
+<p><div id="attachment_1198" class="has-text-centered"><a href="http://qgis.org/en/site/about/sponsorship.html"><img aria-describedby="caption-attachment-1198" loading="lazy" src="sponsors.png" alt="sponsors" width="780" height="196" srcset="sponsors.png 780w, sponsors.png 150w, sponsors.png 300w, sponsors.png 768w, sponsors.png 1024w, sponsors.png 1134w" sizes="(max-width: 780px) 100vw, 780px" /></a><p id="caption-attachment-1198" class="has-text-centered is-size-7">QGIS gold and silver sponsors</p></div></p>
+<p>Thank you for helping us improve the QGIS experience for everyone!</p>
+<p>If you are following this blog, you are already aware that we have even bigger plans for 2017, including but not limited to the big <a href="http://blog.qgis.org/2016/11/19/lets-make-a-big-funding-push-for-qgis-3-0/">QGIS 3.0 release</a> and a completely overhauled <a href="http://blog.qgis.org/2016/12/13/new-qgis-3-0-logo-candidate/">QGIS logo</a>.</p>
+<p>We&#8217;re looking forward to another great year with the QGIS community.</p>
+<p>Keep on QGISing!</p>

@@ -132,19 +132,18 @@ The posts imported from WordPress have raw HTML bodies that use Bulma classes.
 The migration is finished and the import tooling is gone, so these files are now
 maintained by hand like any other content. Two rules keep them working.
 
-**Do not rename a post file or change its `date`.** The permalink is built from
-both (`config.toml` sets `posts = "/:year/:month/:day/:slug/"`), so changing
-either moves the page and breaks every link to it.
+**Do not change a post's `title`, `slug` or `date`.** The permalink is built from
+them (`config.toml` sets `posts = "/:year/:month/:day/:slug/"`), so changing
+any of them moves the page and breaks every link to it.
 
-**Leave the `/wp-content/` media paths alone.** 194 posts and 184
-`featured_image` entries point at `/wp-content/uploads/...`, the files live in
-`static/wp-content/`, and `layouts/partials/post-details.html` rewrites that
-prefix at render time so the site also works from a subpath on GitHub Pages.
-That rewrite needs a quote, whitespace or comma immediately before
-`/wp-content/`, so keep the path and the quoting around it exactly as they are.
-Renaming the folder to something tidier would break every image on the site.
+**Keep the old image URLs working.** Each post is a folder with its images next
+to `index.md`. `static/wp-content/` holds symlinks to those images, so the old
+`/wp-content/uploads/...` URLs still work. Do not delete them.
 
-New posts do not use `/wp-content/` at all. See "Adding images" below.
+Images used by several posts stay in `static/wp-content/` and are referenced as
+`/wp-content/uploads/...`. `layouts/partials/post-details.html` prefixes that
+path with the base URL, which needs a quote, whitespace or comma immediately
+before `/wp-content/`, so keep the quoting around it.
 
 If you write HTML in a post, use Bulma classes: `table is-fullwidth is-striped
 is-hoverable` inside a `table-container` for tables, `image is-16by9` with a
@@ -213,7 +212,7 @@ Reference them by file name:
 ![Alt text](screenshot-1.png)
 ```
 
-Do not use `static/wp-content/`, it is reserved for posts imported from WordPress.
+Do not use `static/wp-content/`, it is reserved for the old WordPress image URLs.
 
 ### Naming and filing conventions
 
