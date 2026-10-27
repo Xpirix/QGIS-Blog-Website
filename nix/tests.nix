@@ -68,8 +68,8 @@
       check_content "/author/underdark/" "Anita Graser" "Author page has author name"
 
       # Category pages
-      check_status "/category/qgis-release-announcements/" "200" "Category page returns HTTP 200"
-      check_content "/category/qgis-release-announcements/" "QGIS Release Announcements" "Category page has expected heading"
+      check_status "/category/release-announcements/" "200" "Category page returns HTTP 200"
+      check_content "/category/release-announcements/" "Release Announcements" "Category page has expected heading"
 
       # 404 handling
       check_status "/this-page-does-not-exist/" "404" "Non-existent path returns HTTP 404"
