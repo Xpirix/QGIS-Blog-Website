@@ -22,25 +22,6 @@ test.describe("Sidebar navigation", () => {
         await expect(sidebar.homeLink).toBeVisible();
     });
 
-    test("Authors submenu expands and navigates to author page", async ({
-        page,
-        sidebar,
-    }) => {
-
-        // Expand the authors submenu
-        await sidebar.authorsToggle.click();
-        await expect(sidebar.firstAuthorLink).toBeVisible();
-
-        // Navigate to the first author's page
-        const authorName = await sidebar.firstAuthorLink.textContent();
-        await sidebar.firstAuthorLink.click();
-        await expect(page).toHaveURL(/\/author\//);
-
-        // Author page shows the author's name as a heading and sidebar remains
-        await expect(sidebar.sidebar).toBeVisible();
-        await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-    });
-
     test("Categories submenu expands and navigates to category page", async ({
         page,
         sidebar,

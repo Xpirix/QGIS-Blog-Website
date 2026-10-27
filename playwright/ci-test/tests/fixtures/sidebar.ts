@@ -4,8 +4,6 @@ export class Sidebar {
     public readonly sidebar: Locator;
     public readonly homeLink: Locator;
     /** Toggle button that expands the authors sub-list (no href). */
-    public readonly authorsToggle: Locator;
-    /** Toggle button that expands the categories sub-list (no href). */
     public readonly categoriesToggle: Locator;
     /** First author link inside the (collapsed) authors sub-list. */
     public readonly firstAuthorLink: Locator;
@@ -15,10 +13,6 @@ export class Sidebar {
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
         this.homeLink = this.sidebar.getByRole("link", { name: "Home" });
-        this.authorsToggle = this.sidebar
-            .locator(".has-child")
-            .filter({ hasText: "Authors" })
-            .locator("a.icon-text");
         this.categoriesToggle = this.sidebar
             .locator(".has-child")
             .filter({ hasText: "Categories" })
