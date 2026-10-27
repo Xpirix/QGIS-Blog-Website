@@ -1,0 +1,5 @@
+{{- with .Resources.Get .Params.featured_image -}}
+{{ .RelPermalink }}
+{{- else -}}
+{{ .Params.featured_image | strings.TrimPrefix "/" | absURL }}
+{{- end -}}

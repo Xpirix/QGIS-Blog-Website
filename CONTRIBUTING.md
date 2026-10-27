@@ -132,19 +132,18 @@ The posts imported from WordPress have raw HTML bodies that use Bulma classes.
 The migration is finished and the import tooling is gone, so these files are now
 maintained by hand like any other content. Two rules keep them working.
 
-**Do not rename a post file or change its `date`.** The permalink is built from
-both (`config.toml` sets `posts = "/:year/:month/:day/:slug/"`), so changing
-either moves the page and breaks every link to it.
+**Do not change a post's `title`, `slug` or `date`.** The permalink is built from
+them (`config.toml` sets `posts = "/:year/:month/:day/:slug/"`), so changing
+any of them moves the page and breaks every link to it.
 
-**Leave the `/wp-content/` media paths alone.** 194 posts and 184
-`featured_image` entries point at `/wp-content/uploads/...`, the files live in
-`static/wp-content/`, and `layouts/partials/post-details.html` rewrites that
-prefix at render time so the site also works from a subpath on GitHub Pages.
-That rewrite needs a quote, whitespace or comma immediately before
-`/wp-content/`, so keep the path and the quoting around it exactly as they are.
-Renaming the folder to something tidier would break every image on the site.
+**Keep the old image URLs working.** Each post is a folder with its images next
+to `index.md`. `static/wp-content/` holds symlinks to those images, so the old
+`/wp-content/uploads/...` URLs still work. Do not delete them.
 
-New posts do not use `/wp-content/` at all. See "Adding images" below.
+Images used by several posts stay in `static/wp-content/` and are referenced as
+`/wp-content/uploads/...`. `layouts/partials/post-details.html` prefixes that
+path with the base URL, which needs a quote, whitespace or comma immediately
+before `/wp-content/`, so keep the quoting around it.
 
 If you write HTML in a post, use Bulma classes: `table is-fullwidth is-striped
 is-hoverable` inside a `table-container` for tables, `image is-16by9` with a
@@ -158,7 +157,7 @@ classes, so they do nothing but add noise.
 
 ## 📝 Writing a Blog Post
 
-Blog posts are stored as Markdown files in `content/posts/`. Each post is a single `.md` file with TOML front matter.
+Each blog post is a folder in `content/posts/` with an `index.md` (TOML front matter) and the post's images next to it, so images show up in the GitHub preview.
 
 ### Front matter reference
 
@@ -170,7 +169,7 @@ draft: false
 authors: ["your-author-slug"]
 categories: ["Release Announcements"]
 tags: ["qgis", "release"]
-featured_image: "/img/posts/your-post-slug/featured.png"
+featured_image: "featured.png"
 ---
 ```
 
@@ -182,7 +181,7 @@ featured_image: "/img/posts/your-post-slug/featured.png"
 | `authors` | Yes | Array of author slugs matching `content/authors/<slug>/` |
 | `categories` | No | Array of category names |
 | `tags` | No | Array of tag names |
-| `featured_image` | No | Root-relative path to the featured image |
+| `featured_image` | No | Image file in the post folder |
 
 ### Creating an author
 
@@ -198,32 +197,26 @@ bio: "Short bio about you."
 
 ### Adding images
 
-Store images for new blog posts under `static/img/posts/<your-post-slug>/`. **Do not use `static/wp-content/`** — that folder is reserved for posts imported from WordPress.
+Put the images in the post folder:
 
 ```
-static/
-  img/
-    posts/
-      your-post-slug/
-        featured.png      ← referenced as /img/posts/your-post-slug/featured.png
-        screenshot-1.png
+content/posts/your-post-slug/
+  index.md
+  featured.png
+  screenshot-1.png
 ```
 
-Reference images in your post content using root-relative paths:
+Reference them by file name:
 
 ```markdown
-![Alt text](/img/posts/your-post-slug/screenshot-1.png)
+![Alt text](screenshot-1.png)
 ```
 
-Or in HTML (supported because `markup.goldmark.renderer.unsafe = true`):
-
-```html
-<img src="/img/posts/your-post-slug/screenshot-1.png" alt="Alt text" style="max-width:100%;">
-```
+Do not use `static/wp-content/`, it is reserved for the old WordPress image URLs.
 
 ### Naming and filing conventions
 
-- File name: `content/posts/your-post-slug.md` — use lowercase, hyphen-separated words matching the post title
+- Folder name: `content/posts/your-post-slug/` — use lowercase, hyphen-separated words matching the post title
 - The URL will be `/:year/:month/:day/:slug/` (e.g. `/2026/04/17/your-post-slug/`)
 - Optimise images before committing: `python scripts/resize_image.py`
 
@@ -236,12 +229,12 @@ date: "2026-06-01T09:00:00+00:00"
 draft: false
 authors: ["timlinux"]
 categories: ["Release Announcements"]
-featured_image: "/img/posts/qgis-4-1-released/featured.png"
+featured_image: "featured.png"
 ---
 
 We are pleased to announce QGIS 4.1!
 
-<img src="/img/posts/qgis-4-1-released/screenshot.png" alt="QGIS 4.1 screenshot" style="max-width:100%;">
+![QGIS 4.1 screenshot](screenshot.png)
 
 More details below...
 ```
@@ -256,7 +249,7 @@ Before committing images, either:
 - run the resize script to convert to WebP and cap dimensions:
 
 ```bash
-python scripts/resize_image.py static/img/posts/your-post-slug/
+python scripts/resize_image.py content/posts/your-post-slug/
 ```
 
 
