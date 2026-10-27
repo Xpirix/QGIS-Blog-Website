@@ -1,6 +1,7 @@
 ---
 title: "QGIS Crowdfunding project: 2.5D Rendering of buildings/polygons"
 date: "2015-11-02T19:46:29+00:00"
+slug: "qgis-crowdfunding-project-2-5d-rendering-of-buildingspolygons"
 draft: false
 authors: ["neumannandreas"]
 categories: ["Uncategorized"]

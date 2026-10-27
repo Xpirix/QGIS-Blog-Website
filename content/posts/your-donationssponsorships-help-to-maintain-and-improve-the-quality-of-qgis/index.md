@@ -1,6 +1,7 @@
 ---
 title: "Your donations/sponsorships help to maintain and improve the quality of QGIS"
 date: "2015-11-09T19:51:40+00:00"
+slug: "your-donationssponsorships-help-to-maintain-and-improve-the-quality-of-qgis"
 draft: false
 authors: ["neumannandreas"]
 categories: ["Uncategorized"]

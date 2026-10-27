@@ -36,7 +36,8 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#-project-overview"> 🚀 Project Overview </a></li>
-    <li><a href="#-how-to-be-referenced"> 🌟 How to be Referenced </a></li>    <li><a href="#-writing-a-blog-post"> ✍️ Writing a Blog Post </a></li>    <li><a href="#-qa-status"> 🚥 QA Status </a></li>
+    <li><a href="#-how-to-be-referenced"> 🌟 How to be Referenced </a></li>    <li><a href="#-writing-a-blog-post"> ✍️ Writing a Blog Post </a></li>
+    <li><a href="#-adding-or-editing-an-author"> 👤 Adding or Editing an Author </a></li>    <li><a href="#-qa-status"> 🚥 QA Status </a></li>
     <li><a href="#-license"> 📜 License </a></li>
     <li><a href="#-folder-structure"> 📂 Folder Structure </a></li>
     <li><a href="#-using-ai-large-language-models"> 🤖 Using 'AI' (Large Language Models) </a></li>
@@ -73,6 +74,25 @@ Blog posts live in `content/posts/` as Markdown files with HTML front matter. Se
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
+
+## 👤 Adding or Editing an Author
+
+Each author has a file `content/authors/<author-slug>/_index.md`:
+
+```toml
+---
+title: "author-slug"
+display_name: "Your Full Name"
+bio: "Short bio about you."
+---
+```
+
+- To add an author, create the folder (its name is the slug) and the file above.
+- To edit an author, change `display_name` or `bio` in that file.
+- To credit an author on a post, put the slug in the post's front matter: `authors: ["author-slug"]`.
+
+![-----------------------------------------------------](./img/green-gradient.png)
+
 
 ## 🚥 QA Status
 
