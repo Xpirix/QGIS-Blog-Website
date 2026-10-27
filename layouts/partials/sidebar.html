@@ -59,7 +59,7 @@
                 <ul id="categories" class="collapsed">
                     {{ range $.Site.Taxonomies.categories.ByCount }}
                     <li {{ if findRE (replaceRE "/$" "" .Page.RelPermalink) $pageUrl }} class="is-active"{{ end }}>
-                        <a href="{{ .Page.RelPermalink }}" class="icon-text truncate">
+                        <a href="{{ .Page.RelPermalink }}" class="icon-text truncate" title="{{ .Page.Title }} ({{ .Count }})">
                             <span class="icon">
                                 <i class="fas fa-folder-open"></i>
                             </span>
