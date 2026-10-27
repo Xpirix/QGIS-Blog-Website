@@ -1,0 +1,22 @@
+---
+title: "Plugin Update November 2022"
+date: "2022-12-04T20:42:51+00:00"
+draft: false
+authors: ["underdark"]
+categories: ["Plugin update"]
+featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
+---
+
+<p>The <a href="https://plugins.qgis.org/plugins/">QGIS plugin repository</a> currently lists 1739 plugins and the list keeps on growing. This month has been busy with 12 new plugins. It can be challenging to stay up to date. </p>
+
+
+
+<p>Our monthly plugin update is meant to provide you a quick overview of the newest plugins. If any of the names or short descriptions piques your interest, you can find the direct link to the plugin page in the table below the screenshot.</p>
+
+
+
+<figure><a href="qgis-plugins-2022-11.png"><img loading="lazy" width="508" height="1023" src="qgis-plugins-2022-11.png" alt="" srcset="qgis-plugins-2022-11.png 508w, qgis-plugins-2022-11.png 74w, qgis-plugins-2022-11.png 149w, qgis-plugins-2022-11.png 637w" sizes="(max-width: 508px) 100vw, 508px" /></a></figure>
+
+
+
+<figure class="table-container"><table class="table is-fullwidth is-striped is-hoverable"><tbody><tr><td><a href="https://plugins.qgis.org/plugins/bdot10k/">BDOT10k</a></td></tr><tr><td>Wtyczka do pobierania danych BDOT10k. Plugin for downloading BDOT10k data.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/DMI_Open_Data/">DMI Open Data</a></td></tr><tr><td>This plugin lets you import data from DMIs Open Data</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/road2qgis/">road2QGIS</a></td></tr><tr><td>Plugin faisant appel au calcul d&#8217;itinéraires du Géoportail pour intégration dans QGIS</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/qgis_points2one/">NextGIS Points2One</a></td></tr><tr><td>Create lines and polygons from vertices.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/godata_for_upload/">Go Data Extraction</a></td></tr><tr><td>This is a Plugin for QGIS that enables users to log in to Go.Data and extract case data. Go.Data is an application which facilitates outbreak investigation, including field data collection, contact tracing, and visualization of chains of transmission.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/layertree2json/">LayerTree2JSON</a></td></tr><tr><td>Parse QGIS 3 project and write a JSON config file with layer information.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/Tieosoitetyokalu/">Tieosoitetyökalu</a></td></tr><tr><td>Tieosoitetyökalu-plugin hakee VKM-rajapinnasta osoitetietoja ja esittää niitä erilaisin tavoin QGIS:sissa.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/koordinates/">Koordinates</a></td></tr><tr><td>Discover, view and clone Koordinates hosted data directly from QGIS.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/gps_replay/">GPS Replay</a></td></tr><tr><td>Allows replay of a previously logged GPS file (i.e. a NMEA text log).</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/segment_reshape_plugin/">Segment reshape tool</a></td></tr><tr><td>Tool to reshape toplogically connected segments</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/GBFS-NOW/">GBFS-NOW</a></td></tr><tr><td>GBFS-NOW</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/mcda/">School placement multi-criteria decision analysis (MCDA)</a></td></tr><tr><td>This plugin generates a customized site classification raster layer for educational facilities (schools).</td></tr></tbody></table></figure>

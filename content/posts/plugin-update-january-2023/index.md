@@ -1,0 +1,22 @@
+---
+title: "Plugin Update January 2023"
+date: "2023-02-15T18:18:45+00:00"
+draft: false
+authors: ["underdark"]
+categories: ["Plugin update"]
+featured_image: "/wp-content/uploads/2017/01/qgis-icon_60px.png"
+---
+
+<p>This month has been busy with 20 new plugins in the <a href="https://plugins.qgis.org/plugins/">QGIS plugin repository</a>. </p>
+
+
+
+<p>Since it can be challenging to stay up to date, our monthly plugin update provides you a quick overview of the newest plugins. If any of the names or short descriptions piques your interest, you can find the direct link to the plugin page in the table below the screenshot.</p>
+
+
+
+<figure><a href="qgis-plugins-2023-01-439017662-e1680370309625.png"><img src="qgis-plugins-2023-01-439017662-e1680370309625.png" alt="" /></a></figure>
+
+
+
+<figure class="table-container"><table class="table is-fullwidth is-striped is-hoverable"><tbody><tr><td><a href="https://plugins.qgis.org/plugins/ThreePointMethod/">ThreePointMethod</a></td></tr><tr><td>Determine the orientation of geological surfaces using the three-point vector method.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/japangeology3/">japanGeology3</a></td></tr><tr><td>japanGeology3</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/cartodruid_sync/">CartoDruid Synchronizer</a></td></tr><tr><td>Plugin to synchronize SQLite databases to Cartodruid Synchronization services at ITACyL</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/e_tracability/">eTracability Automatic Accountability Tracker</a></td></tr><tr><td>This plugin adds automatic attributes to vector layers, that track who updated or created features, and when.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/minded_fba/">MINDED FBA</a></td></tr><tr><td>An automatic remote sensing tool for the estimation of flooded and burned areas.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/qkan/">QKan</a></td></tr><tr><td>Gruppe der QKan-Erweiterung(en)</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/magic_map_loader/">MAGIC Map Loader</a></td></tr><tr><td>This plugin will open the DEFRA MAGIC Map service on the area of your map canvas</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/fullmce_Sarah-main/">Full MCE for Public Health</a></td></tr><tr><td>Full Multicriteria Evaluation tool for Public Health</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/latlonbuffer/">Lat lon buffer</a></td></tr><tr><td>This processing plugin makes a buffer in meters around lat lon point features</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/equi_processing/">Equi Processing</a></td></tr><tr><td>Equidistance algorithme</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/Qpip/">Qpip</a></td></tr><tr><td>Qgis Pip Management</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/geo-zone-check-germany/">Geo-Zone Check Germany</a></td></tr><tr><td>UAS flight restriction checker for Germany</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/get_nib-main/">NIB-ortofoto-prosjekt</a></td></tr><tr><td>Henter alle ortofoto-prosjekt fra Norge i bilder (WMS) som ligger innafor et utsnitt.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/Kauko/">Kauko työkalut</a></td></tr><tr><td>Kauko työkalut</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/PlanCreator-3/">Plan Creator 3</a></td></tr><tr><td>Tool for creating a digital building model Инструмент создания цифровой модели здания</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/project_report/">Project Reports</a></td></tr><tr><td>Plugin to generate reports (CSV and HTML) of properties and metadata about layers, fields and layouts of QGIS projects.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/kartverket_adresse/">Kartverket adresse-API</a></td></tr><tr><td>This plugin fetches coordinates for Norwegian addresses using the Kartverket open adress-API</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/sensehawk_qc/">SenseHawk QC</a></td></tr><tr><td>This plugin will load and save SenseHawk projects needing quality check.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/polygon_from_map_extent/">Polygon from map extent</a></td></tr><tr><td>A lightweight QGIS plugin to make a polygon from the current map extent.</td></tr><tr><td><a href="https://plugins.qgis.org/plugins/QgisGLViewer/">Equirectangular 360° Viewer</a></td></tr><tr><td>Equirectangular and 360° streetview like image viewer</td></tr></tbody></table></figure>
