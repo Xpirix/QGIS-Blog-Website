@@ -1,6 +1,7 @@
 ---
 title: "Call for Proposals: QGIS Website Overhaul 2023/2024"
 date: "2023-10-03T16:45:52+00:00"
+slug: "call-for-proposals-qgis-website-overhaul-2023-2024"
 draft: false
 authors: ["timlinux"]
 categories: ["Uncategorized"]
